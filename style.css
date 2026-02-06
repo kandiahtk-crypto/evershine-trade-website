@@ -137,3 +137,22 @@ h2::before {
   background: #0b2e45;
   margin-bottom: 12px;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 24px;
+}
+
+ul li {
+  padding-left: 28px;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #0b2e45;
+  font-weight: 600;
+}
