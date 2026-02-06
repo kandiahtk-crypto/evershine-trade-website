@@ -156,3 +156,9 @@ ul li::before {
   color: #0b2e45;
   font-weight: 600;
 }
+.content-block {
+  background: #f9fafb;
+  padding: 48px;
+  border-radius: 12px;
+  margin-top: 48px;
+}
