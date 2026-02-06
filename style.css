@@ -121,3 +121,19 @@ section::after {
   background: #e5e7eb;
   margin: 64px 0 0;
 }
+h2 {
+  font-size: 1.8rem;
+  margin-top: 72px;
+  margin-bottom: 20px;
+  letter-spacing: -0.015em;
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: #0b2e45;
+  margin-bottom: 12px;
+}
