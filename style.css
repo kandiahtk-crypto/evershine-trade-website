@@ -107,3 +107,17 @@ footer {
   font-size: 0.9rem;
   color: #6b7280;
 }
+
+/* SECTION SEPARATION */
+section {
+  position: relative;
+}
+
+section::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #e5e7eb;
+  margin: 64px 0 0;
+}
