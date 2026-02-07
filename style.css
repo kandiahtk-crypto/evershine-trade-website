@@ -225,3 +225,19 @@ h2 {
   }
 
 }
+/* MOBILE ALIGNMENT FIX AFTER LISTS */
+@media (max-width: 768px) {
+
+  ul {
+    padding-left: 4px;
+  }
+
+  ul li {
+    padding-left: 22px;
+  }
+
+  p {
+    margin-left: 0;
+  }
+
+}
