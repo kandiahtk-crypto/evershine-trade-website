@@ -241,3 +241,11 @@ h2 {
   }
 
 }
+/* FINAL MOBILE OPTICAL ALIGNMENT FIX */
+@media (max-width: 768px) {
+
+  p {
+    padding-left: 6px;
+  }
+
+}
