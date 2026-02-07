@@ -1,30 +1,91 @@
-<form action="https://formspree.io/f/abcdwxyz" method="POST">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trade RFQ | UK Inbound Coach Transport</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <nav class="nav-container">
+    <strong>Inbound Coach Transport</strong>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="fleet-compliance.html">Fleet & Compliance</a>
+      <a href="how-we-work.html">How We Work</a>
+      <a href="trade-rfq.html">Trade RFQ</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="container">
+
+  <h1>Trade Request for Quotation</h1>
 
   <p>
-    <strong>Company Name</strong><br>
-    <input type="text" name="company" required>
+    This RFQ form is for Destination Management Companies and inbound tour operators
+    seeking pre-booked group transport services within the United Kingdom.
   </p>
 
-  <p>
-    <strong>Contact Name</strong><br>
-    <input type="text" name="contact" required>
+  <p style="color:#374151; font-size:0.95rem;">
+    Trade enquiries only. Please submit confirmed or near-confirmed itineraries.
+    Provisional requests without routing or dates may require clarification before response.
   </p>
 
-  <p>
-    <strong>Email</strong><br>
+  <form class="rfq-form"
+        action="https://formspree.io/f/XXXXXXX"
+        method="POST">
+
+    <label>Company Name</label>
+    <input type="text" name="company_name" required>
+
+    <label>Contact Name</label>
+    <input type="text" name="contact_name" required>
+
+    <label>Email</label>
     <input type="email" name="email" required>
-  </p>
 
-  <p>
-    <strong>Travel Dates / Programme Window</strong><br>
-    <input type="text" name="dates">
-  </p>
+    <label>Travel Dates / Programme Window</label>
+    <input type="text" name="travel_dates">
 
-  <p>
-    <strong>Service Details</strong><br>
-    <textarea name="details" rows="5" required></textarea>
-  </p>
+    <label>Estimated Group Size</label>
+    <input type="text" name="group_size">
 
-  <button type="submit">Submit Trade RFQ</button>
+    <label>Service Type</label>
+    <select name="service_type">
+      <option value="">Select</option>
+      <option>Airport / Cruise Transfers</option>
+      <option>Day Excursions</option>
+      <option>Multi-Day UK Touring</option>
+      <option>Mixed Programme</option>
+    </select>
 
-</form>
+    <label>Service Details</label>
+    <textarea name="service_details"
+      placeholder="Routing, locations, number of days, special considerations…"></textarea>
+
+    <input type="submit" value="Submit Trade RFQ">
+
+  </form>
+
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-container">
+    <p><strong>Trade services only.</strong> Pre-booked group transport.</p>
+    <p>© Evershine Coaches Limited<br>
+       UK-registered coach operator · Based near London Heathrow</p>
+  </div>
+</footer>
+
+</body>
+</html>
