@@ -188,3 +188,18 @@ footer {
   }
 
 }
+/* HEADER COLOUR */
+header {
+  background: #0b2e45;
+  border-bottom: none;
+}
+
+nav strong,
+nav a {
+  color: #ffffff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
