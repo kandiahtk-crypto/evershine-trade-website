@@ -1,49 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Trade RFQ | Inbound Coach Transport</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<form action="https://formspree.io/f/abcdwxyz" method="POST">
 
-<header>
-  <nav class="nav">
-    <div class="brand">Inbound Coach Transport</div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="fleet-compliance.html">Fleet & Compliance</a>
-      <a href="how-we-work.html">How We Work</a>
-      <a href="trade-rfq.html">Trade RFQ</a>
-    </div>
-  </nav>
-</header>
+  <p>
+    <strong>Company Name</strong><br>
+    <input type="text" name="company" required>
+  </p>
 
-<main class="container">
+  <p>
+    <strong>Contact Name</strong><br>
+    <input type="text" name="contact" required>
+  </p>
 
-  <h1>Request a Trade Quote</h1>
+  <p>
+    <strong>Email</strong><br>
+    <input type="email" name="email" required>
+  </p>
 
-  <div class="content-block">
-    <p>
-      This RFQ form is intended for Destination Management Companies and professional tour operators arranging inbound group travel within the United Kingdom.
-    </p>
+  <p>
+    <strong>Travel Dates / Programme Window</strong><br>
+    <input type="text" name="dates">
+  </p>
 
-    <p>
-      Typical response time: <strong>within one business day</strong>.
-    </p>
+  <p>
+    <strong>Service Details</strong><br>
+    <textarea name="details" rows="5" required></textarea>
+  </p>
 
-    <!-- FORM GOES HERE -->
-    <p><em>Form integration to be added.</em></p>
-  </div>
+  <button type="submit">Submit Trade RFQ</button>
 
-</main>
-
-<footer>
-  <p>© Evershine Coaches Limited</p>
-  <p>UK-registered coach operator · Based near London Heathrow</p>
-</footer>
-
-</body>
-</html>
+</form>
