@@ -178,3 +178,32 @@ h1 {
 h2 {
   font-size: 1.9rem;
 }
+/* MOBILE READABILITY FIX */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 19px;
+  }
+
+  p, li {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .container {
+    padding: 72px 20px;
+  }
+
+  .content-block {
+    padding: 32px;
+  }
+
+}
