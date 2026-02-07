@@ -203,3 +203,12 @@ nav a:hover {
   text-decoration: underline;
   opacity: 0.9;
 }
+/* FOOTER COLOUR */
+footer {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+footer p {
+  color: #e5e7eb;
+}
