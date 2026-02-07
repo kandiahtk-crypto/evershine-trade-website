@@ -212,3 +212,7 @@ footer {
 footer p {
   color: #e5e7eb;
 }
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
