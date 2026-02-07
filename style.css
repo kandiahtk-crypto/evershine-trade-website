@@ -207,3 +207,21 @@ h2 {
   }
 
 }
+/* MOBILE TEXT WEIGHT & COMFORT */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 1.08rem;
+    line-height: 1.85;
+  }
+
+  li {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+}
