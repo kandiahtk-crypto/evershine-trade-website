@@ -1,39 +1,23 @@
-/* =========================
-   BASE RESET
-========================= */
-
+/* BASE RESET */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: #111827;
   background: #ffffff;
   line-height: 1.7;
-  font-size: 18px;
 }
 
-/* =========================
-   LAYOUT
-========================= */
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 80px 24px;
-}
-
-/* =========================
-   NAVIGATION
-========================= */
-
+/* HEADER */
 header {
-  border-bottom: 1px solid #e5e7eb;
+  background: #0b2e45;
 }
 
-nav {
+.nav {
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px 24px;
@@ -42,36 +26,42 @@ nav {
   align-items: center;
 }
 
-nav strong {
+.brand {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
   font-size: 18px;
 }
 
-nav a {
-  margin-left: 24px;
-  text-decoration: none;
-  color: #111827;
-  font-size: 16px;
-}
-
-nav a:hover {
+.nav-links a:hover {
   text-decoration: underline;
 }
 
-/* =========================
-   TYPOGRAPHY
-========================= */
+/* CONTENT */
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 72px 24px;
+}
 
 h1 {
-  font-size: 2.8rem;
-  margin-bottom: 32px;
-  line-height: 1.2;
+  font-size: 2.4rem;
+  margin-bottom: 24px;
 }
 
 h2 {
-  font-size: 1.9rem;
-  margin-top: 0;
-  margin-bottom: 20px;
-  position: relative;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
 }
 
 h2::before {
@@ -85,22 +75,21 @@ h2::before {
 
 p {
   margin-bottom: 20px;
-  max-width: 820px;
+  font-size: 1.05rem;
 }
 
 ul {
   list-style: none;
-  padding-left: 0;
-  margin: 24px 0;
+  margin-top: 16px;
 }
 
-ul li {
+li {
+  padding-left: 28px;
+  margin-bottom: 12px;
   position: relative;
-  padding-left: 26px;
-  margin-bottom: 14px;
 }
 
-ul li::before {
+li::before {
   content: "—";
   position: absolute;
   left: 0;
@@ -108,137 +97,57 @@ ul li::before {
   font-weight: 600;
 }
 
-/* =========================
-   CONTENT BLOCKS
-========================= */
-
 .content-block {
   background: #f9fafb;
-  padding: 48px;
+  padding: 40px;
   border-radius: 12px;
-  margin-top: 56px;
+  margin: 48px 0;
 }
 
-/* =========================
-   BUTTON
-========================= */
-
-.button {
+/* CTA */
+.cta {
   display: inline-block;
   margin-top: 24px;
-  padding: 14px 24px;
   background: #0b2e45;
   color: #ffffff;
-  text-decoration: none;
+  padding: 14px 22px;
   border-radius: 6px;
-  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.button:hover {
-  opacity: 0.9;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-  border-top: 1px solid #e5e7eb;
-  padding: 40px 24px;
-  text-align: center;
-  font-size: 14px;
-  color: #6b7280;
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-  body {
-    font-size: 19px;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  nav a {
-    margin-left: 0;
-    margin-right: 16px;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  .container {
-    padding: 64px 20px;
-  }
-
-  .content-block {
-    padding: 32px;
-  }
-
-}
-/* HEADER COLOUR */
-header {
-  background: #0b2e45;
-  border-bottom: none;
-}
-
-nav strong,
-nav a {
-  color: #ffffff;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  opacity: 0.9;
-}
-/* FOOTER COLOUR */
+/* FOOTER */
 footer {
   background: #0f172a;
   color: #e5e7eb;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 80px;
 }
 
-footer p {
-  color: #e5e7eb;
-}
-.nav-links {
-  display: flex;
-  gap: 24px;
-}
-/* MOBILE NAV LAYOUT FIX */
+/* MOBILE */
 @media (max-width: 768px) {
 
-  nav {
+  .nav {
     flex-direction: column;
     align-items: flex-start;
-    padding: 24px 20px;
   }
 
   .nav-links {
-    display: flex;
     flex-wrap: wrap;
     gap: 16px 24px;
     margin-top: 16px;
   }
 
-  nav a {
-    font-size: 18px !important;
-    line-height: 1.4;
-    white-space: nowrap;
+  h1 {
+    font-size: 2rem;
   }
 
-  nav strong {
-    font-size: 20px !important;
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .content-block {
+    padding: 28px;
   }
 }
