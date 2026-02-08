@@ -369,3 +369,50 @@ footer a:hover {
     right: 18px;
   }
 }
+/* HOW WE WORK – BA STYLE PANELS */
+
+.how-we-work {
+  max-width: 900px;
+}
+
+.work-step {
+  display: flex;
+  gap: 28px;
+  padding: 32px 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.work-step:first-of-type {
+  border-top: none;
+}
+
+.step-number {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ba0c2f; /* BA red accent */
+  min-width: 42px;
+}
+
+.step-content h2 {
+  margin-top: 0;
+}
+
+.step-content p {
+  margin-bottom: 16px;
+}
+
+.step-content ul {
+  margin-top: 12px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .work-step {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .step-number {
+    font-size: 1rem;
+  }
+}
