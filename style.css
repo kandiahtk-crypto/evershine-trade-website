@@ -255,3 +255,29 @@ footer a:hover {
   background: #a00a26;
   transform: translateY(-1px);
 }
+/* BA-STYLE CTA LINK */
+
+.cta-link {
+  display: inline-block;
+  margin-top: 24px;
+  font-weight: 600;
+  color: #0b2e45;
+  text-decoration: none;
+  position: relative;
+}
+
+.cta-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background: #d71920; /* British Airways red */
+  transform: translateX(-50%);
+  transition: width 0.25s ease;
+}
+
+.cta-link:hover::after {
+  width: 70%;
+}
