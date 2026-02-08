@@ -1,289 +1,78 @@
-/* =====================
-   BASE RESET
-===================== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<section class="container how-we-work">
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  color: #0b1f33;
-  background: #ffffff;
-  line-height: 1.7;
-}
+  <h1>How We Work</h1>
 
-/* =====================
-   COLOUR VARIABLES (BA STYLE)
-===================== */
-:root {
-  --ba-navy: #0b2e45;
-  --ba-red: #c8102e;
-  --ba-grey: #374151;
-  --ba-light: #f9fafb;
-}
+  <p class="how-intro">
+    Inbound ground transport succeeds or fails on planning discipline.
+    Our operation is structured specifically for trade programmes,
+    where timing, routing logic, and operational control matter.
+  </p>
 
-/* =====================
-   HEADER / NAV
-===================== */
-header {
-  background: var(--ba-navy);
-}
+  <div class="process">
 
-.nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    <div class="process-step">
+      <span class="step-number">01</span>
+      <h2>Structured Planning, Not Ad-Hoc Transport</h2>
+      <p>
+        We do not operate on last-minute assumptions. Every programme is reviewed
+        in advance to ensure transport planning supports the wider itinerary
+        rather than reacting to it.
+      </p>
+    </div>
 
-.brand {
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 600;
-}
+    <div class="process-step">
+      <span class="step-number">02</span>
+      <h2>Pre-Tour Planning & Validation</h2>
+      <p>
+        Each enquiry undergoes a structured pre-tour review to confirm the plan
+        is operationally sound.
+      </p>
+      <ul>
+        <li>Routing logic and realistic journey times</li>
+        <li>Driver hours, rest compliance, and legal limits</li>
+        <li>Vehicle type and luggage capacity</li>
+        <li>Access restrictions at hotels and attractions</li>
+      </ul>
+    </div>
 
-.nav-links {
-  display: flex;
-  gap: 26px;
-  flex-wrap: wrap;
-}
+    <div class="process-step">
+      <span class="step-number">03</span>
+      <h2>Programme-Aligned Execution</h2>
+      <p>
+        Transport is delivered as part of the wider programme, not in isolation.
+        Decisions are made with the overall itinerary outcome in mind.
+      </p>
+    </div>
 
-.nav-links a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px;
-  position: relative;
-}
+    <div class="process-step">
+      <span class="step-number">04</span>
+      <h2>Clear Communication & Operational Control</h2>
+      <p>
+        We maintain calm, structured communication throughout delivery.
+        Issues are handled professionally, with practical solutions rather
+        than reactive escalation.
+      </p>
+    </div>
 
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0;
-  height: 2px;
-  background: var(--ba-red);
-  transition: width 0.2s ease;
-}
+    <div class="process-step">
+      <span class="step-number">05</span>
+      <h2>Drivers Experienced in Group Travel</h2>
+      <p>
+        Our drivers are selected for their experience with inbound groups.
+        They understand itinerary pressure, group handling,
+        and professional tour delivery expectations.
+      </p>
+    </div>
 
-.nav-links a:hover::after {
-  width: 100%;
-}
+    <div class="process-step">
+      <span class="step-number">06</span>
+      <h2>Post-Programme Review & Continuity</h2>
+      <p>
+        Where required, we support post-programme reviews to refine routing,
+        timing, and delivery for future departures and series programmes.
+      </p>
+    </div>
 
-/* WhatsApp button */
-.whatsapp-link {
-  border: 1px solid rgba(255,255,255,0.5);
-  padding: 6px 14px;
-  border-radius: 20px;
-}
+  </div>
 
-/* =====================
-   MAIN CONTENT
-===================== */
-.container {
-  max-width: 780px;
-  margin: 0 auto;
-  padding: 80px 24px;
-}
-
-h1 {
-  font-size: 2.6rem;
-  margin-bottom: 24px;
-}
-
-h2 {
-  font-size: 1.6rem;
-  margin-bottom: 16px;
-  position: relative;
-}
-
-h2::before {
-  content: "";
-  display: block;
-  width: 36px;
-  height: 3px;
-  background: var(--ba-red);
-  margin-bottom: 12px;
-}
-
-p {
-  margin-bottom: 22px;
-  color: var(--ba-grey);
-  font-size: 1.05rem;
-}
-
-ul {
-  list-style: none;
-  margin-top: 16px;
-}
-
-ul li {
-  padding-left: 18px;
-  position: relative;
-  margin-bottom: 12px;
-}
-
-ul li::before {
-  content: "—";
-  position: absolute;
-  left: 0;
-  color: var(--ba-navy);
-}
-
-/* =====================
-   CONTENT BLOCKS (USED EVERYWHERE)
-===================== */
-.content-block {
-  background: var(--ba-light);
-  padding: 40px;
-  border-radius: 12px;
-  margin-bottom: 40px;
-  border-left: 4px solid #e5e7eb;
-}
-
-/* Emphasis for process sections (How We Work) */
-section.container .content-block h2 {
-  font-weight: 600;
-}
-
-section.container .content-block h2::before {
-  background: var(--ba-red);
-  width: 40px;
-}
-
-/* =====================
-   CTA LINK
-===================== */
-.cta-link {
-  display: inline-block;
-  margin-top: 24px;
-  padding: 14px 28px;
-  background: var(--ba-navy);
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1.05rem;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.cta-link:hover {
-  background: #09314d;
-}
-
-/* =====================
-   RFQ WRAPPER
-===================== */
-.rfq-wrapper {
-  background: var(--ba-light);
-  padding: 56px;
-  border-radius: 16px;
-}
-
-/* =====================
-   RFQ FORM
-===================== */
-.rfq-form {
-  margin-top: 40px;
-}
-
-.rfq-form label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: var(--ba-navy);
-}
-
-.rfq-form input,
-.rfq-form textarea,
-.rfq-form select {
-  width: 100%;
-  padding: 14px 16px;
-  font-size: 1rem;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  margin-bottom: 26px;
-  font-family: inherit;
-}
-
-.rfq-form textarea {
-  min-height: 140px;
-}
-
-.rfq-form input:focus,
-.rfq-form textarea:focus,
-.rfq-form select:focus {
-  outline: none;
-  border-color: var(--ba-navy);
-}
-
-.rfq-form input[type="submit"] {
-  background: var(--ba-navy);
-  color: #ffffff;
-  border: none;
-  padding: 16px 26px;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.rfq-form input[type="submit"]:hover {
-  background: #092437;
-}
-
-/* =====================
-   FOOTER
-===================== */
-footer {
-  background: #0f172a;
-  color: #ffffff;
-  text-align: center;
-  padding: 48px 20px;
-}
-
-footer p,
-footer strong,
-footer a {
-  color: #ffffff;
-}
-
-footer a {
-  text-decoration: underline;
-  opacity: 0.95;
-}
-
-footer a:hover {
-  opacity: 1;
-}
-
-/* =====================
-   MOBILE
-===================== */
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    margin-top: 16px;
-    gap: 18px;
-  }
-
-  h1 {
-    font-size: 2.1rem;
-  }
-
-  .rfq-wrapper {
-    padding: 36px 24px;
-  }
-
-  .content-block {
-    padding: 28px;
-  }
-}
+</section>
