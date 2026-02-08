@@ -324,3 +324,48 @@ footer a:hover {
     margin-bottom: 8px;
   }
 }
+/* HOW WE WORK – BA STYLE PROCESS PANELS */
+
+.process {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.process-step {
+  position: relative;
+  padding: 40px;
+  background: #f9fafb;
+  border-radius: 14px;
+  border-left: 4px solid #0b2e45;
+}
+
+.step-number {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #b11226; /* BA red accent */
+}
+
+.process-step h2 {
+  margin-top: 0;
+}
+
+.process-step ul {
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .process-step {
+    padding: 28px;
+  }
+
+  .step-number {
+    top: 18px;
+    right: 18px;
+  }
+}
