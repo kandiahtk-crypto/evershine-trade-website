@@ -220,3 +220,19 @@ footer a:hover {
     padding: 36px 24px;
   }
 }
+/* FOOTER TEXT VISIBILITY FIX */
+footer,
+footer p,
+footer a,
+footer strong {
+  color: #ffffff;
+}
+
+footer a {
+  text-decoration: underline;
+  opacity: 0.95;
+}
+
+footer a:hover {
+  opacity: 1;
+}
