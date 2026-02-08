@@ -15,7 +15,7 @@ body {
 }
 
 /* =====================
-   COLOUR VARIABLES (BA-STYLE)
+   COLOUR VARIABLES (BA STYLE)
 ===================== */
 :root {
   --ba-navy: #0b2e45;
@@ -44,7 +44,6 @@ header {
   color: #ffffff;
   font-size: 22px;
   font-weight: 600;
-  letter-spacing: 0.2px;
 }
 
 .nav-links {
@@ -75,7 +74,7 @@ header {
   width: 100%;
 }
 
-/* WhatsApp */
+/* WhatsApp button */
 .whatsapp-link {
   border: 1px solid rgba(255,255,255,0.5);
   padding: 6px 14px;
@@ -115,6 +114,65 @@ p {
   margin-bottom: 22px;
   color: var(--ba-grey);
   font-size: 1.05rem;
+}
+
+ul {
+  list-style: none;
+  margin-top: 16px;
+}
+
+ul li {
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--ba-navy);
+}
+
+/* =====================
+   CONTENT BLOCKS (USED EVERYWHERE)
+===================== */
+.content-block {
+  background: var(--ba-light);
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  border-left: 4px solid #e5e7eb;
+}
+
+/* Emphasis for process sections (How We Work) */
+section.container .content-block h2 {
+  font-weight: 600;
+}
+
+section.container .content-block h2::before {
+  background: var(--ba-red);
+  width: 40px;
+}
+
+/* =====================
+   CTA LINK
+===================== */
+.cta-link {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 28px;
+  background: var(--ba-navy);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cta-link:hover {
+  background: #09314d;
 }
 
 /* =====================
@@ -163,7 +221,6 @@ p {
   border-color: var(--ba-navy);
 }
 
-/* Submit button */
 .rfq-form input[type="submit"] {
   background: var(--ba-navy);
   color: #ffffff;
@@ -184,18 +241,24 @@ p {
 ===================== */
 footer {
   background: #0f172a;
-  color: #e5e7eb;
+  color: #ffffff;
   text-align: center;
   padding: 48px 20px;
 }
 
+footer p,
+footer strong,
 footer a {
-  color: #93c5fd;
-  text-decoration: none;
+  color: #ffffff;
+}
+
+footer a {
+  text-decoration: underline;
+  opacity: 0.95;
 }
 
 footer a:hover {
-  text-decoration: underline;
+  opacity: 1;
 }
 
 /* =====================
@@ -219,230 +282,8 @@ footer a:hover {
   .rfq-wrapper {
     padding: 36px 24px;
   }
-}
-/* FOOTER TEXT VISIBILITY FIX */
-footer,
-footer p,
-footer a,
-footer strong {
-  color: #ffffff;
-}
 
-footer a {
-  text-decoration: underline;
-  opacity: 0.95;
-}
-
-footer a:hover {
-  opacity: 1;
-}
-/* PRIMARY CTA LINK */
-.cta-link {
-  display: inline-block;
-  margin-top: 24px;
-  padding: 14px 28px;
-  background: #ba0c2f; /* BA red */
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1.05rem;
-  border-radius: 6px;
-  text-decoration: none;
-  box-shadow: 0 6px 18px rgba(186, 12, 47, 0.25);
-  transition: all 0.2s ease;
-}
-
-.cta-link:hover {
-  background: #a00a26;
-  transform: translateY(-1px);
-}
-/* BA-STYLE CTA LINK */
-
-.cta-link {
-  display: inline-block;
-  margin-top: 24px;
-  font-weight: 600;
-  color: #0b2e45;
-  text-decoration: none;
-  position: relative;
-}
-
-.cta-link::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -6px;
-  width: 0;
-  height: 3px;
-  background: #d71920; /* British Airways red */
-  transform: translateX(-50%);
-  transition: width 0.25s ease;
-}
-
-.cta-link:hover::after {
-  width: 70%;
-}
-/* HOW WE WORK – BA STYLE PROCESS PANELS */
-
-.process {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-top: 48px;
-}
-
-.process-step {
-  position: relative;
-  padding: 40px;
-  background: #f9fafb;
-  border-radius: 14px;
-  border-left: 4px solid #0b2e45;
-}
-
-.step-number {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: #b11226; /* BA red accent */
-}
-
-.process-step h2 {
-  margin-top: 0;
-}
-
-.process-step ul {
-  margin-top: 16px;
-}
-
-@media (max-width: 768px) {
-  .process-step {
+  .content-block {
     padding: 28px;
   }
-
-  .step-number {
-    top: 18px;
-    right: 18px;
-  }
-}
-/* HOW WE WORK – BA STYLE PANELS */
-
-.how-we-work {
-  max-width: 900px;
-}
-
-.work-step {
-  display: flex;
-  gap: 28px;
-  padding: 32px 0;
-  border-top: 1px solid #e5e7eb;
-}
-
-.work-step:first-of-type {
-  border-top: none;
-}
-
-.step-number {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #ba0c2f; /* BA red accent */
-  min-width: 42px;
-}
-
-.step-content h2 {
-  margin-top: 0;
-}
-
-.step-content p {
-  margin-bottom: 16px;
-}
-
-.step-content ul {
-  margin-top: 12px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .work-step {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .step-number {
-    font-size: 1rem;
-  }
-}
-/* HOW WE WORK – BA STYLE */
-
-.how-we-work {
-  margin-top: 96px;
-}
-
-.how-intro {
-  max-width: 640px;
-  margin-bottom: 48px;
-  font-size: 1.05rem;
-  color: #374151;
-}
-
-.work-steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
-}
-
-.work-step {
-  background: #f9fafb;
-  padding: 32px;
-  border-radius: 14px;
-  position: relative;
-}
-
-.step-number {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: #9ca3af;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.work-step h3 {
-  margin-bottom: 12px;
-  font-size: 1.2rem;
-  color: #0b2e45;
-}
-
-.work-step ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.work-step ul li {
-  padding-left: 18px;
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.work-step ul li::before {
-  content: "—";
-  position: absolute;
-  left: 0;
-  color: #0b2e45;
-}
-/* HOW WE WORK – PROCESS EMPHASIS (BA STYLE) */
-
-section.container .content-block h2 {
-  font-weight: 600;
-}
-
-section.container .content-block h2::before {
-  background: #ba0c2f; /* BA red accent */
-  width: 40px;
-}
-
-section.container .content-block {
-  border-left: 4px solid #e5e7eb;
-  padding-left: 36px;
 }
