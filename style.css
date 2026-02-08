@@ -474,3 +474,18 @@ footer a:hover {
   left: 0;
   color: #0b2e45;
 }
+/* HOW WE WORK – PROCESS EMPHASIS (BA STYLE) */
+
+section.container .content-block h2 {
+  font-weight: 600;
+}
+
+section.container .content-block h2::before {
+  background: #ba0c2f; /* BA red accent */
+  width: 40px;
+}
+
+section.container .content-block {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 36px;
+}
