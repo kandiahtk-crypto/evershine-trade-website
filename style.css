@@ -281,3 +281,46 @@ footer a:hover {
 .cta-link:hover::after {
   width: 70%;
 }
+/* HOW WE WORK – BA STYLE PANELS */
+
+.work-panels {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 56px;
+}
+
+.work-panel {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 32px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.work-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0b2e45;
+  line-height: 1;
+}
+
+.work-content h2 {
+  margin-top: 0;
+}
+
+.work-content ul {
+  margin-top: 16px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .work-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .work-number {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+}
