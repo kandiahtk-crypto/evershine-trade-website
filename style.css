@@ -287,3 +287,65 @@ footer a:hover {
     padding: 28px;
   }
 }
+/* ===== HOW WE WORK – BA AIRLINE STYLE ===== */
+
+.how-we-work {
+  margin-top: 80px;
+}
+
+.how-intro {
+  max-width: 640px;
+  margin-bottom: 48px;
+  font-size: 1.05rem;
+  color: #374151;
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.process-step {
+  position: relative;
+  padding: 40px;
+  background: #f9fafb;
+  border-radius: 14px;
+  border-left: 4px solid #0b2e45;
+}
+
+.process-step h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.process-step ul {
+  margin-top: 16px;
+  padding-left: 18px;
+}
+
+.process-step ul li {
+  margin-bottom: 10px;
+}
+
+.step-number {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #c8102e;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .process-step {
+    padding: 28px;
+  }
+
+  .step-number {
+    top: 18px;
+    right: 18px;
+  }
+}
