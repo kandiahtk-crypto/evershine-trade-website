@@ -1,26 +1,26 @@
 <header class="site-header">
   <div class="nav">
     <div class="brand">
-      <a href="/index.html">UK Inbound Ground Transport</a>
+      <a href="../index.html">UK Inbound Ground Transport</a>
     </div>
 
     <nav class="nav-links">
-      <a href="/index.html" data-page="home">Home</a>
-      <a href="/services.html" data-page="services">Services</a>
-      <a href="/fleet-compliance.html" data-page="fleet">Fleet & Compliance</a>
-      <a href="/how-we-work.html" data-page="how">How We Work</a>
+      <a href="../index.html">Home</a>
+      <a href="../services.html">Services</a>
+      <a href="../fleet-compliance.html">Fleet & Compliance</a>
+      <a href="../how-we-work.html">How We Work</a>
 
       <div class="dropdown">
         <span class="dropdown-toggle">Markets ▾</span>
         <div class="dropdown-menu">
-          <a href="/markets/usa.html">USA</a>
-          <a href="/markets/europe.html">Europe</a>
-          <a href="/markets/india.html">India</a>
-          <a href="/markets/china.html">China</a>
+          <a href="../markets/usa.html">USA</a>
+          <a href="../markets/europe.html">Europe</a>
+          <a href="../markets/india.html">India</a>
+          <a href="../markets/china.html">China</a>
         </div>
       </div>
 
-      <a href="/trade-rfq.html" data-page="rfq">Trade RFQ</a>
+      <a href="../trade-rfq.html">Trade RFQ</a>
 
       <a href="https://wa.me/447XXXXXXXXX" class="whatsapp-btn" target="_blank">
         WhatsApp
@@ -28,12 +28,3 @@
     </nav>
   </div>
 </header>
-
-<script>
-  const current = location.pathname;
-  document.querySelectorAll('.nav-links a[data-page]').forEach(link => {
-    if (current.includes(link.getAttribute('href'))) {
-      link.classList.add('active');
-    }
-  });
-</script>
