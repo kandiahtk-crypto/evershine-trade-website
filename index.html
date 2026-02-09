@@ -1,107 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>UK Inbound Ground Transport | Trade Coach Services</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>UK Inbound Ground Transport | Trade Only</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
- <script>
-  fetch("/partials/header.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("site-header").innerHTML = html;
-    });
-</script>
 
+  <!-- HEADER PLACEHOLDER -->
+  <div id="site-header"></div>
 
- 
+  <!-- LOAD HEADER -->
+  <script>
+    fetch("/partials/header.html")
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("site-header").innerHTML = html;
+      })
+      .catch(err => {
+        console.error("Header failed to load", err);
+      });
+  </script>
 
-<main>
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="container">
+      <h1>UK Inbound Ground Transport for Tour Operators & DMCs</h1>
 
-<section class="container">
-
-  <h1>UK Inbound Ground Transport for Tour Operators & DMCs</h1>
-
-  <p>
-    We provide pre-booked <strong>UK inbound ground transport</strong> services for
-    <strong>Destination Management Companies</strong> and
-    <strong>international tour operators</strong>, delivering structured,
-    reliable coach operations across the United Kingdom.
-  </p>
-
-  <p>
-    Based near <strong>London Heathrow</strong>, our operation supports airport and
-    cruise transfers, inter-city ground movements, and multi-day UK touring
-    programmes — planned to meet international expectations around timing,
-    compliance, and operational control.
-  </p>
-
-  <!-- NUMBERED LOGIC (SAME AS SERVICES PAGE) -->
-
-  <div class="content-block">
-    <h2>01 — Trade-Only Ground Transport Focus</h2>
-    <p>
-      We work exclusively with Destination Management Companies and inbound tour
-      operators, structuring ground transport around confirmed programmes rather
-      than retail bookings or ad-hoc movements.
-    </p>
-  </div>
-
-  <div class="content-block">
-    <h2>02 — Inbound-Aware Planning & Coordination</h2>
-    <p>
-      Transport is planned around international arrivals, group handling
-      requirements, driver hours, access restrictions, congestion, and real
-      UK operating conditions.
-    </p>
-  </div>
-
-  <div class="content-block">
-    <h2>03 — Programme-Aligned Delivery</h2>
-    <p>
-      Services are delivered as part of the wider itinerary, not in isolation.
-      Operational decisions are made to protect timing, flow, and the overall
-      programme outcome.
-    </p>
-  </div>
-
-  <div class="content-block">
-    <h2>04 — Professional Drivers & Clear Communication</h2>
-    <p>
-      Drivers are experienced in inbound group travel and supported by structured
-      communication and operational oversight throughout delivery.
-    </p>
-  </div>
-
-  <div class="content-block">
-    <h2>05 — Continuity for Series & Repeat Programmes</h2>
-    <p>
-      We support repeat departures and series tours with consistent delivery
-      standards, operational continuity, and post-programme review where required.
-    </p>
-  </div>
-
-  <p>
-    <strong>Trade services only.</strong> We operate as a ground transport partner
-    within structured inbound programmes.
-  </p>
-
-  <a href="trade-rfq.html" class="cta-link">Request a Trade Quote</a>
-
-</section>
-
-</main>
-
-<footer>
-  <p><strong>Trade services only.</strong> Pre-booked UK inbound ground transport.</p>
-  <p>
-    © Evershine Coaches Limited<br>
-    UK-registered coach operator · Based near London Heathrow
-  </p>
-</footer>
+      <p>
+        We provide pre-booked <strong>UK inbound ground transport</strong> for
+        destination management companies and international tour operators,
+        delivering structured, reliable coach operations across the United Kingdom.
+      </p>
+    </section>
+  </main>
 
 </body>
 </html>
