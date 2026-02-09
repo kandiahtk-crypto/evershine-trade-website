@@ -8,21 +8,16 @@
 </head>
 
 <body>
+ <script>
+  fetch("/partials/header.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("site-header").innerHTML = html;
+    });
+</script>
 
-<header>
-  <div class="nav">
-    <div class="brand">UK Inbound Ground Transport</div>
 
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="fleet-compliance.html">Fleet & Compliance</a>
-      <a href="how-we-work.html">How We Work</a>
-      <a href="trade-rfq.html">Trade RFQ</a>
-      <a href="https://wa.me/447XXXXXXXXX" target="_blank" class="whatsapp-link">WhatsApp</a>
-    </nav>
-  </div>
-</header>
+ 
 
 <main>
 
