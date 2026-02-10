@@ -1,148 +1,334 @@
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1>UK Inbound Group Transport, Built for the Trade</h1>
-    <p class="hero-intro">
-      Planned, pre-booked ground transport for international tour operators,
-      DMCs, and wholesalers delivering structured UK itineraries.
-    </p>
-    <p class="hero-sub">
-      We specialise exclusively in inbound group movements —
-      not retail coach hire, not ad-hoc point-to-point jobs.
-    </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UK Inbound Group Transport</title>
 
-    <a href="/rfq" class="btn-primary">
-      Request a Trade Quote
-    </a>
-    <span class="hero-note">
-      Trade partners only · Ground transport only · UK-wide
-    </span>
-  </div>
-</section>
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --bg-muted: #f6f7f8;
+      --brand: #0b3a53;
+      --accent: #9b1c1c;
+    }
 
-<!-- WHO THIS IS FOR -->
-<section class="section section-muted">
-  <div class="container narrow">
-    <p>
-      We work with international travel businesses that require a reliable UK
-      ground partner — one that understands series tours, release periods,
-      routing complexity, and margin protection.
-    </p>
-    <p>
-      If you sell the UK as part of a structured programme, we integrate
-      seamlessly into your operation.
-    </p>
-  </div>
-</section>
+    * {
+      box-sizing: border-box;
+    }
 
-<!-- SERVICES -->
-<section class="section">
-  <div class="container grid">
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      line-height: 1.6;
+    }
 
-    <div class="service-card">
-      <span class="service-number">01</span>
-      <h2>Inbound Group Coach Transport</h2>
-      <p>
-        Planned and pre-booked coach transport for inbound groups, delivered as
-        part of structured UK itineraries rather than ad-hoc point-to-point movements.
-      </p>
+    a {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* ---------- HEADER ---------- */
+
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      background: #fff;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* ---------- MOBILE MENU ---------- */
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.4rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-nav {
+      display: none;
+      background: #fff;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .mobile-nav a {
+      display: block;
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid #e5e7eb;
+      color: var(--ink);
+    }
+
+    /* ---------- LAYOUT ---------- */
+
+    main {
+      display: block;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .container.narrow {
+      max-width: 780px;
+    }
+
+    .section-muted {
+      background: var(--bg-muted);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .hero-sub {
+      color: var(--muted);
+    }
+
+    .btn-primary {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.25rem;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 700;
+    }
+
+    /* ---------- SERVICES ---------- */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      border: 1px solid #e5e7eb;
+      padding: 2rem;
+      background: #fff;
+    }
+
+    .service-number {
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    /* ---------- CTA ---------- */
+
+    .cta {
+      background: var(--brand);
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta a {
+      background: #fff;
+      color: var(--brand);
+    }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .mobile-nav.open {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="logo">UK Inbound Transport</div>
+
+    <nav>
       <ul>
-        <li>Multi-day touring programmes</li>
-        <li>Fixed routing and known timings</li>
-        <li>Series tours and pre-contracted departures</li>
-        <li>Clear operational and commercial parameters</li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/series-tours.html">Series Tours</a></li>
+        <li><a href="/rfq.html">Trade RFQ</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <div class="service-card">
-      <span class="service-number">02</span>
-      <h2>Airport &amp; Cruise Transfers</h2>
+    <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+  </div>
+
+  <div id="mobileNav" class="mobile-nav">
+    <a href="/">Home</a>
+    <a href="/services.html">Services</a>
+    <a href="/series-tours.html">Series Tours</a>
+    <a href="/rfq.html">Trade RFQ</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section>
+    <div class="container">
+      <h1>UK Inbound Group Transport, Built for the Trade</h1>
       <p>
-        Coordinated group transfers via UK airports and cruise terminals, aligned
-        with international flight schedules, port operations, and group handling.
+        Planned, pre-booked ground transport for international tour operators,
+        DMCs, and wholesalers delivering structured UK itineraries.
       </p>
-      <ul>
-        <li>Split arrivals and departures</li>
-        <li>Early and late operating windows</li>
-        <li>Cruise turnarounds and hotel transitions</li>
-        <li>Defined waiting time and release logic</li>
-      </ul>
-    </div>
+      <p class="hero-sub">
+        We specialise exclusively in inbound group movements — not retail coach hire,
+        not ad-hoc point-to-point jobs.
+      </p>
 
-    <div class="service-card">
-      <span class="service-number">03</span>
-      <h2>Series Tours &amp; Repeating Programmes</h2>
+      <a href="/rfq.html" class="btn-primary">Request a Trade Quote</a>
+      <p class="hero-sub">Trade partners only · Ground transport only · UK-wide</p>
+    </div>
+  </section>
+
+  <!-- WHO -->
+  <section class="section-muted">
+    <div class="container narrow">
       <p>
-        Operationally consistent transport delivery for repeating departures,
-        seasonal programmes, and contracted series.
+        We work with international travel businesses that require a reliable UK
+        ground partner — one that understands series tours, release periods,
+        routing complexity, and margin protection.
       </p>
-      <ul>
-        <li>Fixed routing and standardised timings</li>
-        <li>Locked operational assumptions</li>
-        <li>Transparent cost structures</li>
-        <li>Margin-protected pricing across departures</li>
-      </ul>
-    </div>
-
-    <div class="service-card">
-      <span class="service-number">04</span>
-      <h2>Operational Control, Not Just Vehicles</h2>
       <p>
-        We don’t just supply coaches — we manage movement logic.
+        If you sell the UK as part of a structured programme, we integrate seamlessly
+        into your operation.
       </p>
-      <ul>
-        <li>Route-appropriate vehicle allocation</li>
-        <li>Realistic driving times and duty compliance</li>
-        <li>Clear turnaround assumptions</li>
-        <li>Structured handovers between days and drivers</li>
-      </ul>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- SERVICES -->
+  <section>
+    <div class="container grid">
 
-<!-- HOW WE WORK -->
-<section class="section section-muted">
-  <div class="container narrow">
-    <h2>How We Work</h2>
-    <ul class="work-list">
-      <li>Trade-only enquiries</li>
-      <li>Pre-booked programmes only</li>
-      <li>Clear scope, timings, and assumptions</li>
-      <li>No on-the-day improvisation pricing</li>
-    </ul>
-    <p>
-      If it’s structured, planned, and inbound — we’re a fit.
-    </p>
-  </div>
-</section>
+      <div class="service-card">
+        <span class="service-number">01</span>
+        <h2>Inbound Group Coach Transport</h2>
+        <p>Planned, pre-booked coach transport for structured UK itineraries.</p>
+        <ul>
+          <li>Multi-day touring programmes</li>
+          <li>Fixed routing and timings</li>
+          <li>Series and pre-contracted departures</li>
+          <li>Clear commercial parameters</li>
+        </ul>
+      </div>
 
-<!-- WHY US -->
-<section class="section">
-  <div class="container narrow">
-    <h2>Why Trade Partners Choose Us</h2>
-    <ul class="why-list">
-      <li>UK inbound specialists, not generalist coach brokers</li>
-      <li>Commercial logic designed for series and volume</li>
-      <li>Operational realism built into pricing</li>
-      <li>Calm, predictable delivery for overseas teams</li>
-    </ul>
-  </div>
-</section>
+      <div class="service-card">
+        <span class="service-number">02</span>
+        <h2>Airport &amp; Cruise Transfers</h2>
+        <p>Group arrivals and departures via UK airports and cruise terminals.</p>
+        <ul>
+          <li>Split arrivals</li>
+          <li>Early and late operations</li>
+          <li>Cruise turnarounds</li>
+          <li>Defined waiting logic</li>
+        </ul>
+      </div>
 
-<!-- CTA -->
-<section class="section cta">
-  <div class="container">
-    <h2>Request a Trade Quote</h2>
-    <p>
-      Submit your programme details and receive a structured response aligned
-      with your itinerary, operating dates, and commercial framework.
-    </p>
-    <a href="/rfq" class="btn-primary">
-      Start a Trade RFQ
-    </a>
-    <span class="cta-note">
-      Trade partners only · UK inbound only · Ground transport only
-    </span>
-  </div>
-</section>
+      <div class="service-card">
+        <span class="service-number">03</span>
+        <h2>Series Tours &amp; Repeating Programmes</h2>
+        <p>Consistent delivery for repeating and seasonal departures.</p>
+        <ul>
+          <li>Standardised routing</li>
+          <li>Locked assumptions</li>
+          <li>Transparent costs</li>
+          <li>Margin-protected pricing</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <span class="service-number">04</span>
+        <h2>Operational Control, Not Just Vehicles</h2>
+        <p>We manage movement logic, not just coaches.</p>
+        <ul>
+          <li>Route-appropriate vehicles</li>
+          <li>Duty-compliant planning</li>
+          <li>Clear turnarounds</li>
+          <li>Structured handovers</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Request a Trade Quote</h2>
+      <p>Structured responses aligned with your itinerary and operating framework.</p>
+      <a href="/rfq.html" class="btn-primary">Start a Trade RFQ</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © UK Inbound Transport · Trade partners only
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("mobileNav").classList.toggle("open");
+  }
+</script>
+
+</body>
+</html>
