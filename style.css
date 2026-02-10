@@ -2,7 +2,6 @@
    Base reset
    ========================= */
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +17,7 @@ body {
                Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: #ffffff;
-  background-color: #0b1d2d; /* deep trade blue */
+  background-color: #0b1d2d;
 }
 
 /* =========================
@@ -26,7 +25,7 @@ body {
    ========================= */
 
 a {
-  color: #8a6cff; /* brand purple for normal links */
+  color: #8a6cff;              /* brand purple for normal links */
   text-decoration: underline;
 }
 
@@ -45,35 +44,76 @@ header {
 
 .nav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 1.5rem;
 }
 
-/* ---- Site logo (CRITICAL FIX) ---- */
-
-.site-logo a,
-.site-logo a:visited,
-.site-logo a:hover,
-.site-logo a:focus,
-.site-logo a:active {
+/* Brand / site title */
+.brand a,
+.brand a:visited,
+.brand a:hover,
+.brand a:focus,
+.brand a:active {
   color: #ffffff !important;
+  text-decoration: none !important;
   font-weight: 600;
   font-size: 1.1rem;
-  text-decoration: none !important;
-  letter-spacing: 0.2px;
+  line-height: 1.3;
 }
 
-/* ---- Navigation links ---- */
-
+/* Navigation links */
 .nav-links a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
+}
+
+/* =========================
+   Dropdown (Markets)
+   ========================= */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0b1d2d;
+  padding: 0.5rem 0;
+  min-width: 160px;
+  z-index: 10;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.4rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Show dropdown on hover (desktop) */
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* =========================
@@ -122,7 +162,7 @@ p {
 }
 
 /* =========================
-   Service blocks / cards
+   Service blocks
    ========================= */
 
 .service {
@@ -174,7 +214,7 @@ footer {
 }
 
 /* =========================
-   Mobile tweaks
+   Desktop tweaks
    ========================= */
 
 @media (min-width: 768px) {
@@ -185,24 +225,4 @@ footer {
   h2 {
     font-size: 1.5rem;
   }
-}
-/* Header brand text – treat as logo, not a link */
-.site-header .brand a,
-.site-header .brand a:visited,
-.site-header .brand a:hover,
-.site-header .brand a:focus,
-.site-header .brand a:active {
-  color: #ffffff !important;
-  text-decoration: none !important;
-  font-weight: 600;
-}
-/* Brand title – never look like a link (desktop + mobile) */
-.brand a,
-.brand a:visited,
-.brand a:hover,
-.brand a:focus,
-.brand a:active {
-  color: #ffffff !important;
-  text-decoration: none !important;
-  font-weight: 600;
 }
