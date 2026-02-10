@@ -370,3 +370,17 @@ footer a:hover {
     padding-left: 12px;
   }
 }
+.site-logo,
+.site-logo a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.2px;
+}
+
+.site-logo a:hover,
+.site-logo a:focus {
+  text-decoration: none;
+  opacity: 0.9;
+}
