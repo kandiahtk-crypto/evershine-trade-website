@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>UK Inbound Ground Transport | Trade Only</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/evershine-trade-website/style.css" />
 </head>
+
+<body>
+
+  <!-- HEADER PLACEHOLDER -->
+  <div id="site-header"></div>
+
+  <!-- LOAD HEADER -->
+  <script>
+    fetch("/evershine-trade-website/partials/header.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("site-header").innerHTML = html;
+      });
+  </script>
+
+  <main>
+    <section class="container">
+      <h1>UK Inbound Ground Transport for Tour Operators & DMCs</h1>
+    </section>
+  </main>
+
+</body>
+</html>
 
 <body>
 
