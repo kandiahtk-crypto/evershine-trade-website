@@ -384,3 +384,14 @@ footer a:hover {
   text-decoration: none;
   opacity: 0.9;
 }
+/* Site logo – force consistent branding */
+.site-logo a,
+.site-logo a:visited,
+.site-logo a:hover,
+.site-logo a:focus,
+.site-logo a:active {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
