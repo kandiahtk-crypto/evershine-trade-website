@@ -369,3 +369,18 @@ li {
   background: #fff;
   color: #0b3a53;
 }
+.section-muted {
+  background: var(--bg-muted);
+  padding: 2rem 0; /* reduce vertical padding */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1.25rem; /* tighter on mobile */
+  }
+
+  .section-muted .container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
