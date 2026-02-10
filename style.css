@@ -197,3 +197,13 @@ footer {
   text-decoration: none !important;
   font-weight: 600;
 }
+/* Brand title – never look like a link (desktop + mobile) */
+.brand a,
+.brand a:visited,
+.brand a:hover,
+.brand a:focus,
+.brand a:active {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 600;
+}
