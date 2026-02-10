@@ -185,3 +185,12 @@ footer {
     font-size: 1.5rem;
   }
 }
+/* Homepage title – force non-link appearance */
+.site-title a,
+.site-title a:visited,
+.site-title a:hover,
+.site-title a:focus,
+.site-title a:active {
+  color: inherit !important;
+  text-decoration: none !important;
+}
