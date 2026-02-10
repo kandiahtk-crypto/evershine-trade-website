@@ -185,12 +185,13 @@ footer {
     font-size: 1.5rem;
   }
 }
-/* Homepage title – force non-link appearance */
-.site-title a,
-.site-title a:visited,
-.site-title a:hover,
-.site-title a:focus,
-.site-title a:active {
-  color: inherit !important;
+/* Header brand text – treat as logo, not a link */
+.site-header .brand a,
+.site-header .brand a:visited,
+.site-header .brand a:hover,
+.site-header .brand a:focus,
+.site-header .brand a:active {
+  color: #ffffff !important;
   text-decoration: none !important;
+  font-weight: 600;
 }
