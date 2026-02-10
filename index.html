@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -23,45 +21,17 @@
       .then(res => res.text())
       .then(html => {
         document.getElementById("site-header").innerHTML = html;
-      });
+      })
+      .catch(err => console.error(err));
   </script>
-
-  <main>
-    <section class="container">
-      <h1>UK Inbound Ground Transport for Tour Operators & DMCs</h1>
-    </section>
-  </main>
-
-</body>
-</html>
-
-<body>
-
-  <!-- HEADER PLACEHOLDER -->
-  <div id="site-header"></div>
-
-  <!-- LOAD HEADER -->
-<script>
-  fetch("./partials/header.html")
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById("site-header").innerHTML = html;
-    })
-    .catch(err => {
-      console.error("Header failed to load", err);
-    });
-</script>
-    
 
   <!-- MAIN CONTENT -->
   <main>
     <section class="container">
       <h1>UK Inbound Ground Transport for Tour Operators & DMCs</h1>
-
       <p>
         We provide pre-booked <strong>UK inbound ground transport</strong> for
-        destination management companies and international tour operators,
-        delivering structured, reliable coach operations across the United Kingdom.
+        destination management companies and international tour operators.
       </p>
     </section>
   </main>
