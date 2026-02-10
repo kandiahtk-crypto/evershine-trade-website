@@ -257,3 +257,30 @@ footer {
     font-size: 2rem;
   }
 }
+/* =========================
+   Homepage hero polish
+   ========================= */
+
+/* Space between header/menu and content */
+main {
+  padding-top: 3.5rem;
+}
+
+/* Homepage hero container */
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+/* Headline breathing room */
+.container h1 {
+  margin-bottom: 1.5rem;
+}
+
+/* Intro paragraph */
+.container p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 680px;
+}
