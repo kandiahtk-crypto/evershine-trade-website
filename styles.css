@@ -120,3 +120,24 @@ footer {
   background: #111;
   color: white;
 }
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.hero-buttons a {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
