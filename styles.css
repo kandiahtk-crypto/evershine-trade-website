@@ -301,3 +301,8 @@ form button {
 form button:hover {
   opacity: 0.9;
 }
+.trade-only {
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
