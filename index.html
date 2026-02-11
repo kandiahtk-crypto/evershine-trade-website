@@ -9,12 +9,51 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "UK Inbound Ground Transport",
-  "url": "https://www.yourrealdomain.com",
-  "description": "UK inbound ground transport supplier for international tour operators and DMCs.",
-  "areaServed": "United Kingdom",
-  "serviceType": "Tour Operator Transport Services"
+  "@graph": [
+
+    {
+      "@type": "Organization",
+      "@id": "https://kandiahtk-crypto.github.io/#organization",
+      "name": "UK Inbound Ground Transport",
+      "url": "https://kandiahtk-crypto.github.io/",
+      "description": "Trade-only UK inbound ground transport supplier for international tour operators and destination management companies.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      },
+      "knowsAbout": [
+        "Series tour transport UK",
+        "UK tour operator transport services",
+        "Inbound group touring logistics",
+        "Multi-day touring coordination",
+        "Pre-season capacity allocation"
+      ]
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://kandiahtk-crypto.github.io/#service",
+      "name": "UK Inbound Ground Transport Services",
+      "provider": {
+        "@id": "https://kandiahtk-crypto.github.io/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      },
+      "serviceType": [
+        "Series Tour Transport Coordination",
+        "Multi-Day Group Touring Transport",
+        "Airport Transfer Coordination",
+        "Inbound Tour Operator Transport Services"
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "International Tour Operators and DMCs"
+      }
+    }
+
+  ]
 }
 </script>
 </head>
