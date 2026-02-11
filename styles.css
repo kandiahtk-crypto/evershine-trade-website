@@ -1,3 +1,5 @@
+/* Base */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -11,6 +13,8 @@ body {
   margin: 0 auto;
 }
 
+/* Header */
+
 .site-header {
   background: #ffffff;
   border-bottom: 1px solid #e5e5e5;
@@ -21,6 +25,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 18px 0;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 16px;
 }
 
 nav a {
@@ -34,6 +43,8 @@ nav a {
   font-weight: bold;
 }
 
+/* Hero */
+
 .hero {
   padding: 80px 0;
   background: #f7f9fc;
@@ -44,8 +55,9 @@ nav a {
 }
 
 .hero h1 {
-  font-size: 32px;
+  font-size: 34px;
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .hero-sub {
@@ -59,9 +71,35 @@ nav a {
   margin-bottom: 25px;
 }
 
-.hero-buttons a {
-  margin-right: 15px;
+/* Buttons */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
 }
+
+.btn-primary,
+.btn-secondary {
+  padding: 14px 22px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.btn-primary {
+  background: #0b3d91;
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid #0b3d91;
+  color: #0b3d91;
+}
+
+/* Sections */
 
 .section {
   padding: 70px 0;
@@ -73,6 +111,7 @@ nav a {
 
 h2 {
   margin-bottom: 20px;
+  font-size: 26px;
 }
 
 .grid-list {
@@ -86,20 +125,7 @@ h2 {
   color: #555;
 }
 
-.btn-primary {
-  background: #0b3d91;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.btn-secondary {
-  border: 1px solid #0b3d91;
-  color: #0b3d91;
-  padding: 12px 20px;
-  text-decoration: none;
-}
+/* CTA */
 
 .cta-section {
   padding: 60px 0;
@@ -113,6 +139,8 @@ h2 {
   color: #0b3d91;
 }
 
+/* Footer */
+
 footer {
   padding: 30px 0;
   text-align: center;
@@ -120,24 +148,42 @@ footer {
   background: #111;
   color: white;
 }
-.hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
 
-.hero-buttons a {
-  white-space: nowrap;
-}
+/* Responsive */
 
 @media (max-width: 768px) {
-  .hero-buttons {
+
+  .nav {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .grid-list {
+    columns: 1;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
   .hero-buttons a {
     width: 100%;
-    text-align: center;
+  }
+
+  .section {
+    padding: 50px 0;
   }
 }
