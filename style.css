@@ -200,3 +200,11 @@ nav a:hover {
     flex-direction: column;
   }
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
