@@ -107,3 +107,80 @@ h1 {
   background: transparent;
   color: var(--navy);
 }
+:root {
+  --navy: #0b1f3b;
+  --navy-deep: #061428;
+  --red: #c8102e;
+  --light-grey: #f4f6f8;
+  --text-dark: #1c1c1c;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: var(--text-dark);
+  background: white;
+}
+
+nav {
+  background: var(--navy);
+  color: white;
+  padding: 18px 0;
+}
+
+nav a {
+  color: white;
+  margin-left: 28px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: var(--red);
+}
+
+strong {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+main {
+  padding: 60px 0;
+}
+
+.label {
+  color: var(--red);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: var(--navy);
+  margin-top: 40px;
+}
+
+.section {
+  margin-top: 50px;
+}
+
+footer {
+  background: var(--navy-deep);
+  color: white;
+  padding: 30px 0;
+  margin-top: 80px;
+}
