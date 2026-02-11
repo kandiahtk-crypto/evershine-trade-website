@@ -2,89 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>RFQ | Inbound Ground Transport</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trade RFQ | UK Inbound Ground Transport</title>
+  <meta name="description" content="Structured UK transport programme submission for international tour operators and DMCs.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
-  <div class="container">
-    <strong>Evershine Coaches Limited</strong>
-    <div>
+<header class="site-header">
+  <div class="container nav">
+    <div class="logo">UK Inbound Ground Transport</div>
+    <nav>
       <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="series-tours.html">Series Tours</a>
-      <a href="fleet-compliance.html">Fleet & Compliance</a>
       <a href="how-we-work.html">How We Work</a>
-      <a href="rfq.html">RFQ</a>
-    </div>
+      <a href="trade-rfq.html" class="nav-cta">Trade RFQ</a>
+    </nav>
   </div>
-</nav>
+</header>
 
-  <main class="container">
+<section class="hero small-hero">
+  <div class="container">
+    <h1>Programme Submission</h1>
+    <p class="hero-sub">
+      Structured UK transport enquiry for international tour operators and destination management companies.
+    </p>
+  </div>
+</section>
 
-  <p class="label">Request for Quotation</p>
-  <h1>Programme Submission</h1>
+<section class="section">
+  <div class="container">
 
-  <p>
-    For DMCs and tour operators requiring structured UK
-    ground transport delivery.
-  </p>
+    <!-- IMPORTANT: Replace action URL with your form endpoint -->
+    <form action="https://formspree.io/f/YOUR_ID" method="POST" enctype="multipart/form-data">
 
-  <form action="mailto:your@email.com" method="post" enctype="text/plain">
+      <h2>Company Details</h2>
 
-    <div class="section">
-      <label>Company Name *</label><br>
-      <input type="text" name="Company" required>
-    </div>
+      <label>Company Name *</label>
+      <input type="text" name="company" required>
 
-    <div class="section">
-      <label>Contact Name *</label><br>
-      <input type="text" name="Contact" required>
-    </div>
+      <label>Contact Name *</label>
+      <input type="text" name="contact" required>
 
-    <div class="section">
-      <label>Email *</label><br>
-      <input type="email" name="Email" required>
-    </div>
+      <label>Email *</label>
+      <input type="email" name="email" required>
 
-    <div class="section">
-      <label>Travel Dates</label><br>
-      <input type="text" name="Dates">
-    </div>
+      <label>Primary Market</label>
+      <select name="market">
+        <option value="">Select Market</option>
+        <option>United States</option>
+        <option>India</option>
+        <option>Europe</option>
+        <option>China</option>
+        <option>Other</option>
+      </select>
 
-    <div class="section">
-      <label>Group Size</label><br>
-      <input type="text" name="Group Size">
-    </div>
+      <h2>Programme Overview</h2>
 
-    <div class="section">
-      <label>Programme Details *</label><br>
-      <textarea name="Details" rows="6" required></textarea>
-    </div>
+      <label>Travel Dates *</label>
+      <input type="text" name="dates" placeholder="e.g. 12–20 May 2026" required>
 
-    <div class="section">
-      <button type="submit">Submit RFQ</button>
-    </div>
+      <label>Group Size *</label>
+      <input type="number" name="group_size" required>
 
-  </form>
+      <label>Number of Departures</label>
+      <input type="number" name="departures" placeholder="For series programmes">
 
-</main>
+      <label>Arrival & Departure Gateway</label>
+      <input type="text" name="gateway" placeholder="e.g. LHR in / EDI out">
 
+      <label>Programme Details *</label>
+      <textarea name="details" required placeholder="Outline routing, hotel locations, daily movements, special requirements..."></textarea>
+
+      <h2>Programme Documentation</h2>
+
+      <p class="field-note">
+        Upload itinerary, routing sheet, departure schedule or cost documentation where available.
+      </p>
+
+      <input type="file" name="attachments" multiple>
+
+      <button type="submit">Submit Programme Enquiry</button>
+
+    </form>
+
+  </div>
+</section>
 
 <footer>
   <div class="container">
-
-    <p><strong>Evershine Coaches Limited</strong></p>
-    <p>Inbound Ground Transport — United Kingdom</p>
-    <p>Trade-only UK ground transport provider.</p>
-
-    <div class="footer-contact" style="margin-top:20px;">
-      <a href="https://wa.me/447XXXXXXXXX">
-        WhatsApp Trade Desk
-      </a>
-    </div>
-
+    <p>© 2026 UK Inbound Ground Transport. Trade-only B2B services.</p>
   </div>
 </footer>
 
