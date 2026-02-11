@@ -18,51 +18,54 @@
     <a href="rfq.html">RFQ</a>
   </div>
 </nav>
-<main class="container">
 
-  <p class="label">RFQ</p>
-  <h1>Request for Quotation</h1>
+  <main class="container">
+
+  <p class="label">Request for Quotation</p>
+  <h1>Programme Submission</h1>
 
   <p>
-    Structured quotation process for DMCs, tour operators and
-    series programme planners.
+    For DMCs and tour operators requiring structured UK
+    ground transport delivery.
   </p>
 
-  <div class="section">
-    <h3>Required Programme Information</h3>
-    <ul>
-      <li>Travel dates</li>
-      <li>Group size</li>
-      <li>Full itinerary routing</li>
-      <li>Hotel locations</li>
-      <li>Special compliance considerations</li>
-    </ul>
-  </div>
+  <form action="mailto:your@email.com" method="post" enctype="text/plain">
 
-  <div class="section">
-    <h3>Series Programme Submissions</h3>
-    <p>
-      For recurring departures, please include estimated
-      annual volume and seasonal schedule.
-    </p>
-  </div>
+    <div class="section">
+      <label>Company Name *</label><br>
+      <input type="text" name="Company" required>
+    </div>
 
-  <div class="section">
-    <h3>Response Time</h3>
-    <p>
-      Standard RFQ turnaround: 24–48 hours
-      depending on routing complexity.
-    </p>
-  </div>
+    <div class="section">
+      <label>Contact Name *</label><br>
+      <input type="text" name="Contact" required>
+    </div>
 
-  <div class="section">
-    <h3>Trade-Only Notice</h3>
-    <p>
-      We operate exclusively with Destination Management Companies,
-      tour operators and group travel organisers.
-      No direct-to-consumer bookings.
-    </p>
-  </div>
+    <div class="section">
+      <label>Email *</label><br>
+      <input type="email" name="Email" required>
+    </div>
+
+    <div class="section">
+      <label>Travel Dates</label><br>
+      <input type="text" name="Dates">
+    </div>
+
+    <div class="section">
+      <label>Group Size</label><br>
+      <input type="text" name="Group Size">
+    </div>
+
+    <div class="section">
+      <label>Programme Details *</label><br>
+      <textarea name="Details" rows="6" required></textarea>
+    </div>
+
+    <div class="section">
+      <button type="submit">Submit RFQ</button>
+    </div>
+
+  </form>
 
 </main>
 
