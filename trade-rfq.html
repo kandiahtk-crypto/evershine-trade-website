@@ -2,153 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Trade RFQ | UK Inbound Ground Transport</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Inbound Ground Transport — UK</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Trade RFQ | UK Inbound Ground Transport</title>
+  <meta name="description" content="Structured UK transport programme submission for international tour operators and DMCs.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
-  <div class="container">
-    <strong>Inbound Ground Transport</strong>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="series-tours.html">Series Tours</a>
-    <a href="fleet-compliance.html">Fleet & Compliance</a>
-    <a href="how-we-work.html">How We Work</a>
-    <a href="rfq.html">RFQ</a>
-  </div>
-</nav>
-
-<main class="container">
-  <p class="label">Inbound Ground Transport — United Kingdom</p>
-  <h1>Ground Transport Services for Structured UK Programmes</h1>
-
-  <p>
-    Pre-booked ground transport services for Destination Management Companies (DMCs),
-    tour operators, and group tour operators delivering UK programmes.
-  </p>
-
-  <div class="grid-2 section">
-    <div>
-      <h3>Primary Source Markets</h3>
-      <p>USA · Europe · China · India</p>
-    </div>
-    <div class="rule">
-      <h3>Supplier Classification</h3>
-      <ul>
-        <li>Trade-only ground transport provider</li>
-        <li>DMC and tour operator focused</li>
-        <li>Series-capable delivery model</li>
-        <li>Compliance-managed operations (all markets)</li>
-      </ul>
-    </div>
-  </div>
-</main>
-
-<footer>
-  <div class="container">
-    <p>Trade-only UK ground transport provider.</p>
-    <p>No consumer bookings.</p>
-  </div>
-</footer>
-
-</body>
-</html>
-</head>
-
-<body>
-
-<header>
-  <div class="nav">
-    <div class="brand">UK Inbound Ground Transport</div>
-
-    <nav class="nav-links">
+<header class="site-header">
+  <div class="container nav">
+    <div class="logo">UK Inbound Ground Transport</div>
+    <nav>
       <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="fleet-compliance.html">Fleet & Compliance</a>
       <a href="how-we-work.html">How We Work</a>
-      <a href="trade-rfq.html">Trade RFQ</a>
-      <a href="https://wa.me/447XXXXXXXXX" target="_blank" class="whatsapp-link">WhatsApp</a>
+      <a href="trade-rfq.html" class="nav-cta">Trade RFQ</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <section class="container">
+<section class="hero small-hero">
+  <div class="container">
+    <h1>Programme Submission</h1>
+    <p class="hero-sub">
+      Structured UK transport enquiry for international tour operators and destination management companies.
+    </p>
+  </div>
+</section>
 
-    <div class="rfq-wrapper">
+<section class="section">
+  <div class="container">
 
-      <h1>Trade Request for Quotation</h1>
+    <!-- IMPORTANT: Replace action URL with your form endpoint -->
+    <form action="https://formspree.io/f/YOUR_ID" method="POST" enctype="multipart/form-data">
 
-      <p>
-        This RFQ form is for <strong>Destination Management Companies</strong> and
-        <strong>international tour operators</strong> seeking
-        <strong>UK inbound ground transport</strong> for pre-booked group programmes.
+      <h2>Company Details</h2>
+
+      <label>Company Name *</label>
+      <input type="text" name="company" required>
+
+      <label>Contact Name *</label>
+      <input type="text" name="contact" required>
+
+      <label>Email *</label>
+      <input type="email" name="email" required>
+
+      <label>Primary Market</label>
+      <select name="market">
+        <option value="">Select Market</option>
+        <option>United States</option>
+        <option>India</option>
+        <option>Europe</option>
+        <option>China</option>
+        <option>Other</option>
+      </select>
+
+      <h2>Programme Overview</h2>
+
+      <label>Travel Dates *</label>
+      <input type="text" name="dates" placeholder="e.g. 12–20 May 2026" required>
+
+      <label>Group Size *</label>
+      <input type="number" name="group_size" required>
+
+      <label>Number of Departures</label>
+      <input type="number" name="departures" placeholder="For series programmes">
+
+      <label>Arrival & Departure Gateway</label>
+      <input type="text" name="gateway" placeholder="e.g. LHR in / EDI out">
+
+      <label>Programme Details *</label>
+      <textarea name="details" required placeholder="Outline routing, hotel locations, daily movements, special requirements..."></textarea>
+
+      <h2>Programme Documentation</h2>
+
+      <p class="field-note">
+        Upload itinerary, routing sheet, departure schedule or cost documentation where available.
       </p>
 
-      <p>
-        Trade enquiries only. Please submit confirmed or near-confirmed itineraries.
-        Provisional requests without routing or dates may require clarification
-        before pricing can be reviewed.
-      </p>
+      <input type="file" name="attachments" multiple>
 
-      <p>
-        For urgent operational queries only, our team is available via
-        <a href="https://wa.me/447XXXXXXXXX" target="_blank">WhatsApp</a>.
-      </p>
+      <button type="submit">Submit Programme Enquiry</button>
 
-      <form class="rfq-form"
-            action="https://formspree.io/f/XXXXXXX"
-            method="POST">
+    </form>
 
-        <label>Company Name</label>
-        <input type="text" name="company_name" required>
-
-        <label>Contact Name</label>
-        <input type="text" name="contact_name" required>
-
-        <label>Email</label>
-        <input type="email" name="email" required>
-
-        <label>Travel Dates / Programme Window</label>
-        <input type="text" name="travel_dates">
-
-        <label>Estimated Group Size</label>
-        <input type="text" name="group_size">
-
-        <label>Service Type</label>
-        <select name="service_type">
-          <option value="">Select</option>
-          <option>Airport / Cruise Transfers</option>
-          <option>Day Excursions</option>
-          <option>Multi-Day UK Touring</option>
-          <option>Mixed Programme</option>
-        </select>
-
-        <label>Service Details</label>
-        <textarea name="service_details"
-          placeholder="Routing, locations, number of days, access considerations, special requirements…"></textarea>
-
-        <input type="submit" value="Submit Trade RFQ">
-
-      </form>
-
-    </div>
-
-  </section>
-</main>
+  </div>
+</section>
 
 <footer>
-  <p><strong>Trade services only.</strong> Pre-booked group transport.</p>
-  <p>
-    © Evershine Coaches Limited<br>
-    UK-registered coach operator · Based near London Heathrow
-  </p>
+  <div class="container">
+    <p>© 2026 UK Inbound Ground Transport. Trade-only B2B services.</p>
+  </div>
 </footer>
 
 </body>
