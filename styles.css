@@ -306,3 +306,11 @@ form button:hover {
   text-align: center;
   letter-spacing: 0.3px;
 }
+.service-card h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.service-card h2 a:hover {
+  text-decoration: underline;
+}
