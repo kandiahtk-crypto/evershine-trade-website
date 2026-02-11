@@ -324,4 +324,7 @@ form button:hover {
 .section a:hover {
   opacity: 0.8;
 }
-
+nav a {
+  text-decoration: none;
+  border-bottom: none;
+}
