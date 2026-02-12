@@ -37,20 +37,23 @@ body {
   color: #0b1f3a;
 }
 
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: #0b1f3a;
-  font-weight: 500;
-  font-size: 15px;
+.nav nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
+.nav nav a {
+  text-decoration: none;
+  color: #0b1f3a;
+  font
 .nav a:hover {
   color: #0b3d91;
 }
