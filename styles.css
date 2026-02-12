@@ -44,10 +44,10 @@ nav a.active {
 
 /* 🔥 Desktop Menu upgraded */
 nav a {
-  margin-left: 24px;
+  margin-left: 18px;
   text-decoration: none;
   color: #333;
-  font-size: 18px;
+  font-size: 17px;   /* was 20px */
   font-weight: 600;
 }
 
