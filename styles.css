@@ -30,6 +30,10 @@ body {
   align-items: center;
   padding: 18px 0;
 }
+nav a.active {
+  font-weight: 700;
+  color: #0b3d91;
+}
 
 /* 🔥 Logo upgraded */
 .logo {
