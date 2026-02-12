@@ -20,7 +20,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 
+  padding: 22px 0; /* slightly more premium spacing */
+}
 
 .nav-cta {
   font-weight: bold;
