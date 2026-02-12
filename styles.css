@@ -194,3 +194,76 @@ footer {
     font-size: 32px;
   }
 }
+/* LIGHT HERO */
+.hero-light {
+  background: #f8f9fb;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-light h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #0b1f3a;
+  margin-bottom: 25px;
+}
+
+.hero-intro {
+  font-size: 19px;
+  font-weight: 500;
+  color: #2c2c2c;
+  max-width: 750px;
+  margin: 0 auto 20px;
+}
+
+.hero-light p {
+  font-size: 17px;
+  color: #5a5a5a;
+  max-width: 750px;
+  margin: 0 auto 18px;
+}
+
+/* PROCESS GRID */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.process-card {
+  position: relative;
+  padding: 30px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.step-number {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0b3d91;
+  opacity: 0.15;
+  margin-bottom: 10px;
+}
+
+.section-light {
+  background: #f8f9fb;
+  padding: 80px 0;
+}
+
+.clean-list {
+  margin-top: 30px;
+  line-height: 1.8;
+}
+
+.section-note {
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+.cta-band-soft {
+  background: #eef2f7;
+  padding: 80px 0;
+  text-align: center;
+}
