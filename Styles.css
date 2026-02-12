@@ -24,12 +24,11 @@ body {
 }
 
 nav a {
-  margin-left: 22px;
+  margin-left: 20px;
   text-decoration: none;
   color: #333;
-  font-size: 17px;
-  font-weight: 500;
-  letter-spacing: 0.2px;
+  font-size: 18px;   /* was 16px */
+  font-weight: 600;  /* stronger */
 }
 .nav-cta {
   background: #0b3d91;
