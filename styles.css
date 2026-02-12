@@ -143,3 +143,23 @@ footer {
   padding: 8px 16px;
   border-radius: 4px;
 }
+.hero {
+  background: #0b1f3a;
+  color: white;
+  padding: 120px 0 100px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #d6e1f0;
+  max-width: 750px;
+  margin: 0 auto 30px;
+}
