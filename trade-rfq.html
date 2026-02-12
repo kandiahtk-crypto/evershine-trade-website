@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Submit UK Departure Programme | Trade RFQ</title>
+  <title>Submit UK Programme for Operational Review | Trade RFQ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Submit structured UK departure programmes for capacity allocation and commercial review. Trade-only inbound ground transport supplier for international tour operators and DMCs.">
+  <meta name="description" content="Submit your UK series or multi-day touring programme for structured operational review. Trade-only inbound ground transport for international tour operators and DMCs.">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -19,7 +19,7 @@
       <a href="fleet-compliance.html">Fleet & Compliance</a>
       <a href="how-we-work.html">How We Work</a>
       <a href="market.html">Markets</a>
-      <a href="trade-rfq.html" class="active nav-cta">Trade RFQ</a>
+      <a href="trade-rfq.html" class="nav-cta active">Trade RFQ</a>
     </nav>
   </div>
 </header>
@@ -28,150 +28,170 @@
 
 <section class="hero small-hero">
   <div class="container">
-    <h1>Submit Your UK Departure Programme</h1>
+    <h1>Submit Your UK Departure Schedule for Operational Review</h1>
     <p class="hero-sub">
-      Structured intake for international tour operators and DMCs requiring controlled
-      UK inbound ground transport delivery.
-    </p>
-    <p>
-      All submissions are reviewed against seasonal capacity, routing logic and operational scope
-      before commercial confirmation.
+      Structured intake for series-based and multi-departure UK touring programmes.
+      Trade-only B2B submission.
     </p>
   </div>
 </section>
 
-<!-- AUTHORITY INTRO -->
+<!-- AUTHORITY FILTER BLOCK -->
 
 <section class="section alt">
   <div class="container">
-    <h2>Trade-Only Structured Programme Review</h2>
+    <h2>Structured Programme Review Framework</h2>
+    <ul class="grid-list">
+      <li>Routing feasibility validation</li>
+      <li>Driver hours compliance assessment</li>
+      <li>Seasonal capacity availability review</li>
+      <li>Series departure calendar alignment</li>
+      <li>Operational risk control analysis</li>
+    </ul>
     <p>
-      We operate exclusively as a B2B inbound ground transport supplier.
-      Capacity is allocated against defined routing, departure schedules and vehicle availability.
-    </p>
-    <p>
-      Early submission supports confirmed pricing validity and secured fleet allocation,
-      particularly for peak season departures.
+      We operate exclusively with international tour operators and DMCs.
+      Retail enquiries are not processed.
     </p>
   </div>
 </section>
 
-<!-- RFQ FORM -->
+<!-- FORM SECTION -->
 
 <section class="section">
   <div class="container">
 
-    <h2>Programme Submission Details</h2>
+<form action="#" method="post" enctype="multipart/form-data">
 
-    <form action="#" method="post">
+  <!-- OPERATOR DETAILS -->
 
-      <h3>Company Information</h3>
+  <h2>1. Operator Details</h2>
 
-      <label>Company Name (Tour Operator / DMC)</label>
-      <input type="text" required>
+  <label>Company Name *</label>
+  <input type="text" required>
 
-      <label>Primary Contact (Operations / Contracting)</label>
-      <input type="text" required>
+  <label>Contact Name *</label>
+  <input type="text" required>
 
-      <label>Email Address</label>
-      <input type="email" required>
+  <label>Email *</label>
+  <input type="email" required>
 
-      <label>Source Market</label>
-      <select required>
-        <option value="">Select Market</option>
-        <option>United States</option>
-        <option>China</option>
-        <option>India</option>
-        <option>Europe</option>
-        <option>Other</option>
-      </select>
+  <label>Source Market</label>
+  <select>
+    <option>United States</option>
+    <option>China</option>
+    <option>Europe</option>
+    <option>India</option>
+    <option>Other</option>
+  </select>
 
-      <h3>Programme Structure</h3>
+  <label>Company Website</label>
+  <input type="url">
 
-      <label>Departure Pattern</label>
-      <select required>
-        <option value="">Select</option>
-        <option>Series (Fixed Departures)</option>
-        <option>Ad-Hoc Departures</option>
-        <option>Mixed Structure</option>
-      </select>
+  <!-- PROGRAMME OVERVIEW -->
 
-      <label>Estimated Annual UK Departures</label>
-      <input type="text">
+  <h2>2. Programme Overview</h2>
 
-      <label>Target Travel Period</label>
-      <input type="text" placeholder="e.g. April – September 2026">
+  <label>Programme Type</label>
+  <select>
+    <option>Fixed Departure Series</option>
+    <option>Escorted Multi-Day Tour</option>
+    <option>Ad-Hoc Group</option>
+    <option>Educational / Special Interest</option>
+  </select>
 
-      <label>Expected Group Size</label>
-      <input type="text">
+  <label>First Departure Date</label>
+  <input type="date">
 
-      <label>Preferred Airports</label>
-      <input type="text" placeholder="Heathrow, Gatwick, Manchester, Edinburgh, Glasgow, Luton etc">
+  <label>Final Departure Date</label>
+  <input type="date">
 
-      <label>Routing Summary</label>
-      <textarea placeholder="Outline touring flow (e.g. London – Bath – Cotswolds – Lake District – Edinburgh)"></textarea>
+  <label>Number of Departure Cycles</label>
+  <input type="number">
 
-      <label>Upload Itinerary (Optional)</label>
-      <input type="file">
+  <label>Estimated Group Size</label>
+  <input type="number">
 
-      <button type="submit">Submit Programme for Review</button>
+  <!-- ROUTING -->
 
-    </form>
+  <h2>3. Routing & Scope</h2>
+
+  <label>Arrival Airport</label>
+  <select>
+    <option>London Heathrow</option>
+    <option>London Gatwick</option>
+    <option>Manchester</option>
+    <option>Edinburgh</option>
+    <option>Glasgow</option>
+    <option>Luton</option>
+    <option>Other</option>
+  </select>
+
+  <label>Departure Airport</label>
+  <select>
+    <option>London Heathrow</option>
+    <option>London Gatwick</option>
+    <option>Manchester</option>
+    <option>Edinburgh</option>
+    <option>Glasgow</option>
+    <option>Luton</option>
+    <option>Other</option>
+  </select>
+
+  <label>High-Level Route Outline</label>
+  <textarea placeholder="Outline major cities and overnight pattern"></textarea>
+
+  <label>Accommodation Pattern</label>
+  <select>
+    <option>City-Based</option>
+    <option>Touring Circuit</option>
+    <option>Mixed</option>
+  </select>
+
+  <!-- COMMERCIAL -->
+
+  <h2>4. Commercial Structure</h2>
+
+  <label>Pricing Model Required</label>
+  <select>
+    <option>Per Day Rate</option>
+    <option>Series Fixed Rate</option>
+    <option>Seasonal Contracted Rate</option>
+  </select>
+
+  <label>Budget Expectation (Optional)</label>
+  <input type="text">
+
+  <!-- FILE UPLOAD -->
+
+  <h2>5. Itinerary Upload</h2>
+
+  <label>Upload Itinerary (PDF / Excel)</label>
+  <input type="file">
+
+  <!-- SUBMIT -->
+
+  <button type="submit">Submit Programme for Review</button>
+
+</form>
 
   </div>
 </section>
 
-<!-- CONTRACT STYLE LANGUAGE -->
+<!-- CLOSING AUTHORITY -->
 
 <section class="section alt">
   <div class="container">
-    <h2>Commercial & Operational Framework</h2>
-    <ul class="grid-list">
-      <li>Capacity allocated against confirmed routing schedules</li>
-      <li>Pricing validity issued with defined time parameters</li>
-      <li>Operational assumptions documented in writing</li>
-      <li>Structured variation handling protocol</li>
-      <li>Driver hours and compliance oversight included</li>
-    </ul>
     <p>
-      We deliver contracted programmes within defined scope and documented operating parameters.
-      There are no open-ended assumptions.
+      Submissions are reviewed within 1–2 working days.  
+      Series departures may require advance capacity confirmation depending on seasonal load.  
+      Early submission improves allocation certainty.
     </p>
-  </div>
-</section>
-
-<!-- WHAT HAPPENS NEXT -->
-
-<section class="section">
-  <div class="container">
-    <h2>What Happens Next</h2>
-    <ul class="grid-list">
-      <li>Programme routing review</li>
-      <li>Vehicle and driver requirement validation</li>
-      <li>Seasonal capacity check</li>
-      <li>Commercial proposal issuance</li>
-    </ul>
-    <p>
-      Structured proposals are returned with clear execution parameters and pricing validity.
-    </p>
-  </div>
-</section>
-
-<!-- CTA -->
-
-<section class="cta-section">
-  <div class="container">
-    <h2>Structured UK Inbound Ground Transport</h2>
-    <p>
-      Serious operators with defined UK departure programmes are prioritised for capacity allocation.
-    </p>
-    <a href="services.html" class="btn-primary">View Services</a>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p><strong>Trade-only B2B services.</strong> UK inbound ground transport based near London Heathrow.</p>
+    <p><strong>Trade-only services.</strong> UK inbound ground transport operator based near London Heathrow.</p>
     <p>© 2026 UK Inbound Ground Transport</p>
   </div>
 </footer>
