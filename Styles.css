@@ -32,13 +32,11 @@ body {
   background: #f7f9fc;
 }
 
-.small-hero {
-  padding: 60px 0;
-}
-
 .hero h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
 }
 
 .hero-sub {
