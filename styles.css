@@ -311,3 +311,20 @@ form button:hover {
 .section a:hover {
   opacity: 0.8;
 }
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.process-step {
+  text-align: left;
+}
+
+.step-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b3d91;
+  margin-bottom: 10px;
+}
