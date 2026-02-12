@@ -2,98 +2,157 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trade RFQ | UK Inbound Ground Transport</title>
-  <meta name="description" content="Structured UK transport programme submission for international tour operators and DMCs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit structured UK touring programmes for operational review. Trade-only RFQ for international tour operators and DMCs requiring UK inbound ground transport.">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header class="site-header">
   <div class="container nav">
     <div class="logo">UK Inbound Ground Transport</div>
-   <nav>
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  
-  <a href="fleet-compliance.html">Fleet & Compliance</a>
-  <a href="how-we-work.html">How We Work</a>
-  <a href="trade-rfq.html" class="nav-cta">Trade RFQ</a>
-</nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="fleet-compliance.html">Fleet & Compliance</a>
+      <a href="how-we-work.html">How We Work</a>
+      <a href="market.html">Markets</a>
+      <a href="trade-rfq.html" class="nav-cta active">Trade RFQ</a>
+    </nav>
   </div>
 </header>
 
 <section class="hero small-hero">
   <div class="container">
-    <h1>Programme Submission</h1>
+    <h1>Submit UK Programme for Operational Review</h1>
     <p class="hero-sub">
-      Structured UK transport enquiry for international tour operators and destination management companies.
+      Trade-only structured RFQ for international tour operators and DMCs.
+    </p>
+    <p>
+      Series departures, escorted touring and multi-day UK programmes are reviewed
+      within defined capacity and routing parameters.
     </p>
   </div>
 </section>
 
 <section class="section">
-  <div class="container">
+  <div class="container rfq-wrapper">
 
-    <!-- IMPORTANT: Replace action URL with your form endpoint -->
-    <form action="https://formspree.io/f/YOUR_ID" method="POST" enctype="multipart/form-data">
+    <form>
 
-      <h2>Company Details</h2>
+      <!-- OPERATOR DETAILS -->
 
-      <label>Company Name *</label>
-      <input type="text" name="company" required>
+      <div class="rfq-section">
+        <h2>1. Operator Information</h2>
+        <p>Please provide full company and operational contact details.</p>
 
-      <label>Contact Name *</label>
-      <input type="text" name="contact" required>
+        <label>Company Name</label>
+        <input type="text" required>
 
-      <label>Email *</label>
-      <input type="email" name="email" required>
+        <label>Country of Operation</label>
+        <select required>
+          <option value="">Select</option>
+          <option>United States</option>
+          <option>China</option>
+          <option>India</option>
+          <option>Europe</option>
+          <option>Other</option>
+        </select>
 
-      <label>Primary Market</label>
-      <select name="market">
-        <option value="">Select Market</option>
-        <option>United States</option>
-        <option>India</option>
-        <option>Europe</option>
-        <option>China</option>
-        <option>Other</option>
-      </select>
+        <label>Primary Contact Name</label>
+        <input type="text" required>
 
-      <h2>Programme Overview</h2>
+        <label>Email Address</label>
+        <input type="email" required>
 
-      <label>Travel Dates *</label>
-      <input type="text" name="dates" placeholder="e.g. 12–20 May 2026" required>
+        <label>Phone / WhatsApp</label>
+        <input type="text">
+      </div>
 
-      <label>Group Size *</label>
-      <input type="number" name="group_size" required>
+      <!-- PROGRAMME STRUCTURE -->
 
-      <label>Number of Departures</label>
-      <input type="number" name="departures" placeholder="For series programmes">
+      <div class="rfq-section">
+        <h2>2. Programme Structure</h2>
+        <p>Confirmed departure cycles and operating dates are required.</p>
 
-      <label>Arrival & Departure Gateway</label>
-      <input type="text" name="gateway" placeholder="e.g. LHR in / EDI out">
+        <label>Programme Type</label>
+        <select required>
+          <option value="">Select</option>
+          <option>Series Departure</option>
+          <option>Escorted Group Tour</option>
+          <option>Ad-Hoc Multi-Day Tour</option>
+          <option>Airport Transfers Only</option>
+        </select>
 
-      <label>Programme Details *</label>
-      <textarea name="details" required placeholder="Outline routing, hotel locations, daily movements, special requirements..."></textarea>
+        <label>Number of Departures</label>
+        <input type="number">
 
-      <h2>Programme Documentation</h2>
+        <label>Departure Date(s)</label>
+        <input type="text" placeholder="e.g. May–September 2026">
 
-      <p class="field-note">
-        Upload itinerary, routing sheet, departure schedule or cost documentation where available.
-      </p>
+        <label>Estimated Group Size</label>
+        <input type="number">
+      </div>
 
-      <input type="file" name="attachments" multiple>
+      <!-- ROUTING DETAILS -->
 
-      <button type="submit">Submit Programme Enquiry</button>
+      <div class="rfq-section">
+        <h2>3. Routing & Operational Detail</h2>
+
+        <label>Arrival Airport</label>
+        <select>
+          <option>London Heathrow</option>
+          <option>Gatwick</option>
+          <option>Manchester</option>
+          <option>Edinburgh</option>
+        </select>
+
+        <label>Full Itinerary (Day-by-Day)</label>
+        <textarea placeholder="Provide structured routing including overnights, mileage, and special requirements"></textarea>
+
+        <label>Special Requirements</label>
+        <textarea placeholder="Split groups, luggage trailer, language driver request, etc."></textarea>
+      </div>
+
+      <!-- COMMERCIAL FRAMEWORK -->
+
+      <div class="rfq-section">
+        <h2>4. Commercial Framework</h2>
+
+        <label>Pricing Validity Required</label>
+        <input type="text" placeholder="e.g. Contract rate for 2026 season">
+
+        <label>Payment Terms</label>
+        <input type="text" placeholder="e.g. 30 days prior to departure">
+
+        <label>Additional Notes</label>
+        <textarea></textarea>
+      </div>
+
+      <button type="submit">
+        Submit Programme for Structured Review
+      </button>
 
     </form>
 
   </div>
 </section>
 
+<section class="section alt">
+  <div class="container">
+    <p>
+      <strong>Trade-only submission.</strong> All programmes are reviewed against
+      capacity allocation, routing feasibility and compliance parameters.
+    </p>
+  </div>
+</section>
+
 <footer>
   <div class="container">
-    <p>© 2026 UK Inbound Ground Transport. Trade-only B2B services.</p>
+    <p><strong>Trade services only.</strong> UK inbound ground transport based near London Heathrow.</p>
+    <p>© 2026 UK Inbound Ground Transport</p>
   </div>
 </footer>
 
