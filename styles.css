@@ -190,11 +190,11 @@ footer {
 
   /* 🔥 Mobile Menu upgraded */
   nav a {
-    display: block;
-    margin: 12px 0;
-    font-size: 20px;
-    font-weight: 600;
-  }
+  display: block;
+  margin: 12px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
 
   .hero h1 {
     font-size: 26px;
