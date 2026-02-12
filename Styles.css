@@ -136,6 +136,10 @@ nav a {
     font-size: 22px;
     font-weight: 600;
   }
+  .hero h1 {
+  font-size: 38px;
+  line-height: 1.2;
+}
 
 }
 .section p {
