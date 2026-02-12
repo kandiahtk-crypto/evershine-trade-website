@@ -4,8 +4,8 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #0b1f3a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
   line-height: 1.6;
   background: #ffffff;
 }
@@ -14,6 +14,10 @@ body {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
 }
 
 /* ===============================
@@ -35,6 +39,7 @@ body {
 .logo {
   font-weight: 600;
   font-size: 18px;
+  color: #0b1f3a;
   white-space: nowrap;
 }
 
@@ -63,42 +68,28 @@ body {
   border-radius: 4px;
 }
 
-/* Mobile */
-@media (max-width: 900px) {
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-
-  .main-nav {
-    flex-wrap: wrap;
-    gap: 18px;
-  }
-}
-
 /* ===============================
-   HERO
+   HERO (LIGHT VERSION)
 ================================= */
 
 .hero {
-  background: #ffffff;
-  padding: 110px 0 90px;
+  padding: 90px 0;
   text-align: center;
+  background: #f8f9fb;
 }
 
 .hero h1 {
-  font-size: 44px;
-  line-height: 1.2;
+  font-size: 40px;
   font-weight: 600;
+  color: #0b1f3a;
   margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 18px;
+  color: #4a4a4a;
   max-width: 750px;
   margin: 0 auto 30px;
-  color: #4a5568;
 }
 
 .btn-primary {
@@ -108,6 +99,7 @@ body {
   text-decoration: none;
   border-radius: 4px;
   font-weight: 600;
+  display: inline-block;
 }
 
 /* ===============================
@@ -118,19 +110,13 @@ body {
   padding: 80px 0;
 }
 
-.section-alt-light {
+.section-light {
   background: #f8f9fb;
-  padding: 80px 0;
 }
 
-.section-note {
-  margin-top: 40px;
-  font-weight: 500;
+.section-dark {
+  background: #f0f2f5;
 }
-
-/* ===============================
-   CARD GRID
-================================= */
 
 .card-grid {
   display: grid;
@@ -139,37 +125,37 @@ body {
   margin-top: 40px;
 }
 
-.premium-card {
+.card {
   background: white;
   padding: 30px;
   border-radius: 6px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
-  transition: 0.3s ease;
-}
-
-.premium-card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
 /* ===============================
-   CTA BAND
+   CTA BAND (KEEP THIS STYLE)
 ================================= */
 
-.cta-band-strong {
-  background: #0b3d91;
+.cta-band {
+  background: #1e3f7a;
   color: white;
-  padding: 90px 0;
+  padding: 80px 0;
   text-align: center;
 }
 
-.cta-band-strong p {
-  color: #d6e1f0;
-  margin-bottom: 30px;
+.cta-band h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
-.btn-primary-light {
+.cta-band p {
+  color: #d6e1f0;
+  margin-bottom: 25px;
+}
+
+.btn-light {
   background: white;
-  color: #0b3d91;
+  color: #1e3f7a;
   padding: 14px 28px;
   text-decoration: none;
   border-radius: 4px;
@@ -185,4 +171,26 @@ footer {
   color: white;
   padding: 40px 0;
   text-align: center;
+  font-size: 14px;
+}
+
+/* ===============================
+   MOBILE
+================================= */
+
+@media (max-width: 900px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
 }
