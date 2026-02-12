@@ -113,3 +113,33 @@ footer {
   padding: 40px 0;
   text-align: center;
 }
+.site-header {
+  background: white;
+  border-bottom: 1px solid #e6e9ee;
+  padding: 15px 0;
+}
+
+.site-header .logo {
+  font-weight: 600;
+  font-size: 18px;
+  color: #0b1f3a;
+}
+
+.site-header nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #0b1f3a;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.site-header nav a:hover {
+  color: #0b3d91;
+}
+
+.nav-cta {
+  background: #0b3d91;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
