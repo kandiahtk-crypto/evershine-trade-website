@@ -20,23 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 0;
-}
-
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;   /* was 16px */
-  font-weight: 600;  /* stronger */
-}
-.nav-cta {
-  background: #0b3d91;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 4px;
-  font-weight: 600;
-}
+  padding: 18px 
 
 .nav-cta {
   font-weight: bold;
@@ -132,8 +116,8 @@ nav a {
   margin-left: 20px;
   text-decoration: none;
   color: #333;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
 }
 /* Mobile Navigation Size Adjustment */
 @media (max-width: 768px) {
@@ -150,7 +134,7 @@ nav a {
   nav a {
     display: block;
     margin: 10px 0;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
   }
 
