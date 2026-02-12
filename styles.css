@@ -460,3 +460,71 @@ form button:hover {
   font-weight: 600;
   text-decoration: none;
 }
+/* --- PREMIUM SECTION VARIATION --- */
+
+.section-dark {
+  background: #0b1f3a;
+  color: white;
+  padding: 80px 0;
+}
+
+.section-dark h2,
+.section-dark h3 {
+  color: white;
+}
+
+.section-dark p {
+  color: #d6e1f0;
+}
+
+.authority-band {
+  background: #0b3d91;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.authority-band h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.premium-card {
+  background: white;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-5px);
+}
+
+.premium-card h3 {
+  margin-bottom: 15px;
+}
+
+.section-alt-light {
+  background: #f8f9fb;
+  padding: 80px 0;
+}
+
+.cta-band-strong {
+  background: #0b3d91;
+  color: white;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.cta-band-strong .btn-primary {
+  background: white;
+  color: #0b3d91;
+}
