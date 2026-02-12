@@ -328,3 +328,23 @@ form button:hover {
   color: #0b3d91;
   margin-bottom: 10px;
 }
+/* =========================
+   HOW WE WORK – PROCESS STEPS
+========================= */
+
+.process-step {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 40px;
+}
+
+.step-number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 64px;
+  font-weight: 800;
+  color: #0b3d91;
+  opacity: 0.15;
+  line-height: 1;
+}
