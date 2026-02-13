@@ -199,3 +199,48 @@ ul li {
   background: #e5e8ee;
   margin-top: 40px;
 }
+/* ===============================
+   FLEET & COMPLIANCE – UPGRADE
+================================= */
+
+/* Section spacing refinement */
+.section p {
+  margin-bottom: 22px;
+}
+
+/* Light content card */
+.compliance-card {
+  background: #f7f9fc;
+  padding: 60px 50px;
+  border-radius: 16px;
+  margin-top: 50px;
+}
+
+/* Subheading style */
+.compliance-card h2 {
+  margin-bottom: 25px;
+  font-size: 1.7rem;
+  color: #0b1f3b;
+}
+
+/* List styling */
+.compliance-card ul {
+  margin-top: 25px;
+  padding-left: 22px;
+}
+
+.compliance-card ul li {
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+/* Add subtle separator */
+.compliance-card p:last-child {
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+/* Improve heading balance */
+h1 {
+  letter-spacing: -0.5px;
+}
