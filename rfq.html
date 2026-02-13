@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Trade RFQ | UK Inbound Ground Transport</title>
+
+  <meta name="description" content="Submit structured UK touring transport enquiries for international tour operators and DMCs. Multi-day itineraries and series departures.">
+
+  <link rel="canonical" href="https://yourdomain.com/rfq.html">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">UK Inbound Ground Transport</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="markets.html">Markets</a>
+      <a href="rfq.html" class="cta">Trade RFQ</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Submit Structured Programme Enquiry</h1>
+    <p>
+      Please provide detailed itinerary and operational information
+      to allow structured pricing and capacity planning.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <h2>Company Details</h2>
+
+    <form action="#" method="POST">
+
+      <label>Company Name</label><br>
+      <input type="text" name="company" required><br><br>
+
+      <label>Contact Name</label><br>
+      <input type="text" name="contact" required><br><br>
+
+      <label>Email Address</label><br>
+      <input type="email" name="email" required><br><br>
+
+      <label>Country of Origin</label><br>
+      <input type="text" name="country"><br><br>
+
+      <h2>Programme Information</h2>
+
+      <label>Travel Dates</label><br>
+      <input type="text" name="dates" placeholder="e.g. 12–18 May 2026"><br><br>
+
+      <label>Group Size</label><br>
+      <input type="number" name="group_size"><br><br>
+
+      <label>Vehicle Requirement</label><br>
+      <select name="vehicle">
+        <option>Executive Coach</option>
+        <option>Standard Touring Coach</option>
+        <option>Minibus</option>
+        <option>Multiple Vehicles</option>
+      </select><br><br>
+
+      <label>Daily Routing / Itinerary Summary</label><br>
+      <textarea name="routing" rows="5" placeholder="Provide day-by-day routing summary"></textarea><br><br>
+
+      <label>Is This a Series Departure?</label><br>
+      <select name="series">
+        <option>No – Ad-hoc Programme</option>
+        <option>Yes – Multiple Departures Planned</option>
+      </select><br><br>
+
+      <label>Additional Operational Notes</label><br>
+      <textarea name="notes" rows="4"></textarea><br><br>
+
+      <button type="submit" class="cta">Submit Programme</button>
+
+    </form>
+
+  </div>
+</section>
+
+</body>
+</html>
