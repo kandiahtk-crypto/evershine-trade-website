@@ -1,20 +1,152 @@
-/* ==================================
-   RFQ PAGE – CLEAN PROFESSIONAL
-================================== */
-
-.rfq-wrapper {
-  max-width: 950px;
-  margin: 0 auto;
+:root {
+  --navy: #0b1f3b;
+  --navy-deep: #061428;
+  --red: #c8102e;
+  --light-grey: #f4f6f8;
+  --text-dark: #1c1c1c;
 }
 
-.rfq-form {
-  margin-top: 50px;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+  background: #ffffff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+
+.site-header {
+  background: var(--navy);
+  padding: 18px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  color: var(--red);
+}
+
+.nav-cta {
+  background: var(--red);
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.nav-cta:hover {
+  background: #a50d24;
+  color: white;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  background: var(--light-grey);
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 750px;
+}
+
+/* ================= SECTION ================= */
+
+.section {
+  padding: 80px 0;
+}
+
+.section-light {
+  background: var(--light-grey);
+}
+
+.section h2 {
+  color: var(--navy);
+  margin-bottom: 25px;
+}
+
+.section ul {
+  padding-left: 20px;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+
+/* ================= CARD ================= */
+
+.content-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.05);
+}
+
+/* ================= BUTTON ================= */
+
+.button-primary {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--navy);
+  color: white;
+  padding: 14px 26px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.button-primary:hover {
+  background: var(--red);
+}
+
+/* ================= RFQ FORM ================= */
 
 .form-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .form-group {
@@ -23,224 +155,56 @@
 }
 
 .form-group label {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-weight: 600;
-  font-size: 15px;
-  color: #0b1f3a;
 }
 
 .form-group input,
-.form-group select,
-.form-group textarea {
-  padding: 20px 22px;
+.form-group textarea,
+.form-group select {
+  padding: 18px;
   border: 1px solid #d9dce2;
-  border-radius: 10px;
-  font-size: 18px;
-  font-family: inherit;
-  min-height: 60px;
-  background: #ffffff;
-  transition: all 0.2s ease;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
 .form-group textarea {
-  min-height: 150px;
-  resize: vertical;
+  min-height: 140px;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #1e4591;
-  box-shadow: 0 0 0 4px rgba(30, 69, 145, 0.15);
-}
-
-.full-width {
-  grid-column: 1 / -1;
-}
-
-.large-btn {
-  margin-top: 50px;
-  padding: 20px 45px;
-  font-size: 18px;
-  border-radius: 10px;
-}
-
-/* MOBILE */
-@media (max-width: 900px) {
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/* ==================================
-   FOOTER – MATCH CTA BLUE
-================================== */
+/* ================= FOOTER ================= */
 
 .site-footer {
   background: #1e4591;
-  color: #ffffff;
+  color: white;
   padding: 70px 0;
   text-align: center;
 }
 
 .site-footer p {
   margin: 8px 0;
-  font-size: 15px;
-  color: #ffffff;
+  font-size: 14px;
 }
 
-.footer-legal {
-  font-size: 13px;
-  opacity: 0.85;
-}
-/* ===============================
-   LAYOUT UPGRADE
-================================= */
+/* ================= MOBILE ================= */
 
-.section .container {
-  max-width: 980px;
-}
+@media (max-width: 900px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
 
-/* Add breathing room */
-.section p {
-  margin-bottom: 20px;
-}
+  .main-nav {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 
-/* Add subtle section separation */
-.section-light {
-  background: #f7f9fc;
-}
+  .hero {
+    padding: 70px 0;
+  }
 
-/* Improve headings hierarchy */
-h1, h2 {
-  letter-spacing: -0.5px;
-}
-
-h2 {
-  margin-bottom: 30px;
-}
-
-/* Add card-style blocks */
-.content-card {
-  background: white;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
-  margin-top: 30px;
-}
-
-/* Improve bullet spacing */
-ul li {
-  margin-bottom: 10px;
-}
-
-/* Improve CTA spacing */
-.button-primary {
-  border-radius: 8px;
-  transition: 0.2s ease;
-}
-
-.button-primary:hover {
-  transform: translateY(-2px);
-}
-/* ===============================
-   HOW WE WORK – VISUAL UPGRADE
-================================= */
-
-/* Hero spacing improvement */
-.hero p {
-  margin-bottom: 25px;
-}
-
-/* Structured model block styling */
-.structured-model {
-  margin-top: 60px;
-  padding: 60px 50px;
-  background: #f7f9fc;
-  border-radius: 16px;
-}
-
-/* Each step block */
-.delivery-step {
-  margin-bottom: 60px;
-  position: relative;
-  padding-left: 70px;
-}
-
-/* Step number styling */
-.delivery-step .step-number {
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 48px;
-  font-weight: 700;
-  color: #1e4591;
-  opacity: 0.15;
-}
-
-/* Step titles */
-.delivery-step h3 {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  color: #0b1f3b;
-}
-
-/* Paragraph refinement */
-.delivery-step p {
-  max-width: 720px;
-  color: #333;
-}
-
-/* Add separation line */
-.delivery-step:not(:last-child)::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background: #e5e8ee;
-  margin-top: 40px;
-}
-/* ===============================
-   FLEET & COMPLIANCE – UPGRADE
-================================= */
-
-/* Section spacing refinement */
-.section p {
-  margin-bottom: 22px;
-}
-
-/* Light content card */
-.compliance-card {
-  background: #f7f9fc;
-  padding: 60px 50px;
-  border-radius: 16px;
-  margin-top: 50px;
-}
-
-/* Subheading style */
-.compliance-card h2 {
-  margin-bottom: 25px;
-  font-size: 1.7rem;
-  color: #0b1f3b;
-}
-
-/* List styling */
-.compliance-card ul {
-  margin-top: 25px;
-  padding-left: 22px;
-}
-
-.compliance-card ul li {
-  margin-bottom: 14px;
-  font-size: 1rem;
-}
-
-/* Add subtle separator */
-.compliance-card p:last-child {
-  margin-top: 30px;
-  font-weight: 500;
-}
-
-/* Improve heading balance */
-h1 {
-  letter-spacing: -0.5px;
+  .hero h1 {
+    font-size: 2rem;
+  }
 }
