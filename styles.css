@@ -143,3 +143,59 @@ ul li {
 .button-primary:hover {
   transform: translateY(-2px);
 }
+/* ===============================
+   HOW WE WORK – VISUAL UPGRADE
+================================= */
+
+/* Hero spacing improvement */
+.hero p {
+  margin-bottom: 25px;
+}
+
+/* Structured model block styling */
+.structured-model {
+  margin-top: 60px;
+  padding: 60px 50px;
+  background: #f7f9fc;
+  border-radius: 16px;
+}
+
+/* Each step block */
+.delivery-step {
+  margin-bottom: 60px;
+  position: relative;
+  padding-left: 70px;
+}
+
+/* Step number styling */
+.delivery-step .step-number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1e4591;
+  opacity: 0.15;
+}
+
+/* Step titles */
+.delivery-step h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #0b1f3b;
+}
+
+/* Paragraph refinement */
+.delivery-step p {
+  max-width: 720px;
+  color: #333;
+}
+
+/* Add separation line */
+.delivery-step:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #e5e8ee;
+  margin-top: 40px;
+}
