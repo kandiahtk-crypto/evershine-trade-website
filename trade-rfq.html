@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Trade RFQ | UK Inbound Ground Transport</title>
-  <meta name="description" content="Submit structured UK departure programmes for operational review and capacity confirmation. Trade-only inbound ground transport.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Trade RFQ | UK Inbound Ground Transport</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Submit structured departure schedules for UK inbound ground transport capacity allocation and commercial review.">
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header class="site-header">
   <div class="container header-inner">
-    <div class="logo">
-      <a href="index.html">UK Inbound Ground Transport</a>
-    </div>
+    <div class="logo">UK Inbound Ground Transport</div>
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="markets.html">Markets</a>
@@ -26,56 +25,53 @@
 
 <section class="hero">
   <div class="container">
-    <h1>Submit Your UK Departure Programme</h1>
+    <h1>Submit Structured Departure Schedule</h1>
     <p>
-      Structured intake for international tour operators and DMCs requiring controlled UK inbound ground transport delivery.
+      Provide confirmed routing and departure information for
+      capacity allocation and commercial review.
     </p>
   </div>
 </section>
 
 <section class="section">
-  <div class="container content-card">
-    <h2>Programme Details</h2>
+  <div class="container rfq-wrapper">
 
-    <form class="form-grid">
+    <form class="rfq-form">
+      <div class="form-grid">
 
-      <div class="form-group">
-        <label>Company Name *</label>
-        <input type="text" required>
+        <div class="form-group">
+          <label>Company Name</label>
+          <input type="text">
+        </div>
+
+        <div class="form-group">
+          <label>Contact Name</label>
+          <input type="text">
+        </div>
+
+        <div class="form-group full-width">
+          <label>Programme Overview</label>
+          <textarea></textarea>
+        </div>
+
       </div>
 
-      <div class="form-group">
-        <label>Primary Contact Name *</label>
-        <input type="text" required>
-      </div>
-
-      <div class="form-group">
-        <label>Email *</label>
-        <input type="email" required>
-      </div>
-
-      <div class="form-group">
-        <label>Passenger Volume *</label>
-        <input type="text">
-      </div>
-
-      <div class="form-group">
-        <label>Confirmed Routing *</label>
-        <textarea></textarea>
-      </div>
+      <button type="submit" class="btn-primary large-btn">
+        Submit RFQ
+      </button>
 
     </form>
-
-    <a href="#" class="button-primary">Submit Trade RFQ</a>
 
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="container">
-    <p>UK Inbound Ground Transport</p>
+    <p><strong>UK Inbound Ground Transport</strong></p>
     <p>Trade-only B2B services · England · Scotland · Wales</p>
-    <p>© 2026 UK Inbound Ground Transport · Based near London Heathrow</p>
+    <p class="footer-legal">
+      © 2026 UK Inbound Ground Transport · Based near London Heathrow
+    </p>
   </div>
 </footer>
 
