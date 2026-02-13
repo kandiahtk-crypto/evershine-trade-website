@@ -1,287 +1,61 @@
 /* ===============================
-   GLOBAL
+   RFQ FORM DESIGN
 ================================= */
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  color: #1a1a1a;
-  line-height: 1.6;
-  background: #ffffff;
-}
-
-.container {
-  width: 90%;
-  max-width: 1100px;
+.rfq-wrapper {
+  max-width: 900px;
   margin: 0 auto;
 }
 
-h1, h2, h3 {
-  margin-top: 0;
-}
-
-/* ===============================
-   HEADER
-================================= */
-
-.site-header {
-  background: #ffffff;
-  border-bottom: 1px solid #e6e9ee;
-}
-
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 22px 0;
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: 600;
-  color: #0b1f3a;
-  letter-spacing: 0.2px;
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.main-nav a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  color: #0b1f3a;
-  transition: 0.2s ease;
-}
-
-.main-nav a:hover {
-  color: #0b3d91;
-}
-
-.nav-cta {
-  background: #1e4591;
-  color: #ffffff !important;
-  padding: 12px 22px;
-  border-radius: 6px;
-  font-weight: 600;
-}
-
-.nav-cta:hover {
-  background: #163a7a;
-}
-
-/* ===============================
-   HERO (LIGHT)
-================================= */
-
-.hero,
-.hero-light {
-  padding: 90px 0;
-  text-align: center;
-  background: #f8f9fb;
-}
-
-.hero h1,
-.hero-light h1 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #0b1f3a;
-  margin-bottom: 20px;
-}
-
-.hero p,
-.hero-light p {
-  font-size: 18px;
-  color: #4a4a4a;
-  max-width: 750px;
-  margin: 0 auto 25px;
-}
-
-.hero-intro {
-  font-size: 19px;
-  font-weight: 500;
-  color: #2c2c2c;
-  max-width: 750px;
-  margin: 0 auto 20px;
-}
-
-/* ===============================
-   BUTTONS
-================================= */
-
-.btn-primary {
-  background: #0b3d91;
-  color: white;
-  padding: 14px 28px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 600;
-  display: inline-block;
-}
-
-.btn-light {
-  background: white;
-  color: #1e3f7a;
-  padding: 14px 28px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-/* ===============================
-   SECTIONS
-================================= */
-
-.section {
-  padding: 80px 0;
-}
-
-.section-light {
-  background: #f8f9fb;
-}
-
-.section-dark {
-  background: #f0f2f5;
-}
-
-.section-note {
-  margin-top: 25px;
-  font-weight: 500;
-}
-
-/* ===============================
-   CARDS / GRIDS
-================================= */
-
-.card-grid,
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+.rfq-form {
   margin-top: 40px;
 }
 
-.card,
-.process-card {
-  background: white;
-  padding: 30px;
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #0b1f3a;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 14px;
+  border: 1px solid #d9dce2;
   border-radius: 6px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
-.step-number {
-  font-size: 42px;
-  font-weight: 700;
-  color: #0b3d91;
-  opacity: 0.15;
-  margin-bottom: 10px;
-}
-
-.clean-list {
-  margin-top: 30px;
-  line-height: 1.8;
-}
-
-/* ===============================
-   CTA BAND (SOFT VERSION)
-================================= */
-
-.cta-band-soft {
-  background: #eef2f7;
-  padding: 80px 0;
-  text-align: center;
-}
-
-.cta-band-soft h2 {
-  margin-bottom: 15px;
-}
-
-.cta-band-soft p {
-  margin-bottom: 25px;
-}
-
-/* ===============================
-   FOOTER – PROFESSIONAL NAVY
-================================= */
-
-/* ===============================
-   FOOTER – MATCH CTA BLUE
-================================= */
-
-.site-footer {
-  background: #1e4591;
-  color: #ffffff;
-  padding: 70px 0;
-  text-align: center;
-}
-
-.site-footer p {
-  margin: 8px 0;
   font-size: 15px;
-  color: #ffffff;
+  font-family: inherit;
 }
 
-.footer-legal {
-  font-size: 13px;
-  opacity: 0.85;
+.form-group textarea {
+  resize: vertical;
 }
 
-/* ===============================
-   MOBILE
-================================= */
+.large-btn {
+  margin-top: 40px;
+  padding: 16px 32px;
+  font-size: 16px;
+}
 
+/* MOBILE */
 @media (max-width: 900px) {
-
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+  .form-grid {
+    grid-template-columns: 1fr;
   }
-
-  .main-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: 22px;
-  }
-
-  .main-nav a {
-    font-size: 20px;
-  }
-
-  .nav-cta {
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-    padding: 16px 0;
-  }
-
-  .hero h1,
-  .hero-light h1 {
-    font-size: 32px;
-  }
-}
-/* ===============================
-   FOOTER – MATCH CTA BLUE
-================================= */
-
-.site-footer {
-  background: #1e4591;
-  color: #ffffff;
-  padding: 70px 0;
-  text-align: center;
-}
-
-.site-footer p {
-  margin: 8px 0;
-  font-size: 15px;
-  color: #ffffff;
-}
-
-.footer-legal {
-  font-size: 13px;
-  opacity: 0.85;
 }
