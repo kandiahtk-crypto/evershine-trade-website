@@ -19,9 +19,8 @@ body {
 h1, h2, h3 {
   margin-top: 0;
 }
-
 /* ===============================
-   HEADER
+   HEADER – CLEAN LIGHT STYLE
 ================================= */
 
 .site-header {
@@ -33,15 +32,19 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 0;
+  padding: 22px 0;
 }
 
+/* LOGO */
+
 .logo {
+  font-size: 20px;
   font-weight: 600;
-  font-size: 18px;
   color: #0b1f3a;
-  white-space: nowrap;
+  letter-spacing: 0.2px;
 }
+
+/* NAVIGATION */
 
 .main-nav {
   display: flex;
@@ -51,22 +54,62 @@ h1, h2, h3 {
 
 .main-nav a {
   text-decoration: none;
-  color: #0b1f3a;
+  font-size: 16px;
   font-weight: 500;
-  font-size: 15px;
-  white-space: nowrap;
+  color: #0b1f3a;
+  transition: 0.2s ease;
 }
 
 .main-nav a:hover {
   color: #0b3d91;
 }
 
+/* CTA BUTTON */
+
 .nav-cta {
-  background: #0b3d91;
-  color: white !important;
-  padding: 8px 16px;
-  border-radius: 4px;
+  background: #1e4591;
+  color: #ffffff !important;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: 600;
 }
+
+.nav-cta:hover {
+  background: #163a7a;
+}
+
+/* ===============================
+   MOBILE VERSION (STACKED LIKE YOUR SCREENSHOT)
+================================= */
+
+@media (max-width: 900px) {
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 22px;
+  }
+
+  .main-nav a {
+    font-size: 20px;
+  }
+
+  .nav-cta {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 16px 0;
+  }
+}
+
+   
 
 /* ===============================
    HERO (LIGHT VERSION)
