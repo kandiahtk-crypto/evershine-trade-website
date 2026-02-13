@@ -93,3 +93,53 @@
   font-size: 13px;
   opacity: 0.85;
 }
+/* ===============================
+   LAYOUT UPGRADE
+================================= */
+
+.section .container {
+  max-width: 980px;
+}
+
+/* Add breathing room */
+.section p {
+  margin-bottom: 20px;
+}
+
+/* Add subtle section separation */
+.section-light {
+  background: #f7f9fc;
+}
+
+/* Improve headings hierarchy */
+h1, h2 {
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+/* Add card-style blocks */
+.content-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+  margin-top: 30px;
+}
+
+/* Improve bullet spacing */
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Improve CTA spacing */
+.button-primary {
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+}
