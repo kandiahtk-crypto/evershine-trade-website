@@ -125,7 +125,7 @@ form button {
 ================================= */
 
 .site-footer {
-  background: #f4f8ff;          /* light blue */
+  background: #f4f8ff;
   padding: 60px 0 25px;
   margin-top: 80px;
 }
@@ -134,12 +134,12 @@ form button {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 60px;
+  gap: 80px;
   flex-wrap: wrap;
 }
 
 .footer-left {
-  max-width: 500px;
+  max-width: 520px;
 }
 
 .footer-left strong {
@@ -151,13 +151,18 @@ form button {
 .footer-left p {
   margin: 0;
   color: #5c6b7a;
+  line-height: 1.6;
+}
+
+.footer-right {
+  text-align: right;
 }
 
 .footer-right a {
   display: block;
   margin-bottom: 12px;
   text-decoration: none;
-  color: #3a7bd5;
+  color: var(--blue);
   font-weight: 500;
 }
 
@@ -173,3 +178,17 @@ form button {
   font-size: 14px;
   color: #6c7a89;
 }
+
+/* Mobile footer */
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-right {
+    text-align: left;
+  }
+}
+
+
