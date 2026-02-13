@@ -86,6 +86,35 @@ form textarea {
   border-radius: 4px;
   font-size: 14px;
 }
+.site-footer {
+  background: #f4f8ff;   /* light blue */
+  padding: 60px 0 20px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-right {
+  margin-left: 40px;   /* moves it slightly right */
+}
+
+.footer-right a {
+  display: block;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: #3a7bd5;
+  font-weight: 500;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #6c7a89;
+}
 
 form button {
   border: none;
