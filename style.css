@@ -21,41 +21,8 @@ body {
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: auto;
-}
+  margin: 40px auto;
 
-/* NAVIGATION */
-
-nav {
-  background: var(--navy);
-  padding: 22px 0;
-}
-
-nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav strong {
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  font-size: 0.95rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 32px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-}
-
-nav a:hover {
-  color: var(--red);
-}
 
 /* HERO */
 
