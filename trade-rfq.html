@@ -1,44 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Trade RFQ | UK Inbound Ground Transport for Tour Operators</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Submit a structured Trade RFQ for UK inbound ground transport. Heathrow-based operator supporting international tour operators and DMCs with series departures, escorted touring and multi-day UK programmes.">
+<title>Trade RFQ | UK Inbound Ground Transport for Tour Operators</title>
 
-  <meta name="keywords" content="UK inbound ground transport RFQ, tour operator coach quote UK, DMC transport quotation UK, series tour transport pricing UK, Heathrow coach operator RFQ">
+<meta name="description" content="Submit structured UK departure programmes for operational review. Trade-only RFQ intake for international tour operators and DMCs requiring controlled UK ground transport delivery.">
 
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "UK Inbound Ground Transport Quotation Service",
-    "provider": {
-      "@type": "Organization",
-      "name": "UK Inbound Ground Transport",
-      "areaServed": "United Kingdom"
-    },
-    "serviceType": "Trade RFQ for Inbound Ground Transport",
-    "audience": {
-      "@type": "BusinessAudience",
-      "audienceType": "International Tour Operators and DMCs"
-    }
-  }
-  </script>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-
 <header class="site-header">
   <div class="container header-inner">
     <div class="logo">UK Inbound Ground Transport</div>
-
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="market.html">Markets</a>
@@ -49,158 +26,122 @@
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
-
+<!-- HERO -->
 <section class="hero-light">
   <div class="container">
-
-    <h1>Trade RFQ – UK Inbound Ground Transport</h1>
-
+    <h1>Submit Your UK Programme Details</h1>
     <p class="hero-intro">
-      Structured quotation process for international tour operators and DMCs operating UK programmes.
+      Structured intake for international tour operators and DMCs requiring controlled UK inbound ground transport.
     </p>
-
-    <p>
-      Submit confirmed routing, departure dates and operating assumptions for structured review.
-      All quotations are prepared within defined commercial parameters.
-    </p>
-
   </div>
 </section>
 
-<!-- ================= QUALIFICATION BLOCK ================= -->
-
-<section class="section section-light">
-  <div class="container">
-
-    <h2>Who This RFQ Is For</h2>
-
-    <ul class="clean-list">
-      <li>International tour operators</li>
-      <li>Destination management companies (DMCs)</li>
-      <li>Series departure programme planners</li>
-      <li>Escorted group touring operations teams</li>
-    </ul>
-
-    <p class="section-note">
-      We do not provide retail coach hire or consumer quotations.
-    </p>
-
-  </div>
-</section>
-
-<!-- ================= RFQ FORM ================= -->
-
+<!-- RFQ FORM -->
 <section class="section">
   <div class="container">
 
-    <h2>Submit Your Programme Details</h2>
+    <div class="rfq-wrapper">
 
-    <form action="#" method="POST">
+      <form class="rfq-form">
 
-      <label>Company Name *</label>
-      <input type="text" name="company" required>
+        <div class="form-grid">
 
-      <label>Primary Contact Name *</label>
-      <input type="text" name="contact" required>
+          <div class="form-group">
+            <label>Company Name *</label>
+            <input type="text" required>
+          </div>
 
-      <label>Business Email *</label>
-      <input type="email" name="email" required>
+          <div class="form-group">
+            <label>Primary Contact Name *</label>
+            <input type="text" required>
+          </div>
 
-      <label>Source Market *</label>
-      <select name="market" required>
-        <option value="">Select</option>
-        <option>United States</option>
-        <option>China</option>
-        <option>Europe</option>
-        <option>India</option>
-        <option>Other</option>
-      </select>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" required>
+          </div>
 
-      <label>Programme Type *</label>
-      <select name="programme" required>
-        <option value="">Select</option>
-        <option>Series Departure</option>
-        <option>Multi-Day Escorted Touring</option>
-        <option>Airport Transfers</option>
-        <option>Educational / Special Interest</option>
-      </select>
+          <div class="form-group">
+            <label>Source Market *</label>
+            <input type="text" placeholder="e.g. USA, India, Germany" required>
+          </div>
 
-      <label>Departure Dates *</label>
-      <input type="text" name="dates" placeholder="e.g. 10 May – 18 May 2026" required>
+          <div class="form-group">
+            <label>Programme Type *</label>
+            <select required>
+              <option value="">Select</option>
+              <option>Fixed Departure Series</option>
+              <option>Escorted Multi-Day Tour</option>
+              <option>Ad-Hoc Group</option>
+              <option>Private Touring Programme</option>
+            </select>
+          </div>
 
-      <label>Passenger Volume *</label>
-      <input type="text" name="pax" placeholder="e.g. 45 passengers">
+          <div class="form-group">
+            <label>Departure Dates *</label>
+            <input type="text" placeholder="e.g. 10–18 May 2026" required>
+          </div>
 
-      <label>Confirmed Routing *</label>
-      <textarea name="routing" required placeholder="Day-by-day routing including airports, cities, overnights and major stops."></textarea>
+          <div class="form-group">
+            <label>Passenger Volume *</label>
+            <input type="text" placeholder="e.g. 45 passengers" required>
+          </div>
 
-      <label>Additional Operational Notes</label>
-      <textarea name="notes" placeholder="Special requirements, split groups, guide logistics, luggage capacity, etc."></textarea>
+          <div class="form-group">
+            <label>Confirmed Routing *</label>
+            <textarea rows="4" placeholder="Day-by-day routing including airports, cities, overnights" required></textarea>
+          </div>
 
-      <button type="submit" class="btn-primary">Submit Trade RFQ</button>
+          <div class="form-group full">
+            <label>Additional Operational Notes</label>
+            <textarea rows="4" placeholder="Guide logistics, split groups, luggage vehicles, access restrictions etc."></textarea>
+          </div>
 
-    </form>
+        </div>
 
-  </div>
-</section>
+        <button type="submit" class="btn-primary large-btn">
+          Submit Trade RFQ
+        </button>
 
-<!-- ================= COMMERCIAL FRAMEWORK ================= -->
+      </form>
 
-<section class="section section-light">
-  <div class="container">
-
-    <h2>Commercial Framework</h2>
-
-    <ul class="clean-list">
-      <li>Quotations are issued based on confirmed routing and operating scope</li>
-      <li>Pricing validity periods are defined at time of issue</li>
-      <li>Vehicle allocation subject to confirmed departure status</li>
-      <li>Driver hours compliance applied to all routing structures</li>
-      <li>Variations outside agreed scope subject to written confirmation</li>
-    </ul>
-
-    <p>
-      Structured commercial clarity protects both operator margin and delivery integrity.
-    </p>
+    </div>
 
   </div>
 </section>
 
-<!-- ================= RESPONSE TIMELINE ================= -->
-
-<section class="section">
+<!-- RESPONSE TIMELINE -->
+<section class="section-light">
   <div class="container">
-
     <h2>Response Timeline</h2>
-
     <p>
       Standard RFQs are reviewed within 24–48 business hours.
-      Series departure proposals may require structured review depending on routing complexity.
+      Series departure programmes may require structured review depending on routing complexity and seasonal capacity.
     </p>
-
   </div>
 </section>
 
-<!-- ================= CTA ================= -->
-
-<section class="cta-band">
+<!-- COMMERCIAL FRAMEWORK -->
+<section class="section">
   <div class="container">
-    <h2>Operate UK Programmes with Confidence</h2>
-    <p>
-      Structured inbound ground transport aligned with your commercial departure calendar.
-    </p>
-    <a href="mailto:your@email.com" class="btn-light">Direct Operations Contact</a>
+    <h2>Commercial Framework</h2>
+    <ul class="clean-list">
+      <li>Quotations issued based on confirmed routing and operating scope</li>
+      <li>Pricing validity defined at time of issue</li>
+      <li>Series departures may require structured allocation planning</li>
+      <li>All services operate strictly trade-only (B2B)</li>
+    </ul>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
-
+<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container">
     <p>UK Inbound Ground Transport</p>
     <p>Trade-only B2B services · England · Scotland · Wales</p>
-    <p class="footer-legal">© 2026 UK Inbound Ground Transport · Based near London Heathrow</p>
+    <p class="footer-legal">
+      © 2026 UK Inbound Ground Transport · Based near London Heathrow
+    </p>
   </div>
 </footer>
 
