@@ -4,21 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Trade RFQ | UK Inbound Ground Transport for Tour Operators</title>
-
-<meta name="description" content="Submit structured UK departure programmes for operational review. Trade-only RFQ intake for international tour operators and DMCs requiring controlled UK ground transport delivery.">
+<title>Trade RFQ | UK Inbound Ground Transport</title>
+<meta name="description" content="Submit structured UK departure schedules and routing details for inbound touring programmes. Trade-only B2B ground transport across England, Scotland and Wales.">
+<meta name="robots" content="index, follow">
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header class="site-header">
   <div class="container header-inner">
     <div class="logo">UK Inbound Ground Transport</div>
     <nav class="main-nav">
       <a href="index.html">Home</a>
-      <a href="market.html">Markets</a>
+      <a href="markets.html">Markets</a>
       <a href="how-we-work.html">How We Work</a>
       <a href="fleet-compliance.html">Fleet & Compliance</a>
       <a href="trade-rfq.html" class="nav-cta">Trade RFQ</a>
@@ -29,9 +30,12 @@
 <!-- HERO -->
 <section class="hero-light">
   <div class="container">
-    <h1>Submit Your UK Programme Details</h1>
+    <h1>Submit Your UK Departure Programme</h1>
     <p class="hero-intro">
-      Structured intake for international tour operators and DMCs requiring controlled UK inbound ground transport.
+      Structured intake for international tour operators and DMCs requiring controlled UK inbound ground transport delivery.
+    </p>
+    <p>
+      All submissions are reviewed against seasonal capacity, routing logic and operational scope before commercial confirmation.
     </p>
   </div>
 </section>
@@ -42,7 +46,9 @@
 
     <div class="rfq-wrapper">
 
-      <form class="rfq-form">
+      <h2>Programme Details</h2>
+
+      <form action="#" method="post" class="rfq-form">
 
         <div class="form-grid">
 
@@ -63,7 +69,14 @@
 
           <div class="form-group">
             <label>Source Market *</label>
-            <input type="text" placeholder="e.g. USA, India, Germany" required>
+            <select required>
+              <option value="">Select</option>
+              <option>United States</option>
+              <option>Europe</option>
+              <option>India</option>
+              <option>China</option>
+              <option>Other</option>
+            </select>
           </div>
 
           <div class="form-group">
@@ -71,15 +84,14 @@
             <select required>
               <option value="">Select</option>
               <option>Fixed Departure Series</option>
-              <option>Escorted Multi-Day Tour</option>
-              <option>Ad-Hoc Group</option>
-              <option>Private Touring Programme</option>
+              <option>Escorted Tour</option>
+              <option>Ad Hoc Multi-Day</option>
             </select>
           </div>
 
           <div class="form-group">
             <label>Departure Dates *</label>
-            <input type="text" placeholder="e.g. 10–18 May 2026" required>
+            <input type="text" placeholder="e.g. 10 May – 18 May 2026" required>
           </div>
 
           <div class="form-group">
@@ -89,12 +101,12 @@
 
           <div class="form-group">
             <label>Confirmed Routing *</label>
-            <textarea rows="4" placeholder="Day-by-day routing including airports, cities, overnights" required></textarea>
+            <textarea placeholder="Day-by-day routing including airports, cities and key stops" required></textarea>
           </div>
 
-          <div class="form-group full">
+          <div class="form-group full-width">
             <label>Additional Operational Notes</label>
-            <textarea rows="4" placeholder="Guide logistics, split groups, luggage vehicles, access restrictions etc."></textarea>
+            <textarea placeholder="Split groups, guide logistics, luggage vehicle, peak season considerations"></textarea>
           </div>
 
         </div>
@@ -110,27 +122,14 @@
   </div>
 </section>
 
-<!-- RESPONSE TIMELINE -->
-<section class="section-light">
+<!-- RESPONSE INFO -->
+<section class="section section-light">
   <div class="container">
     <h2>Response Timeline</h2>
     <p>
-      Standard RFQs are reviewed within 24–48 business hours.
-      Series departure programmes may require structured review depending on routing complexity and seasonal capacity.
+      Standard RFQs are reviewed within 24–48 business hours. 
+      Series departure proposals may require structured review depending on routing complexity.
     </p>
-  </div>
-</section>
-
-<!-- COMMERCIAL FRAMEWORK -->
-<section class="section">
-  <div class="container">
-    <h2>Commercial Framework</h2>
-    <ul class="clean-list">
-      <li>Quotations issued based on confirmed routing and operating scope</li>
-      <li>Pricing validity defined at time of issue</li>
-      <li>Series departures may require structured allocation planning</li>
-      <li>All services operate strictly trade-only (B2B)</li>
-    </ul>
   </div>
 </section>
 
@@ -139,9 +138,7 @@
   <div class="container">
     <p>UK Inbound Ground Transport</p>
     <p>Trade-only B2B services · England · Scotland · Wales</p>
-    <p class="footer-legal">
-      © 2026 UK Inbound Ground Transport · Based near London Heathrow
-    </p>
+    <p class="footer-legal">© 2026 UK Inbound Ground Transport · Based near London Heathrow</p>
   </div>
 </footer>
 
