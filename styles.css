@@ -207,23 +207,26 @@ h1, h2, h3 {
    FOOTER – PROFESSIONAL NAVY
 ================================= */
 
-footer {
-  background: #0b1f3a;
+/* ===============================
+   FOOTER – MATCH CTA BLUE
+================================= */
+
+.site-footer {
+  background: #1e4591;
   color: #ffffff;
-  padding: 50px 0;
+  padding: 70px 0;
   text-align: center;
-  font-size: 14px;
 }
 
-footer p {
-  margin: 6px 0;
-  color: #d6e1f0;
+.site-footer p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #ffffff;
 }
 
 .footer-legal {
-  margin-top: 12px;
   font-size: 13px;
-  color: #9fb3d1;
+  opacity: 0.85;
 }
 
 /* ===============================
