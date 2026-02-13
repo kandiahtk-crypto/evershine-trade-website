@@ -201,3 +201,68 @@
 
 </body>
 </html>
+/* ===============================
+   RFQ PAGE
+================================= */
+
+.rfq-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.rfq-form {
+  margin-top: 40px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 18px 20px;
+  border: 1px solid #d9dce2;
+  border-radius: 8px;
+  font-size: 17px;
+  font-family: inherit;
+  min-height: 56px;
+  transition: 0.2s ease;
+}
+
+.form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1e4591;
+  box-shadow: 0 0 0 3px rgba(30,69,145,0.15);
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.large-btn {
+  margin-top: 45px;
+  padding: 18px 40px;
+  font-size: 18px;
+  border-radius: 8px;
+}
