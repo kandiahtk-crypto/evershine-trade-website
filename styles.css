@@ -19,8 +19,9 @@ body {
 h1, h2, h3 {
   margin-top: 0;
 }
+
 /* ===============================
-   HEADER – CLEAN LIGHT STYLE
+   HEADER
 ================================= */
 
 .site-header {
@@ -35,16 +36,12 @@ h1, h2, h3 {
   padding: 22px 0;
 }
 
-/* LOGO */
-
 .logo {
   font-size: 20px;
   font-weight: 600;
   color: #0b1f3a;
   letter-spacing: 0.2px;
 }
-
-/* NAVIGATION */
 
 .main-nav {
   display: flex;
@@ -64,8 +61,6 @@ h1, h2, h3 {
   color: #0b3d91;
 }
 
-/* CTA BUTTON */
-
 .nav-cta {
   background: #1e4591;
   color: #ffffff !important;
@@ -79,7 +74,160 @@ h1, h2, h3 {
 }
 
 /* ===============================
-   MOBILE VERSION (STACKED LIKE YOUR SCREENSHOT)
+   HERO (LIGHT)
+================================= */
+
+.hero,
+.hero-light {
+  padding: 90px 0;
+  text-align: center;
+  background: #f8f9fb;
+}
+
+.hero h1,
+.hero-light h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #0b1f3a;
+  margin-bottom: 20px;
+}
+
+.hero p,
+.hero-light p {
+  font-size: 18px;
+  color: #4a4a4a;
+  max-width: 750px;
+  margin: 0 auto 25px;
+}
+
+.hero-intro {
+  font-size: 19px;
+  font-weight: 500;
+  color: #2c2c2c;
+  max-width: 750px;
+  margin: 0 auto 20px;
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+
+.btn-primary {
+  background: #0b3d91;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn-light {
+  background: white;
+  color: #1e3f7a;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* ===============================
+   SECTIONS
+================================= */
+
+.section {
+  padding: 80px 0;
+}
+
+.section-light {
+  background: #f8f9fb;
+}
+
+.section-dark {
+  background: #f0f2f5;
+}
+
+.section-note {
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+/* ===============================
+   CARDS / GRIDS
+================================= */
+
+.card-grid,
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card,
+.process-card {
+  background: white;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.step-number {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0b3d91;
+  opacity: 0.15;
+  margin-bottom: 10px;
+}
+
+.clean-list {
+  margin-top: 30px;
+  line-height: 1.8;
+}
+
+/* ===============================
+   CTA BAND (SOFT VERSION)
+================================= */
+
+.cta-band-soft {
+  background: #eef2f7;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.cta-band-soft h2 {
+  margin-bottom: 15px;
+}
+
+.cta-band-soft p {
+  margin-bottom: 25px;
+}
+
+/* ===============================
+   FOOTER – PROFESSIONAL NAVY
+================================= */
+
+footer {
+  background: #0b1f3a;
+  color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 6px 0;
+  color: #d6e1f0;
+}
+
+.footer-legal {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #9fb3d1;
+}
+
+/* ===============================
+   MOBILE
 ================================= */
 
 @media (max-width: 900px) {
@@ -107,228 +255,9 @@ h1, h2, h3 {
     font-size: 20px;
     padding: 16px 0;
   }
-}
 
-   
-
-/* ===============================
-   HERO (LIGHT VERSION)
-================================= */
-
-.hero {
-  padding: 90px 0;
-  text-align: center;
-  background: #f8f9fb;
-}
-
-.hero h1 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #0b1f3a;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 18px;
-  color: #4a4a4a;
-  max-width: 750px;
-  margin: 0 auto 30px;
-}
-
-.btn-primary {
-  background: #0b3d91;
-  color: white;
-  padding: 14px 28px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 600;
-  display: inline-block;
-}
-
-/* ===============================
-   SECTIONS
-================================= */
-
-.section {
-  padding: 80px 0;
-}
-
-.section-light {
-  background: #f8f9fb;
-}
-
-.section-dark {
-  background: #f0f2f5;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 6px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
-/* ===============================
-   CTA BAND (KEEP THIS STYLE)
-================================= */
-
-.cta-band {
-  background: #1e3f7a;
-  color: white;
-  padding: 80px 0;
-  text-align: center;
-}
-
-.cta-band h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-.cta-band p {
-  color: #d6e1f0;
-  margin-bottom: 25px;
-}
-
-.btn-light {
-  background: white;
-  color: #1e3f7a;
-  padding: 14px 28px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-/* ===============================
-   FOOTER
-================================= */
-
-footer {
-  background: #111;
-  color: white;
-  padding: 40px 0;
-  text-align: center;
-  font-size: 14px;
-}
-
-/* ===============================
-   MOBILE
-================================= */
-
-@media (max-width: 900px) {
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-
-  .main-nav {
-    flex-wrap: wrap;
-    gap: 18px;
-  }
-
-  .hero h1 {
+  .hero h1,
+  .hero-light h1 {
     font-size: 32px;
   }
-}
-/* LIGHT HERO */
-.hero-light {
-  background: #f8f9fb;
-  padding: 80px 0;
-  text-align: center;
-}
-
-.hero-light h1 {
-  font-size: 36px;
-  font-weight: 600;
-  color: #0b1f3a;
-  margin-bottom: 25px;
-}
-
-.hero-intro {
-  font-size: 19px;
-  font-weight: 500;
-  color: #2c2c2c;
-  max-width: 750px;
-  margin: 0 auto 20px;
-}
-
-.hero-light p {
-  font-size: 17px;
-  color: #5a5a5a;
-  max-width: 750px;
-  margin: 0 auto 18px;
-}
-
-/* PROCESS GRID */
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  margin-top: 40px;
-}
-
-.process-card {
-  position: relative;
-  padding: 30px;
-  background: white;
-  border-radius: 6px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
-.step-number {
-  font-size: 42px;
-  font-weight: 700;
-  color: #0b3d91;
-  opacity: 0.15;
-  margin-bottom: 10px;
-}
-
-.section-light {
-  background: #f8f9fb;
-  padding: 80px 0;
-}
-
-.clean-list {
-  margin-top: 30px;
-  line-height: 1.8;
-}
-
-.section-note {
-  margin-top: 25px;
-  font-weight: 500;
-}
-
-.cta-band-soft {
-  background: #eef2f7;
-  padding: 80px 0;
-  text-align: center;
-}
-/* ===============================
-   FOOTER – CLEAN PROFESSIONAL
-================================= */
-
-footer {
-  background: #0b1f3a;   /* deep navy, not black */
-  color: #ffffff;
-  padding: 50px 0;
-  text-align: center;
-  font-size: 14px;
-}
-
-footer p {
-  margin: 6px 0;
-  color: #d6e1f0;
-}
-
-.footer-legal {
-  margin-top: 12px;
-  font-size: 13px;
-  color: #9fb3d1;
 }
