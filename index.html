@@ -1,171 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UK Inbound Ground Transport for International Tour Operators</title>
+<meta name="description" content="Heathrow-based UK inbound ground transport specialist delivering structured, capacity-controlled touring programmes for international tour operators and DMCs across England, Scotland and Wales.">
 
-  <title>UK Inbound Ground Transport | Trade-Only Touring Operator</title>
-  <meta name="description" content="Heathrow-based UK inbound ground transport operator delivering structured, capacity-controlled touring programmes for international tour operators and DMCs across England, Scotland and Wales.">
+<link rel="canonical" href="https://yourdomain.com/">
 
-  <link rel="stylesheet" href="style.css">
+<style>
 
+/* ===============================
+   ROOT + RESET
+================================= */
+
+:root {
+  --blue-main: #3f8efc;
+  --blue-light: #f4f8ff;
+  --text-dark: #1f2d3d;
+  --text-light: #5c6b7a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===============================
+   HEADER
+================================= */
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e8edf5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 18px;
+  color: #1e3a5f;
+}
+
+.main-nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.main-nav a:hover {
+  color: var(--blue-main);
+}
+
+.nav-cta {
+  background: var(--blue-main);
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* ===============================
+   HERO
+================================= */
+
+.hero {
+  background: var(--blue-light);
+  padding: 120px 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  max-width: 850px;
+  margin-bottom: 20px;
+  color: #1e3a5f;
+}
+
+.hero p {
+  max-width: 750px;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+.button-primary {
+  display: inline-block;
+  margin-top: 30px;
+  background: var(--blue-main);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===============================
+   SECTIONS
+================================= */
+
+.section {
+  padding: 100px 0;
+}
+
+.section-light {
+  background: #f9fbff;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #1e3a5f;
+}
+
+.section p {
+  max-width: 800px;
+  color: var(--text-light);
+}
+
+/* ===============================
+   CARDS
+================================= */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.content-card {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.content-card h3 {
+  margin-top: 0;
+  color: #1e3a5f;
+}
+
+/* ===============================
+   CTA BAND
+================================= */
+
+.cta-band {
+  background: var(--blue-main);
+  color: white;
+  text-align: center;
+  padding: 90px 0;
+}
+
+.cta-band h2 {
+  margin-bottom: 20px;
+}
+
+.cta-band .button-primary {
+  background: white;
+  color: var(--blue-main);
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
+.site-footer {
+  background: #f4f8ff;
+  padding: 60px 0 20px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-inner div {
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #6c7a89;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+}
+
+</style>
 </head>
-<body>
 
-<!-- ================= HEADER ================= -->
+<body>
 
 <header class="site-header">
   <div class="container header-inner">
-    
-    <div class="logo">
-      UK Inbound Ground Transport
-    </div>
-
+    <div class="logo">UK Inbound Ground Transport</div>
     <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="markets.html">Markets</a>
-      <a href="how-we-work.html">How We Work</a>
-      <a href="fleet-compliance.html">Fleet & Compliance</a>
-      <a href="trade-rfq.html" class="nav-cta">Trade RFQ</a>
+      <a href="#">Home</a>
+      <a href="#">Markets</a>
+      <a href="#">How We Work</a>
+      <a href="#">Fleet & Compliance</a>
+      <a href="#" class="nav-cta">Trade RFQ</a>
     </nav>
-
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
-
 <section class="hero">
   <div class="container">
-
-    <h1>
-      UK Inbound Ground Transport for Professional Tour Operators
-    </h1>
-
-    <p class="hero-intro">
-      Structured, capacity-controlled touring delivery for international tour operators and destination management companies operating fixed departures, escorted programmes and multi-day UK circuits.
+    <h1>Structured UK Inbound Ground Transport for International Tour Operators</h1>
+    <p>
+      Heathrow-based inbound transport partner delivering capacity-controlled touring programmes across England, Scotland and Wales for professional tour operators and destination management companies.
     </p>
-
-    <a href="trade-rfq.html" class="button-primary">
-      Submit Departure Schedule
-    </a>
-
+    <a href="#" class="button-primary">Submit Departure Programme</a>
   </div>
 </section>
-
-<!-- ================= POSITIONING ================= -->
 
 <section class="section">
   <div class="container">
-
-    <h2>Trade-Only UK Ground Operations</h2>
-
+    <h2>Built for Trade-Only Touring Operations</h2>
     <p>
-      We operate exclusively as a B2B transport partner supporting international trade buyers requiring structured inbound touring delivery across England, Scotland and Wales.
+      We operate exclusively as a B2B ground transport partner, supporting fixed departure series, escorted touring circuits and structured multi-day programmes aligned to routing logic, seasonality and confirmed capacity.
     </p>
-
-    <p>
-      Our model is aligned to series-based departures, defined routing logic and confirmed seasonal allocation — ensuring operational stability and commercial consistency.
-    </p>
-
-  </div>
-</section>
-
-<!-- ================= SERVICE MODEL ================= -->
-
-<section class="section section-light">
-  <div class="container">
-
-    <h2>Structured Programme Delivery</h2>
 
     <div class="card-grid">
-
       <div class="content-card">
-        <h3>Programme Review</h3>
-        <p>
-          Routing logic, departure structure and operational scope are reviewed prior to allocation to ensure structured delivery across all confirmed departures.
-        </p>
+        <h3>Series Planning</h3>
+        <p>Structured allocation aligned to confirmed departure calendars and seasonal volume forecasting.</p>
       </div>
 
       <div class="content-card">
-        <h3>Capacity Planning</h3>
-        <p>
-          Core fleet resources are aligned to confirmed schedules, ensuring repeat departure stability and controlled vehicle allocation.
-        </p>
+        <h3>Operational Control</h3>
+        <p>Dedicated fleet coordination ensuring continuity across every confirmed programme.</p>
       </div>
 
       <div class="content-card">
-        <h3>Series Execution</h3>
-        <p>
-          We deliver consistent multi-day touring programmes with structured driver rotation, airport coordination and regional routing continuity.
-        </p>
+        <h3>National Coverage</h3>
+        <p>England, Scotland and Wales routing aligned to commercial touring frameworks.</p>
       </div>
-
     </div>
-
   </div>
 </section>
-
-<!-- ================= MARKETS ================= -->
-
-<section class="section">
-  <div class="container">
-
-    <h2>International Trade Markets</h2>
-
-    <p>
-      We support structured UK touring programmes for established international operators across:
-    </p>
-
-    <ul class="market-list">
-      <li>United States</li>
-      <li>European Union</li>
-      <li>India</li>
-      <li>China</li>
-      <li>Australia & New Zealand</li>
-    </ul>
-
-    <p>
-      All programmes are delivered within a controlled commercial framework aligned to confirmed routing and operating scope.
-    </p>
-
-  </div>
-</section>
-
-<!-- ================= CTA ================= -->
 
 <section class="cta-band">
   <div class="container">
-
     <h2>Planning UK Series or Ad-Hoc Departures?</h2>
-
-    <p>
-      Submit routing and departure structure for operational review and structured quotation.
-    </p>
-
-    <a href="trade-rfq.html" class="button-primary">
-      Submit Trade RFQ
-    </a>
-
+    <a href="#" class="button-primary">Submit Trade RFQ</a>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
-
 <footer class="site-footer">
   <div class="container footer-inner">
-
-    <div class="footer-left">
-      <h4>UK Inbound Ground Transport</h4>
-      <p>Trade-only B2B touring transport</p>
+    <div>
+      <strong>UK Inbound Ground Transport</strong>
+      <p>Trade-only B2B ground services</p>
       <p>England · Scotland · Wales</p>
     </div>
-
-    <div class="footer-right">
-      <a href="trade-rfq.html" class="footer-link">Trade RFQ</a>
-      <a href="fleet-compliance.html" class="footer-link">Fleet & Compliance</a>
-    </div>
-
   </div>
 
   <div class="footer-bottom">
