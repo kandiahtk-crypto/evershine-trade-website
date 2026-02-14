@@ -4,26 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Trade RFQ | UK Inbound Ground Transport for Tour Operators</title>
-
-  <meta name="description" content="Submit structured UK departure programmes for operational review. Trade-only B2B ground transport support for international tour operators and DMCs delivering fixed departure series and multi-day UK touring.">
-
-  <meta name="keywords" content="UK inbound transport RFQ, UK tour operator transport enquiry, DMC UK ground transport, fixed departure series transport UK, multi-day touring coach UK">
+  <title>Structured Programme Submission | UK Inbound Ground Transport</title>
+  <meta name="description" content="Submit structured UK touring programmes for controlled fleet allocation and pricing review. Trade-only inbound ground transport capacity planning.">
 
   <link rel="stylesheet" href="style.css">
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Structured Programme Submission",
+    "description": "Trade-only structured UK inbound ground transport capacity submission portal for international tour operators and DMCs.",
+    "url": "https://yourdomain.com/rfq.html"
+  }
+  </script>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-
 <header class="site-header">
   <div class="container header-inner">
-
     <div class="logo">
       <a href="index.html">UK Inbound Ground Transport</a>
     </div>
-
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="markets.html">Markets</a>
@@ -31,115 +35,119 @@
       <a href="fleet-compliance.html">Fleet & Compliance</a>
       <a href="rfq.html" class="nav-cta">Trade RFQ</a>
     </nav>
-
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
-
 <section class="hero">
-  <div class="container">
+  <div class="container narrow">
 
-    <h1>Submit Your UK Departure Programme</h1>
+    <h1>Structured UK Programme Submission</h1>
 
     <p class="hero-intro">
-      Structured intake for international tour operators and destination
-      management companies requiring capacity-controlled UK inbound
-      ground transport across England, Scotland and Wales.
+      Fleet capacity is allocated against confirmed departure calendars.
+      Submit structured routing and passenger data for controlled pricing and operational review.
+    </p>
+
+    <p class="micro-note">
+      Trade-only submission portal for international tour operators and DMCs.
     </p>
 
   </div>
 </section>
-
-<!-- ================= TRADE POSITIONING ================= -->
-
-<section class="section section-light">
-  <div class="container">
-
-    <h2>Trade-Only Programme Review</h2>
-
-    <p>
-      All submissions are reviewed against seasonal capacity,
-      routing structure, confirmed departure schedules and
-      operational scope before commercial confirmation.
-    </p>
-
-    <p>
-      We operate exclusively as a B2B supplier and do not provide
-      retail, private-hire or direct-to-consumer transport services.
-    </p>
-
-  </div>
-</section>
-
-<!-- ================= RFQ FORM ================= -->
 
 <section class="section">
-  <div class="container">
+  <div class="container narrow">
 
-    <h2>Programme Submission Details</h2>
+    <form class="executive-form">
 
-    <form class="rfq-form">
+      <div class="form-section">
+        <h2>Operator Information</h2>
 
-      <div class="form-grid">
+        <label>Company Name</label>
+        <input type="text" required>
 
-        <div class="form-group">
-          <label>Tour Operator / DMC Company Name *</label>
-          <input type="text" required>
-        </div>
+        <label>Country of Operation</label>
+        <input type="text" required>
 
-        <div class="form-group">
-          <label>Primary Commercial Contact *</label>
-          <input type="text" required>
-        </div>
+        <label>Contact Name</label>
+        <input type="text" required>
 
-        <div class="form-group">
-          <label>Email Address *</label>
-          <input type="email" required>
-        </div>
+        <label>Professional Email</label>
+        <input type="email" required>
 
-        <div class="form-group">
-          <label>Source Market *</label>
-          <select required>
-            <option value="">Select Market</option>
-            <option>United States</option>
-            <option>Europe</option>
-            <option>India</option>
-            <option>Asia-Pacific</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label>Programme Type *</label>
-          <select required>
-            <option value="">Select Programme Type</option>
-            <option>Fixed Departure Series</option>
-            <option>Brochure Escorted Tour</option>
-            <option>Multi-Day UK Circuit</option>
-            <option>Ad-Hoc Structured Departure</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label>Estimated Departure Frequency</label>
-          <select>
-            <option value="">Select Frequency</option>
-            <option>Single Departure</option>
-            <option>2–5 Departures</option>
-            <option>6–15 Departures</option>
-            <option>15+ Series Departures</option>
-          </select>
-        </div>
-
-        <div class="form-group full-width">
-          <label>Detailed Routing & Departure Structure *</label>
-          <textarea required placeholder="Include dates, routing logic, group sizes, gateway airports, accommodation flow and frequency of departures."></textarea>
-        </div>
-
+        <label>Estimated Annual UK Departure Volume</label>
+        <select>
+          <option>1–5 departures</option>
+          <option>6–20 departures</option>
+          <option>20+ departures</option>
+        </select>
       </div>
 
-      <button type="submit" class="button-primary large-btn">
-        Submit Structured Programme Review
+      <div class="form-divider"></div>
+
+      <div class="form-section">
+        <h2>Programme Structure</h2>
+
+        <label>Arrival Airport</label>
+        <select>
+          <option>London Heathrow</option>
+          <option>London Gatwick</option>
+          <option>Manchester</option>
+          <option>Edinburgh</option>
+          <option>Glasgow</option>
+          <option>Other</option>
+        </select>
+
+        <label>Departure Airport</label>
+        <select>
+          <option>London Heathrow</option>
+          <option>London Gatwick</option>
+          <option>Manchester</option>
+          <option>Edinburgh</option>
+          <option>Glasgow</option>
+          <option>Other</option>
+        </select>
+
+        <label>Departure Date</label>
+        <input type="date">
+
+        <label>Return Date</label>
+        <input type="date">
+
+        <label>Passenger Volume</label>
+        <input type="number">
+      </div>
+
+      <div class="form-divider"></div>
+
+      <div class="form-section">
+        <h2>Routing Overview</h2>
+
+        <label>Outline itinerary structure (cities, nights, key stops)</label>
+        <textarea rows="6"></textarea>
+      </div>
+
+      <div class="form-divider"></div>
+
+      <div class="form-section">
+        <h2>Commercial Scope</h2>
+
+        <select>
+          <option>Full multi-day touring</option>
+          <option>Airport transfers + touring</option>
+          <option>Scotland circuit only</option>
+          <option>England only</option>
+          <option>Nationwide circuit</option>
+        </select>
+      </div>
+
+      <div class="submission-note">
+        Fleet allocation for peak touring season operates on a rolling confirmation basis.
+        Early structured submission ensures pricing stability and capacity visibility.
+      </div>
+
+      <button type="submit" class="submit-button">
+        Submit Programme for Capacity Review
       </button>
 
     </form>
@@ -147,72 +155,13 @@
   </div>
 </section>
 
-<!-- ================= CAPACITY POLICY ================= -->
-
-<section class="section section-light">
-  <div class="container">
-
-    <h2>Capacity Allocation & Planning Policy</h2>
-
-    <p>
-      Fleet allocation is aligned to confirmed departure calendars,
-      peak-season demand curves and structured routing logic.
-      Early submission is recommended for high-season touring
-      programmes operating between May and September.
-    </p>
-
-    <p>
-      For structured series departures, we recommend submitting
-      seasonal schedules 6–12 months in advance to secure
-      continuity across repeat programmes.
-    </p>
-
-  </div>
-</section>
-
-<!-- ================= INTERNAL LINKING BLOCK ================= -->
-
-<section class="section">
-  <div class="container">
-
-    <h2>Supporting International Tour Operators by Source Market</h2>
-
-    <p>
-      Learn how our structured model adapts to commercial contracting
-      cycles across the United States, Europe, India and Asia-Pacific markets.
-    </p>
-
-    <a href="markets.html" class="button-primary">
-      View Source Market Support
-    </a>
-
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-
 <footer class="site-footer">
   <div class="container footer-inner">
-
     <div>
       <strong>UK Inbound Ground Transport</strong>
-      <p>
-        Trade-only B2B ground transport support for international
-        tour operators and DMCs.
-      </p>
-      <p>
-        England · Scotland · Wales
-      </p>
+      <p>Trade-only B2B fleet allocation partner</p>
+      <p>England · Scotland · Wales</p>
     </div>
-
-    <div>
-      <a href="index.html" class="footer-link">Home</a>
-      <a href="markets.html" class="footer-link">Markets</a>
-      <a href="how-we-work.html" class="footer-link">How We Work</a>
-      <a href="fleet-compliance.html" class="footer-link">Fleet & Compliance</a>
-      <a href="rfq.html" class="footer-link">Trade RFQ</a>
-    </div>
-
   </div>
 
   <div class="footer-bottom">
