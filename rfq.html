@@ -1,138 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Trade RFQ | Structured UK Inbound Ground Transport</title>
-<meta name="description" content="Submit structured UK touring programmes for fleet allocation, pricing review and capacity confirmation. Trade-only inbound ground transport partner.">
+  <title>Structured Programme Submission | UK Inbound Ground Transport</title>
+  <meta name="description" content="Submit structured UK touring programmes for controlled fleet allocation and pricing review. Trade-only inbound ground transport capacity planning.">
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-<!-- Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "name": "Trade RFQ Submission",
-  "description": "Trade-only structured UK inbound ground transport capacity submission portal.",
-  "url": "https://yourdomain.com/rfq.html"
-}
-</script>
-
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Structured Programme Submission",
+    "description": "Trade-only structured UK inbound ground transport capacity submission portal for international tour operators and DMCs.",
+    "url": "https://yourdomain.com/rfq.html"
+  }
+  </script>
 </head>
+
 <body>
 
-<!-- HEADER -->
-
-<header>
+<header class="site-header">
   <div class="container header-inner">
     <div class="logo">
       <a href="index.html">UK Inbound Ground Transport</a>
     </div>
-
-    <nav>
+    <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="markets.html">Markets</a>
       <a href="how-we-work.html">How We Work</a>
       <a href="fleet-compliance.html">Fleet & Compliance</a>
-      <a href="rfq.html" class="cta">Trade RFQ</a>
+      <a href="rfq.html" class="nav-cta">Trade RFQ</a>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
-
 <section class="hero">
-  <div class="container narrow center">
-    <h1>Structured Programme Submission</h1>
-    <p class="hero-sub">
+  <div class="container narrow">
+
+    <h1>Structured UK Programme Submission</h1>
+
+    <p class="hero-intro">
       Fleet capacity is allocated against confirmed departure calendars.
       Submit structured routing and passenger data for controlled pricing and operational review.
     </p>
+
+    <p class="micro-note">
+      Trade-only submission portal for international tour operators and DMCs.
+    </p>
+
   </div>
 </section>
-
-<!-- FORM -->
 
 <section class="section">
   <div class="container narrow">
 
-    <form id="rfqForm">
+    <form class="executive-form">
 
-      <!-- SOURCE MARKET -->
-      <h2>Source Market</h2>
+      <div class="form-section">
+        <h2>Operator Information</h2>
 
-      <label>Select Primary Operator Market</label>
-      <select id="marketSelect" required>
-        <option value="">Select Market</option>
-        <option value="usa">United States</option>
-        <option value="europe">Europe</option>
-        <option value="china">China</option>
-        <option value="india">India</option>
-      </select>
+        <label>Company Name</label>
+        <input type="text" required>
 
-      <hr>
+        <label>Country of Operation</label>
+        <input type="text" required>
 
-      <!-- OPERATOR INFO -->
-      <h2>Operator Information</h2>
+        <label>Contact Name</label>
+        <input type="text" required>
 
-      <label>Company Name</label>
-      <input type="text" required>
+        <label>Professional Email</label>
+        <input type="email" required>
 
-      <label>Country of Operation</label>
-      <input type="text" required>
+        <label>Estimated Annual UK Departure Volume</label>
+        <select>
+          <option>1–5 departures</option>
+          <option>6–20 departures</option>
+          <option>20+ departures</option>
+        </select>
+      </div>
 
-      <label>Contact Name</label>
-      <input type="text" required>
+      <div class="form-divider"></div>
 
-      <label>Professional Email</label>
-      <input type="email" required>
+      <div class="form-section">
+        <h2>Programme Structure</h2>
 
-      <label>Estimated Annual UK Departure Volume</label>
-      <select id="volumeSelect">
-        <option>1–5 departures</option>
-        <option>6–20 departures</option>
-        <option>20+ departures</option>
-      </select>
+        <label>Arrival Airport</label>
+        <select>
+          <option>London Heathrow</option>
+          <option>London Gatwick</option>
+          <option>Manchester</option>
+          <option>Edinburgh</option>
+          <option>Glasgow</option>
+          <option>Other</option>
+        </select>
 
-      <hr>
+        <label>Departure Airport</label>
+        <select>
+          <option>London Heathrow</option>
+          <option>London Gatwick</option>
+          <option>Manchester</option>
+          <option>Edinburgh</option>
+          <option>Glasgow</option>
+          <option>Other</option>
+        </select>
 
-      <!-- PROGRAMME STRUCTURE -->
-      <h2>Programme Structure</h2>
+        <label>Departure Date</label>
+        <input type="date">
 
-      <label>Arrival Airport</label>
-      <select>
-        <option>London Heathrow</option>
-        <option>London Gatwick</option>
-        <option>Manchester</option>
-        <option>Edinburgh</option>
-        <option>Glasgow</option>
-      </select>
+        <label>Return Date</label>
+        <input type="date">
 
-      <label>Departure Date</label>
-      <input type="date">
+        <label>Passenger Volume</label>
+        <input type="number">
+      </div>
 
-      <label>Return Date</label>
-      <input type="date">
+      <div class="form-divider"></div>
 
-      <label>Passenger Volume</label>
-      <input type="number">
+      <div class="form-section">
+        <h2>Routing Overview</h2>
 
-      <hr>
+        <label>Outline itinerary structure (cities, nights, key stops)</label>
+        <textarea rows="6"></textarea>
+      </div>
 
-      <!-- ROUTING -->
-      <h2>Routing Overview</h2>
+      <div class="form-divider"></div>
 
-      <label>Outline Itinerary Structure</label>
-      <textarea rows="6"></textarea>
+      <div class="form-section">
+        <h2>Commercial Scope</h2>
 
-      <!-- HIDDEN QUALIFICATION FIELD -->
-      <input type="hidden" id="marginTier" name="marginTier">
+        <select>
+          <option>Full multi-day touring</option>
+          <option>Airport transfers + touring</option>
+          <option>Scotland circuit only</option>
+          <option>England only</option>
+          <option>Nationwide circuit</option>
+        </select>
+      </div>
 
-      <br><br>
+      <div class="submission-note">
+        Fleet allocation for peak touring season operates on a rolling confirmation basis.
+        Early structured submission ensures pricing stability and capacity visibility.
+      </div>
 
-      <button type="submit" class="cta large">
+      <button type="submit" class="submit-button">
         Submit Programme for Capacity Review
       </button>
 
@@ -141,8 +155,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
-
 <footer class="site-footer">
   <div class="container footer-inner">
     <div>
@@ -150,60 +162,12 @@
       <p>Trade-only B2B fleet allocation partner</p>
       <p>England · Scotland · Wales</p>
     </div>
-
-    <div class="footer-right">
-      <a href="index.html">Home</a>
-      <a href="markets.html">Markets</a>
-      <a href="how-we-work.html">How We Work</a>
-      <a href="fleet-compliance.html">Fleet & Compliance</a>
-      <a href="rfq.html">Trade RFQ</a>
-    </div>
   </div>
 
   <div class="footer-bottom">
     © 2026 UK Inbound Ground Transport · United Kingdom
   </div>
 </footer>
-
-<!-- LEAD QUALIFICATION SCRIPT -->
-
-<script>
-
-const marketSelect = document.getElementById("marketSelect");
-const volumeSelect = document.getElementById("volumeSelect");
-const marginTier = document.getElementById("marginTier");
-
-function updateTier() {
-
-  const market = marketSelect.value;
-  const volume = volumeSelect.value;
-
-  if (market === "usa" && volume === "20+ departures") {
-    marginTier.value = "High Margin Series";
-  }
-
-  else if (market === "china") {
-    marginTier.value = "High Density Volume";
-  }
-
-  else if (market === "india") {
-    marginTier.value = "Structured Price Sensitive";
-  }
-
-  else if (market === "europe") {
-    marginTier.value = "Short Cycle Departure";
-  }
-
-  else {
-    marginTier.value = "Standard Lead";
-  }
-
-}
-
-marketSelect.addEventListener("change", updateTier);
-volumeSelect.addEventListener("change", updateTier);
-
-</script>
 
 </body>
 </html>
