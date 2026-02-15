@@ -31,10 +31,33 @@ body {
   margin: 0 auto;
 }
 
-h1, h2, h3 {
+.narrow {
+  max-width: 760px;
+}
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+h1, h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  margin-top: 0;
+}
+
+h3 {
   font-weight: 600;
   margin-top: 0;
-  letter-spacing: -0.4px;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: var(--primary);
+  margin-top: 18px;
 }
 
 /* =========================================
@@ -58,7 +81,6 @@ header {
   font-size: 20px;
   font-weight: 600;
   color: var(--text-dark);
-  letter-spacing: 0.2px;
 }
 
 nav {
@@ -88,12 +110,13 @@ nav a:hover {
 }
 
 /* =========================================
-   HERO – EXECUTIVE SPACING
+   HERO
 ========================================= */
 
 .hero {
   background: var(--primary-soft);
   padding: 150px 0 130px;
+  animation: fadeUp 0.6s ease forwards;
 }
 
 .hero h1 {
@@ -109,24 +132,8 @@ nav a:hover {
   margin-bottom: 45px;
 }
 
-.button-primary {
-  display: inline-block;
-  background: var(--primary);
-  color: white;
-  padding: 15px 32px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  transition: 0.2s ease;
-}
-
-.button-primary:hover {
-  opacity: 0.9;
-}
-
 /* =========================================
-   SECTIONS – WHITE SPACE = AUTHORITY
+   SECTIONS
 ========================================= */
 
 .section {
@@ -135,11 +142,6 @@ nav a:hover {
 
 .section-light {
   background: var(--primary-soft);
-}
-
-.section h2 {
-  font-size: 2.1rem;
-  margin-bottom: 30px;
 }
 
 .section p {
@@ -174,12 +176,13 @@ nav a:hover {
   padding: 50px;
   border-radius: 10px;
   border: 1px solid var(--border-soft);
-  transition: 0.2s ease;
+  transition: 0.25s ease;
 }
 
 .content-card:hover {
   border-color: #d6dfec;
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.06);
 }
 
 .content-card h3 {
@@ -188,7 +191,27 @@ nav a:hover {
 }
 
 /* =========================================
-   CTA BAND – CONSULTANCY STYLE
+   BUTTONS
+========================================= */
+
+.button-primary {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 15px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: 0.2s ease;
+}
+
+.button-primary:hover {
+  opacity: 0.9;
+}
+
+/* =========================================
+   CTA BAND
 ========================================= */
 
 .cta-band {
@@ -215,7 +238,89 @@ nav a:hover {
 }
 
 /* =========================================
-   FOOTER – LIGHT EXECUTIVE
+   RFQ FORM – EXECUTIVE STYLE
+========================================= */
+
+.executive-form {
+  margin-top: 60px;
+}
+
+.form-section {
+  margin-bottom: 50px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.form-section:nth-of-type(1) { animation-delay: 0.1s; }
+.form-section:nth-of-type(2) { animation-delay: 0.2s; }
+.form-section:nth-of-type(3) { animation-delay: 0.3s; }
+.form-section:nth-of-type(4) { animation-delay: 0.4s; }
+
+.form-section h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 10px;
+}
+
+.form-section label {
+  display: block;
+  margin-top: 18px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.executive-form input,
+.executive-form select,
+.executive-form textarea {
+  width: 100%;
+  padding: 16px 18px;
+  margin-top: 6px;
+  border: 1px solid #dfe3ea;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.executive-form input:focus,
+.executive-form select:focus,
+.executive-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.form-divider {
+  height: 1px;
+  background: var(--border-soft);
+  margin: 40px 0;
+}
+
+.submission-note {
+  margin-top: 30px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.submit-button {
+  margin-top: 40px;
+  width: 100%;
+  padding: 18px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.submit-button:hover {
+  background: #254f8a;
+}
+
+/* =========================================
+   FOOTER – EXECUTIVE STRUCTURE
 ========================================= */
 
 .site-footer {
@@ -239,7 +344,8 @@ nav a:hover {
 
 .footer-left p {
   color: var(--text-muted);
-  margin: 0;
+  margin: 4px 0;
+  font-size: 14px;
 }
 
 .footer-right a {
@@ -259,8 +365,33 @@ nav a:hover {
   padding-top: 25px;
   border-top: 1px solid var(--border-soft);
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-muted);
+}
+
+/* =========================================
+   MICRO TRUST
+========================================= */
+
+.micro-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 12px;
+}
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =========================================
@@ -296,120 +427,4 @@ nav a:hover {
     flex-direction: column;
     gap: 40px;
   }
-}
-.narrow {
-  max-width: 750px;
-}
-
-.micro-note {
-  font-size: 14px;
-  opacity: 0.6;
-  margin-top: 10px;
-}
-
-.executive-form {
-  margin-top: 60px;
-}
-
-.form-section {
-  margin-bottom: 50px;
-}
-
-.form-section h2 {
-  font-family: Georgia, serif;
-  font-weight: 500;
-  font-size: 22px;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #e6e9ee;
-  padding-bottom: 10px;
-}
-
-.form-section label {
-  display: block;
-  margin-top: 18px;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.executive-form input,
-.executive-form select,
-.executive-form textarea {
-  width: 100%;
-  padding: 16px 18px;
-  margin-top: 6px;
-  border: 1px solid #dfe3ea;
-  border-radius: 6px;
-  font-size: 15px;
-  transition: 0.2s ease;
-}
-
-.executive-form input:focus,
-.executive-form select:focus,
-.executive-form textarea:focus {
-  outline: none;
-  border-color: #3a7bd5;
-}
-
-.form-divider {
-  height: 1px;
-  background: #e6e9ee;
-  margin: 40px 0;
-}
-
-.submission-note {
-  margin-top: 30px;
-  font-size: 14px;
-  opacity: 0.7;
-}
-
-.submit-button {
-  margin-top: 40px;
-  width: 100%;
-  padding: 18px;
-  background: #3a7bd5;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-.submit-button:hover {
-  background: #2f66b3;
-}
-/* ==================================
-   SUBTLE EXECUTIVE ANIMATION
-================================== */
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.hero,
-.form-section,
-.submission-note,
-.submit-button {
-  animation: fadeUp 0.6s ease forwards;
-}
-
-.form-section {
-  opacity: 0;
-  animation-delay: 0.1s;
-}
-
-.form-section:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.form-section:nth-child(3) {
-  animation-delay: 0.3s;
 }
