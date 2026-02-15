@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Operator Scoring Dashboard</title>
 
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6fa;
+  margin: 0;
+  padding: 40px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px;
+  width: 100%;
+  background: #2e5fa7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.tierA { background: #1f8a3f; }
+.tierB { background: #e67e22; }
+.tierC { background: #c0392b; }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Operator Scoring Dashboard</h1>
+
+<label>Company Name</label>
+<input type="text" id="company">
+
+<label>Market</label>
+<select id="market">
+  <option value="USA">USA</option>
+  <option value="Europe">Europe</option>
+  <option value="China">China</option>
+  <option value="India">India</option>
+</select>
+
+<label>Estimated Annual UK Departures</label>
+<input type="number" id="departures">
+
+<label>Scotland Focus?</label>
+<select id="scotland">
+  <option value="no">No</option>
+  <option value="yes">Yes</option>
+</select>
+
+<label>Series Operator?</label>
+<select id="series">
+  <option value="no">No</option>
+  <option value="yes">Yes</option>
+</select>
+
+<label>Brochure Based?</label>
+<select id="brochure">
+  <option value="no">No</option>
+  <option value="yes">Yes</option>
+</select>
+
+<button onclick="scoreOperator()">Score Operator</button>
+
+<table id="results">
+<thead>
+<tr>
+  <th>Company</th>
+  <th>Market</th>
+  <th>Score</th>
+  <th>Tier</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+</div>
+
+<script>
+
+function scoreOperator() {
+
+  let company = document.getElementById("company").value;
+  let market = document.getElementById("market").value;
+  let departures = parseInt(document.getElementById("departures").value) || 0;
+  let scotland = document.getElementById("scotland").value;
+  let series = document.getElementById("series").value;
+  let brochure = document.getElementById("brochure").value;
+
+  let score = 0;
+
+  if (market === "USA") score += 2;
+  if (market === "China") score += 2;
+  if (departures >= 20) score += 2;
+  if (departures >= 40) score += 3;
+  if (scotland === "yes") score += 2;
+  if (series === "yes") score += 2;
+  if (brochure === "yes") score += 1;
+
+  let tier = "";
+  let tierClass = "";
+
+  if (score >= 7) {
+    tier = "Tier A – High Value";
+    tierClass = "tierA";
+  } else if (score >= 4) {
+    tier = "Tier B – Moderate";
+    tierClass = "tierB";
+  } else {
+    tier = "Tier C – Low Priority";
+    tierClass = "tierC";
+  }
+
+  let table = document.querySelector("#results tbody");
+  let row = table.insertRow();
+
+  row.innerHTML = `
+    <td>${company}</td>
+    <td>${market}</td>
+    <td>${score}</td>
+    <td><span class="badge ${tierClass}">${tier}</span></td>
+  `;
+
+}
+
+</script>
+
+</body>
+</html>
