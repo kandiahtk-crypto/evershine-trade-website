@@ -2,90 +2,98 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Outbound Acquisition Dashboard</title>
+<title>Outbound Operator Acquisition System</title>
 
 <style>
 body {
   font-family: Arial, sans-serif;
-  background: #f5f7fb;
+  background: #f4f6fa;
   margin: 0;
   padding: 40px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
   background: white;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
 }
 
 h1 {
   margin-top: 0;
 }
 
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
 input, select {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  padding: 12px;
+  margin-top: 6px;
   border-radius: 6px;
   border: 1px solid #ddd;
 }
 
 button {
-  padding: 12px;
+  margin-top: 25px;
+  padding: 14px;
+  width: 100%;
   background: #2e5fa7;
   color: white;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 th, td {
-  padding: 10px;
+  padding: 14px;
   border-bottom: 1px solid #eee;
   text-align: left;
 }
 
+th {
+  background: #f3f6fb;
+}
+
 .badge {
-  padding: 5px 10px;
+  padding: 6px 10px;
   border-radius: 20px;
   color: white;
   font-size: 12px;
+  font-weight: bold;
 }
-
-.high { background: #d9534f; }
-.medium { background: #f0ad4e; }
-.low { background: #5cb85c; }
-
 </style>
 </head>
 
 <body>
 
 <div class="container">
+
 <h1>Outbound Operator Acquisition System</h1>
 
-<h3>Add New Operator</h3>
+<h2>Add New Operator</h2>
 
 <label>Company Name</label>
 <input type="text" id="company">
 
 <label>Country / Market</label>
 <select id="market">
-  <option value="USA">USA</option>
-  <option value="Europe">Europe</option>
-  <option value="India">India</option>
-  <option value="China">China</option>
+  <option>USA</option>
+  <option>Europe</option>
+  <option>China</option>
+  <option>India</option>
 </select>
 
 <label>Estimated Annual UK Departures</label>
@@ -93,19 +101,25 @@ th, td {
 
 <label>Includes Scotland Routing?</label>
 <select id="scotland">
-  <option value="yes">Yes</option>
-  <option value="no">No</option>
+  <option>Yes</option>
+  <option>No</option>
 </select>
 
-<label>Contact Name</label>
-<input type="text" id="contact">
+<label>Estimated Average Programme Value (£)</label>
+<input type="number" id="programmeValue">
 
-<label>Email</label>
-<input type="text" id="email">
+<label>Status</label>
+<select id="status">
+  <option>New Lead</option>
+  <option>Contacted</option>
+  <option>Proposal Sent</option>
+  <option>Negotiation</option>
+  <option>Contracted</option>
+</select>
 
 <button onclick="addOperator()">Add Operator</button>
 
-<h3>Pipeline</h3>
+<h2>Pipeline</h2>
 
 <table>
 <thead>
@@ -114,11 +128,13 @@ th, td {
 <th>Market</th>
 <th>Departures</th>
 <th>Scotland</th>
+<th>Est Revenue</th>
+<th>Est Profit</th>
 <th>Priority</th>
 <th>Status</th>
 </tr>
 </thead>
-<tbody id="tableBody"></tbody>
+<tbody id="pipelineTable"></tbody>
 </table>
 
 </div>
@@ -127,72 +143,97 @@ th, td {
 
 let operators = JSON.parse(localStorage.getItem("operators")) || [];
 
-function calculatePriority(departures, scotland) {
-  let score = 0;
-
-  if (departures >= 10) score += 2;
-  if (departures >= 20) score += 2;
-  if (scotland === "yes") score += 2;
-
-  if (score >= 4) return "high";
-  if (score >= 2) return "medium";
-  return "low";
-}
-
 function addOperator() {
 
-  let company = document.getElementById("company").value;
-  let market = document.getElementById("market").value;
-  let departures = parseInt(document.getElementById("departures").value) || 0;
-  let scotland = document.getElementById("scotland").value;
-  let contact = document.getElementById("contact").value;
-  let email = document.getElementById("email").value;
+  const company = document.getElementById("company").value;
+  const market = document.getElementById("market").value;
+  const departures = parseInt(document.getElementById("departures").value) || 0;
+  const scotland = document.getElementById("scotland").value;
+  const programmeValue = parseFloat(document.getElementById("programmeValue").value) || 0;
+  const status = document.getElementById("status").value;
 
-  let priority = calculatePriority(departures, scotland);
+  let score = 0;
 
-  let newOperator = {
+  // Market weighting
+  if (market === "USA") score += 3;
+  if (market === "China") score += 3;
+  if (market === "India") score += 2;
+  if (market === "Europe") score += 2;
+
+  // Volume weighting
+  if (departures >= 20) score += 4;
+  else if (departures >= 10) score += 2;
+  else if (departures >= 5) score += 1;
+
+  // Scotland = higher margin
+  if (scotland === "Yes") score += 3;
+
+  // Revenue projection
+  let estimatedRevenue = departures * programmeValue;
+
+  // Market margin floors
+  let marginFloor = 0.25;
+  if (market === "USA") marginFloor = 0.28;
+  if (market === "China") marginFloor = 0.30;
+
+  let estimatedProfit = estimatedRevenue * marginFloor;
+
+  // Priority logic
+  let priorityText = "";
+  let priorityColor = "";
+
+  if (score >= 8) {
+    priorityText = "High";
+    priorityColor = "red";
+  } else if (score >= 5) {
+    priorityText = "Medium";
+    priorityColor = "orange";
+  } else {
+    priorityText = "Low";
+    priorityColor = "green";
+  }
+
+  operators.push({
     company,
     market,
     departures,
     scotland,
-    contact,
-    email,
-    priority,
-    status: "Not Contacted"
-  };
+    estimatedRevenue,
+    estimatedProfit,
+    priorityText,
+    priorityColor,
+    status
+  });
 
-  operators.push(newOperator);
   localStorage.setItem("operators", JSON.stringify(operators));
 
-  renderTable();
+  renderPipeline();
 }
 
-function renderTable() {
+function renderPipeline() {
 
-  let tableBody = document.getElementById("tableBody");
-  tableBody.innerHTML = "";
+  const table = document.getElementById("pipelineTable");
+  table.innerHTML = "";
 
   operators.forEach(op => {
-
-    let badgeClass = op.priority;
-
-    let row = `
+    table.innerHTML += `
       <tr>
         <td>${op.company}</td>
         <td>${op.market}</td>
         <td>${op.departures}</td>
         <td>${op.scotland}</td>
-        <td><span class="badge ${badgeClass}">${op.priority.toUpperCase()}</span></td>
+        <td>£${op.estimatedRevenue.toLocaleString()}</td>
+        <td>£${op.estimatedProfit.toLocaleString()}</td>
+        <td><span class="badge" style="background:${op.priorityColor}">
+          ${op.priorityText}
+        </span></td>
         <td>${op.status}</td>
       </tr>
     `;
-
-    tableBody.innerHTML += row;
-
   });
 }
 
-renderTable();
+renderPipeline();
 
 </script>
 
