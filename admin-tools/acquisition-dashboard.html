@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Outbound Operator Acquisition System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Outbound Acquisition Dashboard</title>
 
 <style>
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f6fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   margin: 0;
+  background: #f4f6fa;
   padding: 40px;
+  color: #1a2433;
 }
 
 .container {
@@ -18,17 +21,18 @@ body {
   background: white;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.06);
 }
 
 h1 {
   margin-top: 0;
+  font-size: 28px;
 }
 
 label {
   display: block;
   margin-top: 20px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 input, select {
@@ -37,42 +41,58 @@ input, select {
   margin-top: 6px;
   border-radius: 6px;
   border: 1px solid #ddd;
+  font-size: 14px;
 }
 
 button {
   margin-top: 25px;
   padding: 14px;
   width: 100%;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
   background: #2e5fa7;
   color: white;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 40px;
-}
-
-th, td {
-  padding: 14px;
-  border-bottom: 1px solid #eee;
-  text-align: left;
-}
-
-th {
-  background: #f3f6fb;
+.lead-card {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e6ecf4;
+  background: #fafbfe;
 }
 
 .badge {
   padding: 6px 10px;
   border-radius: 20px;
-  color: white;
   font-size: 12px;
-  font-weight: bold;
+  color: white;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.stage-select {
+  margin-top: 10px;
+}
+
+.email-box {
+  margin-top: 15px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  white-space: pre-wrap;
+}
+
+.small-btn {
+  margin-top: 10px;
+  width: auto;
+  padding: 8px 14px;
+  font-size: 12px;
+  background: #444;
 }
 </style>
 </head>
@@ -81,159 +101,182 @@ th {
 
 <div class="container">
 
-<h1>Outbound Operator Acquisition System</h1>
-
-<h2>Add New Operator</h2>
+<h1>Outbound Acquisition Engine</h1>
 
 <label>Company Name</label>
 <input type="text" id="company">
 
-<label>Country / Market</label>
+<label>Market</label>
 <select id="market">
-  <option>USA</option>
-  <option>Europe</option>
-  <option>China</option>
-  <option>India</option>
+  <option value="USA">USA</option>
+  <option value="Europe">Europe</option>
+  <option value="China">China</option>
+  <option value="India">India</option>
 </select>
 
 <label>Estimated Annual UK Departures</label>
-<input type="number" id="departures">
+<input type="number" id="volume">
 
-<label>Includes Scotland Routing?</label>
-<select id="scotland">
-  <option>Yes</option>
-  <option>No</option>
-</select>
+<button onclick="addLead()">Add Lead</button>
 
-<label>Estimated Average Programme Value (£)</label>
-<input type="number" id="programmeValue">
-
-<label>Status</label>
-<select id="status">
-  <option>New Lead</option>
-  <option>Contacted</option>
-  <option>Proposal Sent</option>
-  <option>Negotiation</option>
-  <option>Contracted</option>
-</select>
-
-<button onclick="addOperator()">Add Operator</button>
-
-<h2>Pipeline</h2>
-
-<table>
-<thead>
-<tr>
-<th>Company</th>
-<th>Market</th>
-<th>Departures</th>
-<th>Scotland</th>
-<th>Est Revenue</th>
-<th>Est Profit</th>
-<th>Priority</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody id="pipelineTable"></tbody>
-</table>
+<div id="leadList"></div>
 
 </div>
 
 <script>
 
-let operators = JSON.parse(localStorage.getItem("operators")) || [];
+let operators = [];
 
-function addOperator() {
+/* Load saved leads */
+window.onload = function() {
+  const saved = localStorage.getItem("operators");
+  if (saved) {
+    operators = JSON.parse(saved);
+    renderLeads();
+  }
+};
+
+function saveData() {
+  localStorage.setItem("operators", JSON.stringify(operators));
+}
+
+function addLead() {
 
   const company = document.getElementById("company").value;
   const market = document.getElementById("market").value;
-  const departures = parseInt(document.getElementById("departures").value) || 0;
-  const scotland = document.getElementById("scotland").value;
-  const programmeValue = parseFloat(document.getElementById("programmeValue").value) || 0;
-  const status = document.getElementById("status").value;
+  const volume = parseInt(document.getElementById("volume").value) || 0;
 
-  let score = 0;
-
-  // Market weighting
-  if (market === "USA") score += 3;
-  if (market === "China") score += 3;
-  if (market === "India") score += 2;
-  if (market === "Europe") score += 2;
-
-  // Volume weighting
-  if (departures >= 20) score += 4;
-  else if (departures >= 10) score += 2;
-  else if (departures >= 5) score += 1;
-
-  // Scotland = higher margin
-  if (scotland === "Yes") score += 3;
-
-  // Revenue projection
-  let estimatedRevenue = departures * programmeValue;
-
-  // Market margin floors
-  let marginFloor = 0.25;
-  if (market === "USA") marginFloor = 0.28;
-  if (market === "China") marginFloor = 0.30;
-
-  let estimatedProfit = estimatedRevenue * marginFloor;
-
-  // Priority logic
-  let priorityText = "";
-  let priorityColor = "";
-
-  if (score >= 8) {
-    priorityText = "High";
-    priorityColor = "red";
-  } else if (score >= 5) {
-    priorityText = "Medium";
-    priorityColor = "orange";
-  } else {
-    priorityText = "Low";
-    priorityColor = "green";
-  }
+  let tier = "";
+  if (volume >= 40) tier = "Tier 1 – High Value";
+  else if (volume >= 15) tier = "Tier 2 – Growth";
+  else tier = "Tier 3 – Low Volume";
 
   operators.push({
     company,
     market,
-    departures,
-    scotland,
-    estimatedRevenue,
-    estimatedProfit,
-    priorityText,
-    priorityColor,
-    status
+    volume,
+    tier,
+    stage: "Cold"
   });
 
-  localStorage.setItem("operators", JSON.stringify(operators));
-
-  renderPipeline();
+  saveData();
+  renderLeads();
 }
 
-function renderPipeline() {
+function deleteLead(index) {
+  operators.splice(index, 1);
+  saveData();
+  renderLeads();
+}
 
-  const table = document.getElementById("pipelineTable");
-  table.innerHTML = "";
+function updateStage(index, value) {
+  operators[index].stage = value;
+  saveData();
+}
 
-  operators.forEach(op => {
-    table.innerHTML += `
-      <tr>
-        <td>${op.company}</td>
-        <td>${op.market}</td>
-        <td>${op.departures}</td>
-        <td>${op.scotland}</td>
-        <td>£${op.estimatedRevenue.toLocaleString()}</td>
-        <td>£${op.estimatedProfit.toLocaleString()}</td>
-        <td><span class="badge" style="background:${op.priorityColor}">
-          ${op.priorityText}
-        </span></td>
-        <td>${op.status}</td>
-      </tr>
+function generateEmail(company, market) {
+
+  if (market === "USA") {
+    return `Subject: UK 2026 Series Allocation Planning
+
+Hi ${company} Team,
+
+We support US tour operators delivering structured UK multi-day touring programmes,
+with controlled fleet allocation during peak Scotland and Heathrow-based departures.
+
+If you're planning 2026 series capacity, I would welcome a brief discussion.
+
+Kind regards`;
+  }
+
+  if (market === "China") {
+    return `Subject: Structured UK Touring Support
+
+Dear ${company},
+
+We support high-density UK touring programmes with structured fleet allocation,
+timing discipline and Scotland routing control.
+
+If you are reviewing UK ground transport partners, I would welcome a conversation.
+
+Kind regards`;
+  }
+
+  if (market === "India") {
+    return `Subject: UK Premium Group Touring Support
+
+Hello ${company},
+
+We provide structured UK ground transport for premium group touring,
+multi-city circuits and seasonal block departures.
+
+If UK capacity planning is underway, I would be pleased to connect.
+
+Best regards`;
+  }
+
+  return `Subject: UK Touring Capacity Support
+
+Hello ${company},
+
+We support structured UK touring programmes for European operators,
+with defined fleet allocation and operational clarity.
+
+Kind regards`;
+}
+
+function copyEmail(text) {
+  navigator.clipboard.writeText(text);
+  alert("Email copied to clipboard.");
+}
+
+function renderLeads() {
+
+  const list = document.getElementById("leadList");
+  list.innerHTML = "";
+
+  operators.forEach((op, index) => {
+
+    let badgeColor = op.tier.includes("Tier 1") ? "red" :
+                     op.tier.includes("Tier 2") ? "orange" : "green";
+
+    const emailText = generateEmail(op.company, op.market);
+
+    list.innerHTML += `
+      <div class="lead-card">
+        <strong>${op.company}</strong><br>
+        Market: ${op.market}<br>
+        Volume: ${op.volume}<br>
+
+        <div class="badge" style="background:${badgeColor}">
+          ${op.tier}
+        </div>
+
+        <div class="stage-select">
+          Stage:
+          <select onchange="updateStage(${index}, this.value)">
+            <option ${op.stage==="Cold"?"selected":""}>Cold</option>
+            <option ${op.stage==="Contacted"?"selected":""}>Contacted</option>
+            <option ${op.stage==="Call Booked"?"selected":""}>Call Booked</option>
+            <option ${op.stage==="Proposal Sent"?"selected":""}>Proposal Sent</option>
+            <option ${op.stage==="Won"?"selected":""}>Won</option>
+          </select>
+        </div>
+
+        <div class="email-box">${emailText}</div>
+
+        <button class="small-btn" onclick="copyEmail(\`${emailText}\`)">
+          Copy Outreach Email
+        </button>
+
+        <button class="small-btn" onclick="deleteLead(${index})">
+          Delete Lead
+        </button>
+
+      </div>
     `;
   });
 }
-
-renderPipeline();
 
 </script>
 
