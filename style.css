@@ -432,25 +432,23 @@ nav a:hover {
    EXECUTIVE WHATSAPP FLOAT
 ========================================= */
 /* =========================================
-   EXECUTIVE WHATSAPP FLOAT
-========================================= */
-.whatsapp-float {
+   .whatsapp-float {
   position: fixed;
   bottom: 25px;
   right: 20px;
-  background: #1a2433;
+  background: var(--primary);
   color: #ffffff;
   padding: 12px 22px;
   border-radius: 40px;
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  box-shadow: 0 12px 30px rgba(46,95,167,0.25);
   transition: all 0.25s ease;
   z-index: 999;
 }
 
 .whatsapp-float:hover {
-  background: #2e5fa7;
+  background: #254f8a;
   transform: translateY(-4px);
 }
