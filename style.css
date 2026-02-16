@@ -431,6 +431,9 @@ nav a:hover {
 /* =========================================
    EXECUTIVE WHATSAPP FLOAT
 ========================================= */
+/* =========================================
+   EXECUTIVE WHATSAPP FLOAT
+========================================= */
 .whatsapp-float {
   position: fixed;
   bottom: 25px;
@@ -450,14 +453,4 @@ nav a:hover {
 .whatsapp-float:hover {
   background: #2e5fa7;
   transform: translateY(-4px);
-}
-
-/* Slightly smaller on mobile */
-@media (max-width: 768px) {
-  .whatsapp-float {
-    padding: 10px 18px;
-    font-size: 13px;
-    bottom: 20px;
-    right: 15px;
-  }
 }
