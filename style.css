@@ -967,3 +967,70 @@ nav a:hover {
 .footer-trust p {
   margin: 4px 0;
 }
+/* ================= ELEGANT FOOTER ================= */
+
+.site-footer {
+  background: #f7f9fc;
+  padding: 70px 0 40px;
+  border-top: 1px solid #e6ecf4;
+}
+
+.footer-elegant {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-brand strong {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-tagline {
+  font-size: 15px;
+  color: #6b7280;
+  max-width: 320px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #1f2937;
+  font-size: 15px;
+  transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.6;
+}
+
+.footer-contact p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-contact a {
+  text-decoration: none;
+  color: #3f5fa3;
+  font-weight: 500;
+}
+
+.micro-trust-line {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 20px;
+}
+
+.footer-legal {
+  text-align: center;
+  font-size: 13px;
+  color: #9ca3af;
+  margin-top: 50px;
+}
