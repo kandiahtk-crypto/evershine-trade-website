@@ -745,3 +745,79 @@ nav a:hover {
   }
 
 }
+/* ================= FOOTER REFINED ================= */
+
+.site-footer {
+  background: #f5f7fa;
+  padding: 60px 0 30px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-company h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.footer-company p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+.footer-email a {
+  color: #3f5fa3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-email a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav h4 {
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #1f2937;
+}
+
+.footer-nav a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #4b5563;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #3f5fa3;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .footer-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+}
