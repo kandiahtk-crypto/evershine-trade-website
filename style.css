@@ -955,3 +955,15 @@ nav a:hover {
     text-align: center;
   }
 }
+/* Footer Micro Trust Signals */
+
+.footer-trust {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.footer-trust p {
+  margin: 4px 0;
+}
