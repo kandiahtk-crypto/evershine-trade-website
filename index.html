@@ -22,13 +22,20 @@
       <a href="index.html">UK Inbound Ground Transport</a>
     </div>
 
-    <nav class="main-nav">
+    <nav class="main-nav" id="mainNav">
       <a href="index.html">Home</a>
       <a href="markets.html">Markets</a>
       <a href="how-we-work.html">How We Work</a>
       <a href="fleet-compliance.html">Fleet & Compliance</a>
       <a href="rfq.html" class="nav-cta">Trade RFQ</a>
     </nav>
+
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
   </div>
 </header>
@@ -61,20 +68,16 @@
 
 <section class="section">
   <div class="container">
-
     <h2>Built Around Real Touring Operations</h2>
-
     <p>
       We work alongside tour operators and destination management companies
       who require dependable on-road execution — not just transport supply.
     </p>
-
     <p>
       Every programme is assessed for routing logic, daily mileage,
       driver hours compliance, city access restrictions, airport timing
       and operational feasibility before confirmation.
     </p>
-
   </div>
 </section>
 
@@ -82,14 +85,11 @@
 
 <section class="section section-light">
   <div class="container">
-
     <h2>Series & Fixed Departure Support</h2>
-
     <p>
       We support confirmed departure calendars with structured fleet allocation,
       ensuring consistent delivery across repeated touring cycles.
     </p>
-
     <ul>
       <li>Confirmed vehicle allocation against departure schedules</li>
       <li>Driver continuity where series structure allows</li>
@@ -97,7 +97,6 @@
       <li>Operational review of long-distance routing (e.g. Highlands, Cornwall)</li>
       <li>Contingency planning for peak-season congestion</li>
     </ul>
-
   </div>
 </section>
 
@@ -105,9 +104,7 @@
 
 <section class="section">
   <div class="container">
-
     <h2>Operational Delivery Framework</h2>
-
     <div class="card-grid">
 
       <div class="content-card">
@@ -135,85 +132,6 @@
       </div>
 
     </div>
-
-  </div>
-</section>
-
-<!-- ================= NATIONAL ROUTING ================= -->
-
-<section class="section section-light">
-  <div class="container">
-
-    <h2>UK Touring Routes We Regularly Support</h2>
-
-    <ul>
-      <li>London arrivals via Heathrow & Gatwick</li>
-      <li>London – Bath – Cardiff – Liverpool circuits</li>
-      <li>Manchester – Lake District routing</li>
-      <li>Edinburgh – Inverness – Isle of Skye touring</li>
-      <li>Extended England–Scotland multi-day programmes</li>
-    </ul>
-
-    <p>
-      Our operational experience across long-distance UK touring
-      ensures realistic journey planning and compliant daily scheduling.
-    </p>
-
-  </div>
-</section>
-
-<!-- ================= TRADE PARTNERS ================= -->
-
-<section class="section">
-  <div class="container">
-
-    <h2>Supporting International Programme Managers</h2>
-
-    <p>
-      We work with product managers, contracting teams and operations
-      departments across the United States, Europe, China and India.
-    </p>
-
-    <p>
-      Our focus is consistent operational execution across
-      contracted UK touring programmes — season after season.
-    </p>
-
-    <a href="rfq.html" class="button-primary">
-      Request Trade Quotation
-    </a>
-
-  </div>
-</section>
-
-  <!-- ================= CRUISE & RAIL GATEWAY ================= -->
-
-<section class="section section-light">
-  <div class="container">
-
-    <h2>Cruise & Rail Gateway Operations</h2>
-
-    <p>
-      Structured ground handling for cruise extensions, Eurostar arrivals
-      and premium gateway-based touring programmes across the United Kingdom.
-    </p>
-
-    <ul>
-      <li>Southampton, Dover & Liverpool cruise terminals</li>
-      <li>Eurostar group arrivals at London St Pancras</li>
-      <li>Heathrow, Gatwick & regional airport coordination</li>
-      <li>Integrated air–rail–cruise–touring programme flow</li>
-    </ul>
-
-    <p>
-      Supporting operators delivering pre- and post-cruise touring,
-      luxury small-group extensions and multi-modal itineraries.
-    </p>
-
-   <a href="luxury-cruise-ground-handling.html" class="button-primary">
-      Explore Premium Gateway Support
-    </a>
-
   </div>
 </section>
 
@@ -221,48 +139,37 @@
 
 <section class="cta-band">
   <div class="container">
-
     <h2>Operational Review for Your Next UK Departure</h2>
-
     <p>
       Share your itinerary and departure schedule for structured
       availability and operational feasibility confirmation.
     </p>
-
     <a href="rfq.html" class="button-primary">
       Submit Trade Enquiry
     </a>
-
   </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
 
-
-
-   <footer class="site-footer">
-
+<footer class="site-footer">
   <div class="container footer-grid">
 
     <div class="footer-company">
       <h3>Evershine Transport Ltd</h3>
-
       <p>
         Registered Office:<br>
         27 Marian Close, Hayes,<br>
         Middlesex, UB4 9DA, United Kingdom
       </p>
-
       <p>
         Company Registration Number: 13507458<br>
         VAT Registration Number: 388 9199 14
       </p>
-
       <p>
         UK inbound ground transport operations partner for
         international tour operators and DMCs.
       </p>
-
       <p class="footer-email">
         Trade Enquiries:
         <a href="mailto:Kandiah.tk@gmail.com">
@@ -278,9 +185,7 @@
       <a href="how-we-work.html">How We Work</a>
       <a href="fleet-compliance.html">Fleet & Compliance</a>
       <a href="rfq.html">Trade RFQ</a>
-      <a href="procurement.html">Procurement & Compliance</a>
       <a href="privacy.html">Privacy & GDPR</a>
-      <a href="modern-slavery.html">Modern Slavery Statement</a>
     </div>
 
   </div>
@@ -288,15 +193,17 @@
   <div class="footer-bottom">
     © 2026 Evershine Transport Ltd · United Kingdom · All Rights Reserved
   </div>
+</footer>
 
-</footer> 
+<!-- Mobile Overlay -->
+<div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
 
-<a href="https://wa.me/447712345678?text=Trade%20Enquiry%20-%20UK%20Touring%20Programme"
-   class="whatsapp-float"
-   target="_blank"
-   aria-label="WhatsApp Trade Enquiry">
-   Trade WhatsApp
-</a>
+<script>
+function toggleMenu() {
+  document.getElementById("mainNav").classList.toggle("active");
+  document.getElementById("menuOverlay").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
