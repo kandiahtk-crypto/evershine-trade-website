@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Structured Programme Submission | UK Inbound Ground Transport</title>
-  <meta name="description" content="Submit structured UK touring programmes for controlled fleet allocation and pricing review. Trade-only inbound ground transport capacity planning.">
+<title>Trade Programme Submission | UK Inbound Ground Transport</title>
+<meta name="description" content="Structured UK inbound ground transport programme submission portal for international tour operators and DMCs. Controlled fleet allocation and operational feasibility review.">
 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -31,200 +32,169 @@
 
 <section class="hero">
   <div class="container narrow">
-
-    <h1>Structured UK Programme Submission</h1>
+    <h1>Structured Programme Submission Portal</h1>
 
     <p class="hero-intro">
       Fleet capacity is allocated against confirmed departure calendars.
-      Submit routing and passenger data for structured operational review.
+      Submit structured programme details for operational feasibility and pricing review.
     </p>
 
     <p class="micro-note">
-      Trade-only submission portal for international tour operators and DMCs.
+      Trade-only portal · International tour operators & DMCs
     </p>
-
   </div>
 </section>
 
-<!-- FORM SECTION -->
+<!-- PROCESS TIMELINE -->
 
 <section class="section section-light">
   <div class="container narrow">
 
-    <!-- 3 STEP PROCESS BAR -->
+    <div class="process-timeline">
+      <div class="timeline-step">
+        <div class="dot"></div>
+        <p>Programme Submission</p>
+      </div>
 
-    <div class="process-bar">
-      <div class="process-step">
-        <strong>01</strong>
-        <span>Submit Programme Structure</span>
+      <div class="timeline-step">
+        <div class="dot"></div>
+        <p>Operational Feasibility Review</p>
       </div>
-      <div class="process-step">
-        <strong>02</strong>
-        <span>Operational Feasibility Review</span>
-      </div>
-      <div class="process-step">
-        <strong>03</strong>
-        <span>Capacity & Pricing Confirmation</span>
+
+      <div class="timeline-step">
+        <div class="dot"></div>
+        <p>Capacity & Pricing Confirmation</p>
       </div>
     </div>
 
-    <!-- FORM CARD -->
+  </div>
+</section>
+
+<!-- FORM CARD -->
+
+<section class="section">
+  <div class="container narrow">
 
     <div class="form-card">
 
-      <form action="https://formsubmit.co/Kandiah.tk@gmail.com"
-            method="POST"
-            enctype="multipart/form-data"
-            class="executive-form">
+<form action="https://formsubmit.co/Kandiah.tk@gmail.com" method="POST" enctype="multipart/form-data">
 
-        <!-- Redirect After Submission -->
-        <input type="hidden" name="_next" value="https://ukinboundgroundtransport.com/success.html">
+<input type="hidden" name="_next" value="https://kandiahtk-crypto.github.io/thank-you.html">
+<input type="hidden" name="_captcha" value="false">
 
-        <!-- Auto Response -->
-        <input type="hidden" name="_autoresponse"
-        value="Thank you for submitting your UK touring programme. Our operations team will review routing structure and capacity availability and respond within 24–48 hours.">
+<!-- OPERATOR -->
 
-        <!-- Disable Captcha -->
-        <input type="hidden" name="_captcha" value="false">
+<h2>Operator Details</h2>
 
-        <!-- OPERATOR INFO -->
+<label>Company Name *</label>
+<input type="text" name="Company Name" required>
 
-        <div class="form-section">
-          <h2>Operator Information</h2>
+<label>Country of Operation *</label>
+<input type="text" name="Country" required>
 
-          <label>Company Name</label>
-          <input type="text" name="company" required>
+<label>Contact Name *</label>
+<input type="text" name="Contact Name" required>
 
-          <label>Country of Operation</label>
-          <input type="text" name="country" required>
+<label>Professional Email *</label>
+<input type="email" name="Email" required>
 
-          <label>Contact Name</label>
-          <input type="text" name="contact_name" required>
+<label>Estimated Annual UK Departures</label>
+<select name="Annual Volume">
+  <option>1–5 departures</option>
+  <option>6–20 departures</option>
+  <option>20+ departures</option>
+</select>
 
-          <label>Professional Email</label>
-          <input type="email" name="email" required>
+<hr>
 
-          <label>Estimated Annual UK Departure Volume</label>
-          <select name="annual_volume">
-            <option>1–5 departures</option>
-            <option>6–20 departures</option>
-            <option>20+ departures</option>
-          </select>
-        </div>
+<!-- PROGRAMME -->
 
-        <div class="form-divider"></div>
+<h2>Programme Overview</h2>
 
-        <!-- PROGRAMME STRUCTURE -->
+<label>Arrival Gateway</label>
+<select name="Arrival Gateway">
+  <option>London Heathrow</option>
+  <option>London Gatwick</option>
+  <option>Manchester</option>
+  <option>Edinburgh</option>
+  <option>Glasgow</option>
+  <option>Cruise Terminal</option>
+  <option>Eurostar / Rail</option>
+</select>
 
-        <div class="form-section">
-          <h2>Programme Structure</h2>
+<label>Departure Gateway</label>
+<select name="Departure Gateway">
+  <option>London Heathrow</option>
+  <option>London Gatwick</option>
+  <option>Manchester</option>
+  <option>Edinburgh</option>
+  <option>Glasgow</option>
+  <option>Cruise Terminal</option>
+  <option>Eurostar / Rail</option>
+</select>
 
-          <label>Arrival Gateway</label>
-          <input type="text" name="arrival_gateway" placeholder="Heathrow / Gatwick / Cruise Port / Rail">
+<label>Departure Date</label>
+<input type="date" name="Departure Date">
 
-          <label>Departure Gateway</label>
-          <input type="text" name="departure_gateway">
+<label>Return Date</label>
+<input type="date" name="Return Date">
 
-          <label>Departure Date</label>
-          <input type="date" name="departure_date">
+<label>Passenger Volume</label>
+<input type="number" name="Passenger Volume">
 
-          <label>Return Date</label>
-          <input type="date" name="return_date">
+<hr>
 
-          <label>Passenger Volume</label>
-          <input type="number" name="passengers">
-        </div>
+<!-- ROUTING -->
 
-        <div class="form-divider"></div>
+<h2>Routing Structure</h2>
 
-        <!-- ROUTING -->
+<label>Outline Itinerary (Cities, Nights, Key Stops)</label>
+<textarea name="Itinerary Overview" rows="6"></textarea>
 
-        <div class="form-section">
-          <h2>Routing Overview</h2>
+<label>Upload Itinerary PDF (Optional)</label>
+<input type="file" name="Itinerary File">
 
-          <label>Outline itinerary structure (cities, nights, key stops)</label>
-          <textarea rows="6" name="itinerary"></textarea>
+<hr>
 
-          <label>Upload Itinerary (PDF preferred)</label>
-          <input type="file" name="itinerary_file" accept=".pdf">
-        </div>
+<div class="submission-note">
+Peak season (May–September) operates on rolling capacity confirmation.
+Early structured submission ensures pricing stability and allocation visibility.
+</div>
 
-        <div class="form-divider"></div>
+<button type="submit" class="submit-button">
+Submit Programme for Review
+</button>
 
-        <!-- COMMERCIAL SCOPE -->
-
-        <div class="form-section">
-          <h2>Commercial Scope</h2>
-
-          <select name="programme_scope">
-            <option>Full multi-day touring</option>
-            <option>Airport transfers + touring</option>
-            <option>Scotland circuit only</option>
-            <option>England only</option>
-            <option>Nationwide circuit</option>
-          </select>
-        </div>
-
-        <div class="submission-note">
-          Peak season (May–September) operates on rolling capacity confirmation.
-          Early structured submission ensures pricing stability and allocation visibility.
-        </div>
-
-        <button type="submit" class="submit-button">
-          Submit Programme for Capacity Review
-        </button>
-
-      </form>
+</form>
 
     </div>
 
   </div>
 </section>
 
+<!-- FOOTER -->
+
 <footer class="site-footer">
+  <div class="container footer-inner">
 
-  <div class="footer-main">
-    <div class="container footer-grid">
-
-      <div class="footer-col">
-        <h3>UK Inbound Ground Transport</h3>
-        <p>
-          Structured operational partner for international tour operators
-          and destination management companies delivering UK touring programmes.
-        </p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Operational Pages</h4>
-        <a href="how-we-work.html">Operational Framework</a>
-        <a href="fleet-compliance.html">Fleet & Compliance</a>
-        <a href="luxury-cruise-ground-handling.html">Luxury Cruise & Rail</a>
-        <a href="markets.html">International Markets</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>Trade Access</h4>
-        <a href="rfq.html">Structured Programme Submission</a>
-        <a href="privacy.html">Privacy & GDPR</a>
-        <a href="modern-slavery.html">Modern Slavery Statement</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>Company Information</h4>
-        <p>Evershine Transport Ltd</p>
-        <p>Registered in England & Wales</p>
-        <p>Company No: 13507458</p>
-        <p>VAT No: 388 9199 14</p>
-        <p class="footer-email">Kandiah.tk@gmail.com</p>
-      </div>
-
+    <div class="footer-left">
+      <strong>Evershine Transport Ltd</strong>
+      <p>Registered Office: 27 Marian Close, Hayes, Middlesex, UB4 9DA, United Kingdom</p>
+      <p>Company Registration Number: 13507458 · VAT: 388 9199 14</p>
+      <p>Trade-only UK inbound ground transport partner.</p>
     </div>
+
+    <div class="footer-right">
+      <a href="index.html">Home</a>
+      <a href="fleet-compliance.html">Fleet & Compliance</a>
+      <a href="privacy.html">Privacy & GDPR</a>
+    </div>
+
   </div>
 
   <div class="footer-bottom">
-    © 2026 Evershine Transport Ltd · Trade-Only UK Inbound Ground Transport Operations
+    © 2026 Evershine Transport Ltd · United Kingdom
   </div>
-
 </footer>
 
 </body>
