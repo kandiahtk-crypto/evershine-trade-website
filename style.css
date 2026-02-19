@@ -209,6 +209,27 @@ nav a:hover {
 .button-primary:hover {
   opacity: 0.9;
 }
+/* Secondary Link Button – Card Context */
+
+.button-secondary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--primary);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  background: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.button-secondary:hover {
+  border-color: var(--primary);
+  color: #ffffff;
+  background: var(--primary);
+}
 
 /* =========================================
    CTA BAND
