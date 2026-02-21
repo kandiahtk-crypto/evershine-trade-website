@@ -1,22 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>UK Departure Programme Submission | Trade-Only Operational Review</title>
+<title>Programme Enquiry | UK Inbound Coach Transport for Fixed Departure Operators</title>
 
-  <meta name="description" content="Submit structured UK touring programmes for operational feasibility review, fleet allocation and commercial confirmation. Supporting fixed departure series and brochure-based cycles.">
+<meta name="description" content="Submit confirmed departure programmes for structured operational review and fleet allocation across Britain & Ireland. UK inbound coach transport partner for fixed departure tour operators.">
 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- ORGANIZATION SCHEMA -->
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"Evershine Transport Ltd",
+ "url":"https://yourdomain.com",
+ "description":"Structured inbound touring transport partner for fixed departure operators across Britain & Ireland."
+}
+</script>
+
+<!-- BREADCRUMB SCHEMA -->
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"BreadcrumbList",
+ "itemListElement":[
+  {
+   "@type":"ListItem",
+   "position":1,
+   "name":"Home",
+   "item":"https://yourdomain.com/"
+  },
+  {
+   "@type":"ListItem",
+   "position":2,
+   "name":"Programme Enquiry",
+   "item":"https://yourdomain.com/rfq.html"
+  }
+ ]
+}
+</script>
 
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
+
 <header class="site-header">
   <div class="container header-inner">
-
     <div class="logo">
       <a href="index.html">UK Inbound Ground Transport</a>
     </div>
@@ -25,214 +59,128 @@
       <a href="index.html">Home</a>
       <a href="markets.html">Markets</a>
       <a href="how-we-work.html">How We Work</a>
+      <a href="series-tours.html">Series Tours</a>
       <a href="fleet-compliance.html">Fleet & Compliance</a>
-      <a href="rfq.html" class="nav-cta">Trade RFQ</a>
+      <a href="rfq.html" class="nav-cta">Programme Enquiry</a>
     </nav>
-
   </div>
 </header>
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero">
   <div class="container narrow">
 
-    <h1>Submit Your UK Departure Programme</h1>
+    <h1>Programme Enquiry</h1>
 
     <p class="hero-intro">
-      Structured operational review for fixed departures, repeat series cycles
-      and premium multi-day UK touring programmes.
-    </p>
-
-    <p class="micro-note">
-      Trade-only submission portal · Supporting international tour operators & DMCs
+      Structured inbound coach transport partner for fixed departure
+      tour operators across Britain & Ireland.
     </p>
 
   </div>
 </section>
 
-<!-- PROCESS FLOW -->
+<!-- ================= INTAKE REQUIREMENTS ================= -->
 
 <section class="section">
   <div class="container narrow">
 
-    <div style="text-align:center; margin-bottom:60px;">
+    <h2>Programme Intake Requirements</h2>
 
-      <p style="letter-spacing:2px; font-size:13px; color:#6c7a8c; text-transform:uppercase;">
-        Structured Review Process
-      </p>
+    <p>
+      To ensure structured fleet allocation and operational feasibility,
+      please provide the following information for confirmed departure programmes.
+    </p>
 
-      <h2 style="margin-top:10px;">Programme Evaluation Framework</h2>
-
-      <div style="margin-top:35px; line-height:2;">
-        Programme Submission  
-        <br>↓<br>
-        Operational Feasibility Review  
-        <br>↓<br>
-        Capacity & Commercial Confirmation
-      </div>
-
-    </div>
+    <ul>
+      <li>Confirmed departure dates</li>
+      <li>Full itinerary with hotel list</li>
+      <li>Passenger numbers & luggage profile</li>
+      <li>Arrival & departure gateway</li>
+      <li>Special routing requirements (e.g. Highlands, Ireland)</li>
+    </ul>
 
   </div>
 </section>
 
-<!-- FORM -->
+<!-- ================= RFQ FORM ================= -->
 
 <section class="section section-light">
   <div class="container narrow">
 
-    <form class="executive-form" 
-          action="https://formsubmit.co/Kandiah.tk@gmail.com" 
-          method="POST" 
-          enctype="multipart/form-data">
+    <form name="rfq" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="rfq">
 
-      <!-- Hidden Config -->
-      <input type="hidden" name="_subject" value="New UK Departure Programme Submission">
-      <input type="hidden" name="_next" value="https://ukinboundgroundtransport.com/thank-you.html">
-      <input type="hidden" name="_captcha" value="false">
+      <label>Company Name</label>
+      <input type="text" name="company" required>
 
-      <!-- SECTION A -->
+      <label>Contact Name</label>
+      <input type="text" name="contact" required>
 
-      <div class="form-section">
-        <h2>Operator Information</h2>
+      <label>Email Address</label>
+      <input type="email" name="email" required>
 
-        <label>Company Name</label>
-        <input type="text" name="Company Name" required>
+      <label>Departure Dates</label>
+      <input type="text" name="departure_dates" placeholder="e.g. 12 May – 20 May 2026" required>
 
-        <label>Country of Operation</label>
-        <input type="text" name="Country" required>
+      <label>Passenger Volume</label>
+      <input type="text" name="passenger_volume">
 
-        <label>Product / Contracting Contact</label>
-        <input type="text" name="Contact Name" required>
+      <label>Gateway (Arrival & Departure)</label>
+      <input type="text" name="gateway">
 
-        <label>Professional Email</label>
-        <input type="email" name="Email" required>
+      <label>Multi-Region Touring</label>
+      <select name="multi_region">
+        <option value="No">No</option>
+        <option value="Yes - Scotland">Yes - Scotland</option>
+        <option value="Yes - Highlands">Yes - Highlands</option>
+        <option value="Yes - Ireland">Yes - Ireland</option>
+      </select>
 
-      </div>
+      <label>Upload Itinerary (PDF)</label>
+      <input type="file" name="itinerary">
 
-      <div class="form-divider"></div>
+      <label>Additional Notes</label>
+      <textarea name="notes" rows="5"></textarea>
 
-      <!-- SECTION B -->
-
-      <div class="form-section">
-        <h2>Departure Structure</h2>
-
-        <label>Arrival Gateway</label>
-        <select name="Arrival Gateway">
-          <option>London Heathrow</option>
-          <option>London Gatwick</option>
-          <option>Manchester</option>
-          <option>Edinburgh</option>
-          <option>Glasgow</option>
-          <option>Cruise Terminal</option>
-          <option>Eurostar / Rail</option>
-          <option>Other</option>
-        </select>
-
-        <label>Departure Gateway</label>
-        <select name="Departure Gateway">
-          <option>London Heathrow</option>
-          <option>London Gatwick</option>
-          <option>Manchester</option>
-          <option>Edinburgh</option>
-          <option>Glasgow</option>
-          <option>Cruise Terminal</option>
-          <option>Eurostar / Rail</option>
-          <option>Other</option>
-        </select>
-
-        <label>Departure Date</label>
-        <input type="date" name="Departure Date">
-
-        <label>Passenger Volume</label>
-        <input type="number" name="Passenger Volume" min="1">
-
-      </div>
-
-      <div class="form-divider"></div>
-
-      <!-- SECTION C -->
-
-      <div class="form-section">
-        <h2>Itinerary Overview</h2>
-
-        <label>Outline routing (cities, nights, key gateways)</label>
-        <textarea name="Itinerary Summary" rows="6"></textarea>
-
-        <label>Upload Itinerary (PDF)</label>
-        <input type="file" name="Itinerary File" accept=".pdf">
-      </div>
-
-      <div class="form-divider"></div>
-
-      <!-- SECTION D -->
-
-      <div class="form-section">
-        <h2>Commercial Scope</h2>
-
-        <select name="Programme Type">
-          <option>Fixed Departure Series</option>
-          <option>Repeat Seasonal Block</option>
-          <option>Luxury Small-Group Touring</option>
-          <option>Pre / Post Cruise Extension</option>
-          <option>Ad Hoc Departure</option>
-        </select>
-      </div>
-
-      <div class="submission-note">
-        Confirmed series and structured departure blocks receive priority
-        fleet alignment during peak UK touring season.
-      </div>
-
-      <button type="submit" class="submit-button">
-        Submit for Operational Review
+      <button type="submit" class="button-primary">
+        Submit Programme for Review
       </button>
 
     </form>
 
+    <p class="micro-note">
+      All submissions undergo structured operational review prior to fleet allocation confirmation.
+    </p>
+
   </div>
 </section>
 
-<!-- ================= CLASSY FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
 
 <footer class="site-footer">
-
   <div class="container footer-elegant">
 
     <div class="footer-brand">
-      <strong>UK Inbound Ground Transport</strong>
+      <strong>Evershine Transport Ltd</strong>
       <p class="footer-tagline">
-        Trade-only operational partner for international tour operators and DMCs.
+        Structured inbound touring transport partner for fixed departure operators.
       </p>
     </div>
 
     <div class="footer-links">
       <a href="how-we-work.html">Operational Framework</a>
+      <a href="series-tours.html">Series Touring Support</a>
       <a href="fleet-compliance.html">Fleet & Compliance</a>
-      <a href="luxury-cruise-ground-handling.html">Cruise & Gateway</a>
-      <a href="rfq.html">Structured Programme Submission</a>
-    </div>
-
-    <div class="footer-contact">
-      <p>
-        Trade Enquiries:<br>
-        <a href="mailto:Kandiah.tk@gmail.com">
-          Kandiah.tk@gmail.com
-        </a>
-      </p>
-
-      <p class="micro-trust-line">
-        UK Operator Licence · Fully Insured · 24/7 Active Programme Support
-      </p>
+      <a href="markets.html">International Markets</a>
     </div>
 
   </div>
 
   <div class="footer-legal">
-    © 2026 Evershine Transport Ltd · Registered in England & Wales
+    © 2026 Evershine Transport Ltd · United Kingdom
   </div>
-
 </footer>
 
 </body>
