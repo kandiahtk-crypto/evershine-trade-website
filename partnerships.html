@@ -8,9 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-
-/* ===== GLOBAL ===== */
-
 * { margin:0; padding:0; box-sizing:border-box; }
 
 body {
@@ -25,8 +22,6 @@ body {
   max-width:1100px;
   margin:0 auto;
 }
-
-/* ===== HEADER ===== */
 
 header {
   background:#ffffff;
@@ -56,12 +51,6 @@ nav a {
   color:#2c3440;
 }
 
-nav a:hover {
-  color:#b79a4b;
-}
-
-/* ===== HERO ===== */
-
 .hero {
   padding:120px 0 80px;
   text-align:center;
@@ -81,12 +70,10 @@ nav a:hover {
 }
 
 .hero p {
-  max-width:800px;
+  max-width:780px;
   margin:0 auto;
   color:#5d6775;
 }
-
-/* ===== SECTION ===== */
 
 .section {
   padding:90px 0;
@@ -96,36 +83,34 @@ nav a:hover {
 .section h2 {
   font-family:'Playfair Display', serif;
   font-weight:400;
-  margin-bottom:20px;
   text-align:center;
+  margin-bottom:20px;
 }
 
 .section p {
   max-width:850px;
   margin:0 auto 25px;
-  color:#5d6775;
   text-align:center;
+  color:#5d6775;
 }
-
-/* ===== GRID ===== */
 
 .grid {
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:50px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:40px;
   margin-top:50px;
 }
 
 .card {
   background:#ffffff;
-  padding:40px;
+  padding:35px;
   border:1px solid #e6e3dc;
 }
 
 .card h3 {
   font-family:'Playfair Display', serif;
   font-weight:400;
-  margin-bottom:15px;
+  margin-bottom:12px;
 }
 
 .card p {
@@ -133,33 +118,26 @@ nav a:hover {
   color:#5d6775;
 }
 
-/* ===== DASHBOARD ===== */
+/* DASHBOARD */
 
 .dashboard {
   background:#ffffff;
   border-top:1px solid #e6e3dc;
   border-bottom:1px solid #e6e3dc;
+  padding:100px 0;
 }
 
 .dashboard-grid {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:50px;
-  margin-top:40px;
+  gap:40px;
   text-align:center;
-}
-
-.metric {
-  padding:30px;
-  border:1px solid #e6e3dc;
-  background:#faf9f6;
 }
 
 .metric h3 {
   font-family:'Playfair Display', serif;
-  font-size:38px;
+  font-size:42px;
   color:#b79a4b;
-  margin-bottom:10px;
 }
 
 .metric span {
@@ -168,11 +146,9 @@ nav a:hover {
   color:#6b7380;
 }
 
-/* ===== CTA ===== */
-
 .cta {
-  text-align:center;
   padding:100px 0;
+  text-align:center;
   border-top:1px solid #e6e3dc;
 }
 
@@ -192,10 +168,8 @@ nav a:hover {
   color:#ffffff;
 }
 
-/* ===== FOOTER ===== */
-
 footer {
-  padding:80px 0;
+  padding:70px 0;
   text-align:center;
   font-size:14px;
   color:#6b7380;
@@ -205,7 +179,6 @@ footer {
 @media(max-width:768px){
   .hero h1 { font-size:28px; }
 }
-
 </style>
 </head>
 
@@ -228,21 +201,48 @@ footer {
     <h1>Why Partner With Us</h1>
     <div class="divider"></div>
     <p>
-      Structured partnership infrastructure for international tour operators
-      and DMCs requiring departure stability and regulatory governance.
+      Structured operational partnership designed for international tour operators
+      and DMCs requiring stability, regulatory discipline and departure continuity
+      across Britain’s inbound touring corridors.
     </p>
   </div>
 </section>
 
-<section class="section dashboard">
+<section class="section">
   <div class="container">
-    <h2>Inbound Market Growth Context</h2>
+    <h2>Structured Capacity Model</h2>
+    <div class="divider"></div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Departure Grid Alignment</h3>
+        <p>Capacity structured around confirmed series schedules and contracting cycles.</p>
+      </div>
+      <div class="card">
+        <h3>Routing Validation</h3>
+        <p>Mileage feasibility and driver-hours compliance embedded in programme design.</p>
+      </div>
+      <div class="card">
+        <h3>Peak Season Stability</h3>
+        <p>Forward allocation planning across high-demand summer corridors.</p>
+      </div>
+      <div class="card">
+        <h3>Gateway Integration</h3>
+        <p>Operational sequencing across Heathrow and regional entry points.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dashboard">
+  <div class="container">
+    <h2 style="text-align:center;">Inbound Market Growth Context</h2>
     <div class="divider"></div>
 
     <div class="dashboard-grid">
       <div class="metric">
         <h3 class="counter" data-target="12">0</h3>
-        <span>Long-Haul Market Expansion</span>
+        <span>Long-Haul Expansion</span>
       </div>
       <div class="metric">
         <h3 class="counter" data-target="85">0</h3>
@@ -254,9 +254,20 @@ footer {
       </div>
       <div class="metric">
         <h3 class="counter" data-target="100">0</h3>
-        <span>Compliance Validation Protocol</span>
+        <span>Compliance Protocol</span>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Responsible Governance</h2>
+    <div class="divider"></div>
+    <p>
+      ESG alignment, driver welfare governance and regional dispersion planning
+      are integrated within structured operational delivery.
+    </p>
   </div>
 </section>
 
@@ -281,24 +292,21 @@ footer {
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const counters = document.querySelectorAll(".counter");
-
   counters.forEach(counter => {
     const target = +counter.getAttribute("data-target");
     let count = 0;
     const speed = 200;
-
-    const updateCount = () => {
-      const increment = target / speed;
-      if (count < target) {
-        count += increment;
+    const update = () => {
+      const inc = target / speed;
+      if(count < target){
+        count += inc;
         counter.innerText = Math.ceil(count);
-        requestAnimationFrame(updateCount);
+        requestAnimationFrame(update);
       } else {
         counter.innerText = target + (target === 100 ? "%" : "+");
       }
     };
-
-    updateCount();
+    update();
   });
 });
 </script>
