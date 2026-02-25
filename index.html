@@ -1,285 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UK Inbound Ground Transport</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
-
-/* ===== GLOBAL ===== */
-
-* { margin:0; padding:0; box-sizing:border-box; }
-
-body {
-  font-family:'Inter',sans-serif;
-  background:#f6f8fb;
-  color:#1f2a36;
-  line-height:1.75;
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"UK Inbound Ground Transport",
+ "url":"https://www.ukinboundgroundtransport.com",
+ "contactPoint":{
+   "@type":"ContactPoint",
+   "contactType":"Trade Enquiries",
+   "email":"info@ukinboundgroundtransport.com"
+ }
 }
+</script>
 
-a, a:visited, a:active {
-  color:#b48a2c;
-  text-decoration:none;
-}
-
-a:hover { opacity:0.8; }
-
-.container {
-  width:90%;
-  max-width:1100px;
-  margin:0 auto;
-  text-align:center;
-}
-
-/* ===== HEADER ===== */
-
-header {
-  background:#ffffff;
-  padding:40px 0 30px;
-  border-bottom:1px solid #e4e8ee;
-}
-
-.logo {
-  font-family:'Playfair Display',serif;
-  font-size:18px;
-  letter-spacing:6px;
-  color:#b48a2c;
-  margin-bottom:30px;
-}
-
-nav {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:20px 40px;
-}
-
-nav a {
-  font-size:13px;
-  letter-spacing:3px;
-  color:#1f2a36;
-}
-
-.nav-cta {
-  border:1px solid #b48a2c;
-  padding:8px 20px;
-}
-
-/* ===== HERO ===== */
-
-.hero {
-  padding:100px 0 80px;
-  background:linear-gradient(to bottom,#ffffff,#f1f4f8);
-}
-
-.hero h1 {
-  font-family:'Playfair Display',serif;
-  font-weight:400;
-  font-size:40px;
-  margin-bottom:30px;
-}
-
-.hero p {
-  max-width:780px;
-  margin:0 auto 30px;
-  color:#5a6675;
-}
-
-/* ===== MAP STRIP ===== */
-
-.map-strip {
-  height:180px;
-  background:
-    linear-gradient(to bottom,rgba(255,255,255,0.9),rgba(255,255,255,0.95)),
-    url('https://upload.wikimedia.org/wikipedia/commons/5/5c/UK_location_map.svg');
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:contain;
-  opacity:0.15;
-}
-
-/* ===== SECTION ===== */
-
-.section {
-  padding:80px 0;
-  background:#ffffff;
-  border-top:1px solid #e4e8ee;
-}
-
-.section h2 {
-  font-family:'Playfair Display',serif;
-  font-weight:400;
-  font-size:28px;
-  margin-bottom:25px;
-}
-
-.section p {
-  max-width:800px;
-  margin:0 auto 25px;
-  color:#5a6675;
-}
-
-/* ===== GRID ===== */
-
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:40px;
-  margin-top:40px;
-  text-align:left;
-}
-
-.card {
-  background:#f6f8fb;
-  padding:30px;
-  border:1px solid #e4e8ee;
-}
-
-.card h3 {
-  font-family:'Playfair Display',serif;
-  font-weight:400;
-  margin-bottom:15px;
-  color:#1f2a36;
-}
-
-.card p {
-  font-size:14px;
-  color:#5a6675;
-}
-
-/* ===== BULLETS ===== */
-
-ul {
-  list-style:none;
-  max-width:650px;
-  margin:0 auto;
-  text-align:left;
-}
-
-ul li {
-  position:relative;
-  padding-left:22px;
-  margin-bottom:14px;
-}
-
-ul li::before {
-  content:"";
-  position:absolute;
-  left:0;
-  top:9px;
-  width:6px;
-  height:6px;
-  background:#b48a2c;
-  border-radius:50%;
-}
-
-/* ===== FOOTER ===== */
-
-footer {
-  padding:60px 0;
-  background:#f1f4f8;
-  font-size:14px;
-  color:#6b7684;
-  border-top:1px solid #e4e8ee;
-}
-
-footer p { margin-bottom:12px; }
-
-.email-link {
-  color:#1f2a36;
-  border-bottom:1px solid rgba(180,138,44,0.4);
-}
-
-@media (max-width:768px){
-.hero h1 { font-size:30px; }
-}
-
-</style>
 </head>
-
 <body>
 
 <header>
-  <div class="container">
-    <div class="logo">UK INBOUND GROUND TRANSPORT</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Markets</a>
-      <a href="#">How We Work</a>
-      <a href="#">Compliance</a>
-      <a href="#">Gateways</a>
-      <a href="#" class="nav-cta">Trade RFQ</a>
-    </nav>
-  </div>
+<div class="container">
+<div class="logo">UK INBOUND GROUND TRANSPORT</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="markets.html">Markets</a>
+<a href="regional.html">Regional Touring</a>
+<a href="operational.html">Operational Model</a>
+<a href="compliance.html">Compliance</a>
+<a href="rfq.html" class="nav-cta">Trade RFQ</a>
+</nav>
+</div>
 </header>
 
 <section class="hero">
-  <div class="container">
-    <h1>Strategic Ground Transport Partner Supporting Britain’s International Visitor Economy</h1>
-
-    <p>
-      We operate as a structured, trade-only transport infrastructure partner 
-      aligned with Britain’s inbound tourism objectives, supporting 
-      international tour operators and destination management companies 
-      delivering fixed departure series and multi-region touring programmes.
-    </p>
-  </div>
+<div class="container">
+<h1>Structured Inbound Touring Infrastructure Supporting Britain’s Visitor Economy</h1>
+<div class="divider"></div>
+<p>
+A strategic ground transport partner aligned with gateway-led arrivals,
+regional touring circuits and fixed departure series across Britain & Ireland.
+</p>
+</div>
 </section>
 
-<div class="map-strip"></div>
+<section class="stats">
+<div class="container">
+<h2>Annual Market Indicators</h2>
+<div class="divider"></div>
 
-<section class="section">
-  <div class="container">
-    <h2>Key Source Markets</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>United States</h3>
-        <p>Supporting escorted touring and fixed series departures aligned with seasonal brochure cycles and gateway-led arrivals.</p>
-      </div>
-      <div class="card">
-        <h3>India</h3>
-        <p>Coordinated multi-city touring with structured urban access and compliance modelling across peak travel periods.</p>
-      </div>
-      <div class="card">
-        <h3>GCC Markets</h3>
-        <p>Luxury-focused and family group touring aligned with regional demand cycles and multi-region itineraries.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="stats-grid">
+<div class="stat">
+<h3>38M+</h3>
+<p>International visitors annually</p>
+</div>
 
-<section class="section">
-  <div class="container">
-    <h2>Gateway Operations</h2>
-    <p>
-      Our infrastructure supports coordinated arrivals and touring integration 
-      through Britain’s principal international gateways:
-    </p>
+<div class="stat">
+<h3>£31B+</h3>
+<p>Inbound visitor expenditure</p>
+</div>
 
-    <ul>
-      <li>London Heathrow – primary long-haul entry hub</li>
-      <li>Manchester – Northern England & Lake District integration</li>
-      <li>Edinburgh – Scotland touring circuits</li>
-      <li>Regional gateway sequencing for multi-entry itineraries</li>
-    </ul>
-  </div>
+<div class="stat">
+<h3>12%+</h3>
+<p>Projected long-haul growth</p>
+</div>
+
+<div class="stat">
+<h3>70%+</h3>
+<p>Arrivals via major gateways</p>
+</div>
+</div>
+</div>
 </section>
 
 <footer>
-  <div class="container">
-    <p>Trade Enquiries:</p>
-    <p>
-      <a href="mailto:info@ukinboundgroundtransport.com" class="email-link">
-        info@ukinboundgroundtransport.com
-      </a>
-    </p>
-    <p>Supporting Britain’s International Visitor Economy</p>
-    <p>© 2026 Evershine Transport Ltd · Registered in England & Wales</p>
-  </div>
+<div class="container">
+<p>Trade Enquiries</p>
+<p class="email">info@ukinboundgroundtransport.com</p>
+<p>© 2026 Evershine Transport Ltd · Registered in England & Wales</p>
+</div>
 </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  document.body.classList.add("loaded");
+
+  const links = document.querySelectorAll("nav a");
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
