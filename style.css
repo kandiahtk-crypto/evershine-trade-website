@@ -228,3 +228,29 @@ footer p { margin-bottom:14px; }
   display:block;
   margin-top:5px;
 }
+/* ===== BRITAIN MAP WATERMARK ===== */
+
+.map-strip {
+  position: relative;
+  background:#ffffff;
+  overflow:hidden;
+}
+
+.map-strip::before {
+  content:"";
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:800px;
+  height:800px;
+  background:url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/United_Kingdom_relief_location_map.jpg/800px-United_Kingdom_relief_location_map.jpg') no-repeat center;
+  background-size:contain;
+  opacity:0.04;  /* ultra subtle */
+  transform:translate(-50%,-50%);
+  pointer-events:none;
+}
+
+.map-strip .container {
+  position:relative;
+  z-index:2;
+}
