@@ -1,11 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UK Inbound Ground Transport | Structured Touring Infrastructure</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+<title>UK Inbound Ground Transport | Structured Touring Infrastructure</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0b1423;
+  color: #e8edf6;
+  line-height: 1.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.narrow {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ===== HEADER ===== */
+
+.site-header {
+  background: #0b1423;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(212,175,55,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #d4af37;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #dce3f2;
+  transition: 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #d4af37;
+}
+
+.nav-cta {
+  border: 1px solid #d4af37;
+  padding: 8px 16px;
+}
+
+.nav-cta:hover {
+  background: #d4af37;
+  color: #0b1423;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+  padding: 140px 0;
+  background: linear-gradient(180deg,#0b1423 0%,#111c30 100%);
+  text-align: center;
+}
+
+.hero-label {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #d4af37;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #b9c3d8;
+  margin-bottom: 40px;
+}
+
+.button-primary {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 1px solid #d4af37;
+  text-decoration: none;
+  color: #d4af37;
+  letter-spacing: 2px;
+  font-size: 12px;
+  transition: 0.3s ease;
+}
+
+.button-primary:hover {
+  background: #d4af37;
+  color: #0b1423;
+}
+
+/* ===== SECTIONS ===== */
+
+.section {
+  padding: 100px 0;
+}
+
+.dark-section {
+  background: #0f1b30;
+}
+
+/* ===== CARDS ===== */
+
+.card-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aviation-card {
+  background: #111c30;
+  padding: 40px;
+  width: 320px;
+  border: 1px solid rgba(212,175,55,0.15);
+  transition: 0.4s ease;
+}
+
+.aviation-card:hover {
+  border-color: #d4af37;
+}
+
+.aviation-card h3 {
+  margin-bottom: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #d4af37;
+}
+
+.aviation-card p {
+  color: #b9c3d8;
+  font-size: 14px;
+}
+
+/* ===== CTA BAND ===== */
+
+.cta-band {
+  background: #0f1b30;
+  padding: 100px 0;
+  text-align: center;
+  border-top: 1px solid rgba(212,175,55,0.2);
+}
+
+.cta-band h2 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+/* ===== FOOTER ===== */
+
+.site-footer {
+  padding: 40px 0;
+  text-align: center;
+  background: #0b1423;
+  border-top: 1px solid rgba(212,175,55,0.15);
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #8892a6;
+}
+
+</style>
 </head>
 
 <body>
@@ -13,7 +206,7 @@
 <header class="site-header">
   <div class="container header-inner">
     <div class="logo">
-      <a href="#">UK Inbound Ground Transport</a>
+      <a href="#">UK INBOUND GROUND TRANSPORT</a>
     </div>
     <nav class="main-nav">
       <a href="#">Markets</a>
@@ -81,9 +274,7 @@
 </section>
 
 <footer class="site-footer">
-  <div class="container footer-bottom">
-    © 2026 UK Inbound Ground Transport · Operational Control · United Kingdom
-  </div>
+  © 2026 UK Inbound Ground Transport · Operational Control · United Kingdom
 </footer>
 
 </body>
