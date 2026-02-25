@@ -251,3 +251,7 @@ footer p { margin-bottom:14px; }
   position:relative;
   z-index:2;
 }
+.hero .container {
+  text-align: left;
+  padding-left: 12%;
+}
