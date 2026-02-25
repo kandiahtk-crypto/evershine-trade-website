@@ -272,3 +272,7 @@ footer p { margin-bottom:14px; }
     padding-left: 0;
   }
 }
+header .container {
+  text-align: center;
+  padding-left: 0;
+}
