@@ -193,3 +193,38 @@ footer p { margin-bottom:14px; }
   .hero h1 { font-size:32px; }
   .section { padding:70px 0; }
 }
+/* ===== Investor Dashboard ===== */
+
+.dashboard {
+  background:#ffffff;
+  padding:100px 0;
+  border-top:1px solid #ececec;
+}
+
+.dashboard-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:40px;
+  margin-top:50px;
+}
+
+.metric {
+  text-align:center;
+  padding:30px;
+  border:1px solid #ececec;
+  background:#fafaf8;
+}
+
+.metric h3 {
+  font-size:36px;
+  color:#c6a548;
+  margin-bottom:10px;
+}
+
+.metric span {
+  font-size:12px;
+  letter-spacing:2px;
+  color:#7a8593;
+  display:block;
+  margin-top:5px;
+}
