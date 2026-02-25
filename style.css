@@ -1,6 +1,14 @@
+/* ===== PREVENT FONT RENDER SHIFT ===== */
+
 html {
   overflow-y: scroll;
 }
+
+body {
+  min-height:100vh;
+}
+
+
 
 /* ================= GLOBAL ================= */
 
@@ -20,7 +28,7 @@ body {
   width:90%;
   max-width:1150px;
   margin:0 auto;
-  text-align:center;
+
 }
 
 /* ================= TYPOGRAPHY ================= */
@@ -38,7 +46,15 @@ h1,h2,h3 {
 }
 
 /* ================= HEADER ================= */
+/* ===== LOCK HEADER WIDTH ===== */
 
+header {
+  width:100%;
+}
+
+header .container {
+  text-align:center;
+}
 header {
   background:#ffffff;
   padding:40px 0 20px;
