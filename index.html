@@ -4,18 +4,37 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UK Inbound Ground Transport | Strategic Sector Partner</title>
+<meta name="description" content="Strategic ground transport infrastructure aligned with UK inbound tourism growth, long-haul markets and gateway distribution.">
+
+<!-- Structured Data Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "UK Inbound Ground Transport",
+  "url": "https://kandiahtk-crypto.github.io/evershine-trade-website/",
+  "email": "info@ukinboundgroundtransport.com",
+  "description": "Strategic sector ground transport partner aligned with UK inbound tourism growth and structured departure programmes.",
+  "areaServed": "United Kingdom",
+  "founder": {
+    "@type": "Person",
+    "name": "Director"
+  }
+}
+</script>
 
 <style>
 body{
   margin:0;
   font-family: "Helvetica Neue", Arial, sans-serif;
   background:#f4f5f7;
-  color:#1c1c1c;
+  color:#1a1a1a;
   line-height:1.6;
 }
 
+/* HEADER */
 header{
-  background:#ffffff;
+  background:white;
   padding:24px 40px;
   border-bottom:1px solid #e6e6e6;
 }
@@ -42,6 +61,7 @@ nav a:hover{
   color:#b89b4c;
 }
 
+/* HERO */
 .hero{
   background:white;
   padding:110px 20px;
@@ -49,7 +69,7 @@ nav a:hover{
 }
 
 .hero h1{
-  font-size:40px;
+  font-size:38px;
   font-weight:300;
   margin-bottom:18px;
 }
@@ -60,16 +80,29 @@ nav a:hover{
   color:#666;
 }
 
-.section{
-  padding:90px 20px;
-  max-width:1100px;
-  margin:auto;
+/* BRITAIN WATERMARK STRIP */
+.map-strip{
+  position:relative;
+  padding:120px 20px;
+  background:white;
+  text-align:center;
 }
 
-.section h2{
-  text-align:center;
+.map-strip::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Blank_map_of_the_United_Kingdom.svg') center no-repeat;
+  background-size:600px;
+  opacity:0.05;
+}
+
+.map-strip h2{
+  position:relative;
   font-weight:400;
-  margin-bottom:10px;
 }
 
 .divider{
@@ -77,6 +110,13 @@ nav a:hover{
   height:1px;
   background:#c9a94d;
   margin:24px auto 60px auto;
+}
+
+/* STATS */
+.section{
+  padding:90px 20px;
+  max-width:1100px;
+  margin:auto;
 }
 
 .stat-grid{
@@ -97,21 +137,44 @@ nav a:hover{
   color:#666;
 }
 
-.market-context{
-  max-width:820px;
+/* DASHBOARD PANEL */
+.dashboard{
+  background:white;
+  padding:80px 20px;
+  margin-top:60px;
+  border-top:1px solid #e6e6e6;
+  border-bottom:1px solid #e6e6e6;
+}
+
+.dashboard-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:40px;
+  max-width:1000px;
+  margin:auto;
+  text-align:center;
+}
+
+.dashboard h4{
+  font-weight:500;
+  margin-bottom:8px;
+}
+
+/* DIRECTOR STATEMENT */
+.director{
+  max-width:850px;
   margin:auto;
   text-align:center;
   color:#555;
+  padding:90px 20px;
 }
 
-.source-note{
-  text-align:center;
-  font-size:12px;
-  color:#999;
-  margin-top:50px;
-  font-style:italic;
+.director h3{
+  font-weight:400;
+  margin-bottom:20px;
 }
 
+/* FOOTER */
 footer{
   background:white;
   padding:40px;
@@ -128,23 +191,28 @@ footer{
 <header>
   <div class="logo">UK INBOUND GROUND TRANSPORT</div>
   <nav>
-    <a href="#">Markets</a>
-    <a href="#">Gateways</a>
-    <a href="#">Operational Model</a>
-    <a href="#">Trade Partnerships</a>
+    <a href="markets.html">Markets</a>
+    <a href="gateways.html">Gateways</a>
+    <a href="model.html">Operational Model</a>
+    <a href="partnerships.html">Trade Partnerships</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h1>Strategic Ground Transport Infrastructure<br>Aligned with UK Inbound Growth</h1>
+  <h1>Strategic Ground Transport Infrastructure<br>Aligned with UK Inbound Tourism Growth</h1>
   <p>
-  Institutional-grade touring architecture supporting structured departure
-  programmes across priority long-haul markets.
+  Institutional-grade touring architecture supporting long-haul priority markets
+  and structured gateway distribution.
   </p>
 </section>
 
+<section class="map-strip">
+  <h2>National Touring Infrastructure Across Britain</h2>
+  <div class="divider"></div>
+</section>
+
 <section class="section">
-  <h2>Market Context Briefing</h2>
+  <h2 style="text-align:center;font-weight:400;">Market Context Briefing</h2>
   <div class="divider"></div>
 
   <div class="stat-grid">
@@ -159,43 +227,43 @@ footer{
     </div>
 
     <div class="stat">
-      <h3>Long-Haul</h3>
-      <p>Priority Growth Markets (USA · India · GCC)</p>
+      <h3>USA · India · GCC</h3>
+      <p>Priority Long-Haul Source Markets</p>
     </div>
 
     <div class="stat">
       <h3>Heathrow & Manchester</h3>
-      <p>Primary International Arrival Gateways</p>
+      <p>Primary International Gateways</p>
     </div>
   </div>
-
-  <div class="market-context">
-    <p>
-    UK inbound tourism remains one of the country’s most significant service export sectors,
-    historically supporting approximately 40 million annual visits and over £30 billion
-    in visitor expenditure. Recovery dynamics continue to be driven by long-haul markets,
-    with structured arrival concentration at Heathrow and Manchester gateways reinforcing
-    the need for coordinated ground transport infrastructure.
-    </p>
-  </div>
-
-  <div class="source-note">
-    Benchmark figures reflect pre-pandemic UK tourism performance (Office for National Statistics / VisitBritain reference baseline).
-  </div>
-
 </section>
 
-<section class="section">
-  <h2>Operational Alignment</h2>
-  <div class="divider"></div>
-  <div class="market-context">
-    <p>
-    UK Inbound Ground Transport operates as a strategic sector partner,
-    aligning fleet capacity, regulatory compliance and fixed-departure touring
-    logistics with the structural realities of UK gateway distribution and
-    regional programme sequencing.
-    </p>
+<section class="dashboard">
+  <div class="dashboard-grid">
+    <div>
+      <h4>Gateway Concentration</h4>
+      <p>Majority of long-haul arrivals concentrated at Heathrow and Manchester.</p>
+    </div>
+    <div>
+      <h4>Structured Series Growth</h4>
+      <p>Rising demand for fixed-departure multi-region touring programmes.</p>
+    </div>
+    <div>
+      <h4>Regulatory Alignment</h4>
+      <p>Driver-hours and compliance planning integrated into routing design.</p>
+    </div>
   </div>
+</section>
+
+<section class="director">
+  <h3>Director’s Strategic Statement</h3>
+  <p>
+  “UK inbound tourism operates as a nationally significant export sector.
+  Our focus is to ensure that ground transport infrastructure aligns with
+  gateway concentration, long-haul recovery dynamics and structured
+  programme sequencing. Stability at arrival translates directly into
+  confidence across regional touring networks.”
+  </p>
 </section>
 
 <footer>
@@ -204,7 +272,6 @@ footer{
 </footer>
 
 <script>
-// Animated counters (safe benchmark style)
 const counters = document.querySelectorAll('.counter');
 
 counters.forEach(counter => {
