@@ -43,9 +43,10 @@ header {
 
 .logo {
   font-size:18px;
-  letter-spacing:6px;
-  color:#c6a548;
+  letter-spacing:4px;
+  color:#b79a4b;
   margin-bottom:25px;
+  display:block;
 }
 
 nav {
