@@ -15,14 +15,13 @@
 
 body {
   font-family:'Inter', sans-serif;
-  background:#0a1220;
-  color:#e6ecf5;
-  line-height:1.8;
-  -webkit-font-smoothing:antialiased;
+  background:#f4f6f9;
+  color:#1b2430;
+  line-height:1.75;
 }
 
 a {
-  color:#d6b77a;
+  color:#9c7c38;
   text-decoration:none;
   transition:0.3s ease;
 }
@@ -48,10 +47,9 @@ a:hover { opacity:0.75; }
   width:100%;
   top:0;
   left:0;
-  background:rgba(7,14,26,0.85);
-  backdrop-filter:blur(10px);
-  padding:24px 0;
-  border-bottom:1px solid rgba(214,183,122,0.15);
+  background:#ffffff;
+  padding:22px 0;
+  border-bottom:1px solid #e2e6ed;
   z-index:1000;
 }
 
@@ -64,94 +62,53 @@ a:hover { opacity:0.75; }
 .logo a {
   font-size:12px;
   letter-spacing:5px;
-  color:#d6b77a;
+  color:#9c7c38;
   font-weight:500;
 }
 
 .main-nav {
   display:flex;
-  gap:40px;
+  gap:36px;
 }
 
 .main-nav a {
   font-size:11px;
   letter-spacing:2px;
-  position:relative;
+  color:#1b2430;
 }
-
-.main-nav a::after {
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-6px;
-  width:0;
-  height:1px;
-  background:#d6b77a;
-  transition:width 0.3s ease;
-}
-
-.main-nav a:hover::after { width:100%; }
 
 .nav-cta {
-  border:1px solid #d6b77a;
+  border:1px solid #9c7c38;
   padding:6px 16px;
 }
 
 /* ================= HERO ================= */
 
 .hero {
-  position:relative;
-  padding:220px 0 180px;
+  padding:190px 0 150px;
   text-align:center;
-  background:
-    linear-gradient(rgba(7,14,26,0.75), rgba(7,14,26,0.95)),
-    url('https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=2000&q=80');
-  background-size:cover;
-  background-position:center;
-}
-
-.hero::before {
-  content:"";
-  position:absolute;
-  bottom:0;
-  left:50%;
-  transform:translateX(-50%);
-  width:80%;
-  height:140px;
-  background:radial-gradient(
-    ellipse at center,
-    rgba(214,183,122,0.25),
-    rgba(214,183,122,0.05),
-    transparent 70%
-  );
-  filter:blur(40px);
-}
-
-.hero-content {
-  position:relative;
-  z-index:2;
+  background:linear-gradient(to bottom,#ffffff,#eef2f6);
 }
 
 .hero-label {
   font-size:11px;
   letter-spacing:6px;
-  color:#d6b77a;
-  margin-bottom:40px;
+  color:#9c7c38;
+  margin-bottom:30px;
 }
 
 .hero h1 {
   font-family:'Playfair Display',serif;
-  font-size:60px;
+  font-size:58px;
   font-weight:400;
   line-height:1.25;
-  margin-bottom:35px;
-  text-shadow:0 15px 40px rgba(0,0,0,0.6);
+  margin-bottom:30px;
 }
 
 .hero p {
-  font-size:19px;
-  color:#cfd7e6;
-  margin-bottom:60px;
+  font-size:18px;
+  color:#5c6675;
+  margin-bottom:50px;
   max-width:760px;
   margin-left:auto;
   margin-right:auto;
@@ -159,26 +116,27 @@ a:hover { opacity:0.75; }
 
 .button-primary {
   display:inline-block;
-  padding:16px 48px;
-  border:1px solid #d6b77a;
+  padding:14px 42px;
+  border:1px solid #9c7c38;
   letter-spacing:2px;
   font-size:12px;
-  transition:0.4s ease;
+  color:#9c7c38;
+  background:#ffffff;
+  transition:0.3s ease;
 }
 
 .button-primary:hover {
-  background:#d6b77a;
-  color:#0a1220;
-  box-shadow:0 20px 60px rgba(214,183,122,0.4);
+  background:#9c7c38;
+  color:#ffffff;
 }
 
 /* ================= EXECUTIVE BAND ================= */
 
 .executive-band {
-  background:#0c1628;
-  padding:70px 0;
-  border-top:1px solid rgba(214,183,122,0.08);
-  border-bottom:1px solid rgba(214,183,122,0.08);
+  background:#ffffff;
+  padding:60px 0;
+  border-top:1px solid #e2e6ed;
+  border-bottom:1px solid #e2e6ed;
 }
 
 .band-grid {
@@ -191,7 +149,7 @@ a:hover { opacity:0.75; }
 .band-item span {
   font-size:11px;
   letter-spacing:3px;
-  color:#7e8aa3;
+  color:#8c95a3;
   display:block;
   margin-bottom:8px;
 }
@@ -200,13 +158,14 @@ a:hover { opacity:0.75; }
   font-family:'Playfair Display',serif;
   font-weight:400;
   font-size:18px;
-  color:#d6b77a;
+  color:#1b2430;
 }
 
-/* ================= CONTENT SECTION ================= */
+/* ================= SECTION ================= */
 
 .section {
-  padding:120px 0;
+  padding:110px 0;
+  background:#f4f6f9;
 }
 
 .section h2 {
@@ -221,12 +180,12 @@ a:hover { opacity:0.75; }
   display:block;
   width:40px;
   height:1px;
-  background:#d6b77a;
-  margin-top:18px;
+  background:#9c7c38;
+  margin:18px auto 0;
 }
 
 .section p {
-  color:#aab4c8;
+  color:#5c6675;
   margin-bottom:30px;
 }
 
@@ -241,7 +200,7 @@ ul li {
   position:relative;
   padding-left:22px;
   margin-bottom:16px;
-  color:#cfd7e6;
+  color:#2c3542;
 }
 
 ul li::before {
@@ -251,48 +210,47 @@ ul li::before {
   top:9px;
   width:6px;
   height:6px;
-  background:#d6b77a;
+  background:#9c7c38;
   border-radius:50%;
 }
 
 /* ================= CTA ================= */
 
 .cta-band {
-  background:#0e1a2e;
-  padding:140px 0;
+  background:#ffffff;
+  padding:120px 0;
   text-align:center;
-  border-top:1px solid rgba(214,183,122,0.15);
+  border-top:1px solid #e2e6ed;
 }
 
 .cta-band h2 {
   font-family:'Playfair Display',serif;
-  font-size:36px;
-  margin-bottom:40px;
+  font-size:34px;
+  margin-bottom:35px;
 }
 
 /* ================= FOOTER ================= */
 
 .site-footer {
-  padding:60px 0;
+  padding:50px 0;
   text-align:center;
-  background:#0a1220;
-  border-top:1px solid rgba(214,183,122,0.1);
+  background:#eef2f6;
   font-size:12px;
   letter-spacing:2px;
-  color:#7f8aa0;
+  color:#7b8696;
 }
 
 /* ================= MOBILE ================= */
 
 @media (max-width:768px){
 
-.hero { padding:180px 0 140px; }
+.hero { padding:150px 0 110px; }
 
 .hero h1 { font-size:34px; }
 
 .hero p { font-size:16px; }
 
-.section h2 { font-size:28px; }
+.section h2 { font-size:26px; }
 
 .main-nav {
   flex-wrap:wrap;
@@ -325,7 +283,7 @@ ul li::before {
 </header>
 
 <section class="hero">
-  <div class="container hero-content">
+  <div class="container narrow">
     <div class="hero-label">HEATHROW-LED OPERATIONS</div>
     <h1>UK Touring Infrastructure<br>Built for Departure Stability</h1>
     <p>
