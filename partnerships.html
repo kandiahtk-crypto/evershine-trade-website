@@ -84,7 +84,6 @@ nav a:hover {
   max-width:800px;
   margin:0 auto;
   color:#5d6775;
-  text-align:center;
 }
 
 /* ===== SECTION ===== */
@@ -132,6 +131,41 @@ nav a:hover {
 .card p {
   font-size:14px;
   color:#5d6775;
+}
+
+/* ===== DASHBOARD ===== */
+
+.dashboard {
+  background:#ffffff;
+  border-top:1px solid #e6e3dc;
+  border-bottom:1px solid #e6e3dc;
+}
+
+.dashboard-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:50px;
+  margin-top:40px;
+  text-align:center;
+}
+
+.metric {
+  padding:30px;
+  border:1px solid #e6e3dc;
+  background:#faf9f6;
+}
+
+.metric h3 {
+  font-family:'Playfair Display', serif;
+  font-size:38px;
+  color:#b79a4b;
+  margin-bottom:10px;
+}
+
+.metric span {
+  font-size:12px;
+  letter-spacing:2px;
+  color:#6b7380;
 }
 
 /* ===== CTA ===== */
@@ -195,141 +229,36 @@ footer {
     <div class="divider"></div>
     <p>
       Structured partnership infrastructure for international tour operators
-      and DMCs requiring departure stability, regulatory governance and
-      long-term allocation security within the UK inbound touring sector.
+      and DMCs requiring departure stability and regulatory governance.
     </p>
   </div>
 </section>
 
-<!-- INSTITUTIONAL MODEL -->
-
-<section class="section">
+<section class="section dashboard">
   <div class="container">
-    <h2>Institutional Partnership Model</h2>
+    <h2>Inbound Market Growth Context</h2>
     <div class="divider"></div>
-    <p>
-      We operate as a structured operational partner rather than a transactional supplier.
-      Capacity modelling, compliance validation and routing feasibility are embedded
-      within programme design from confirmation through execution.
-    </p>
 
-    <div class="grid">
-      <div class="card">
-        <h3>Departure Grid Alignment</h3>
-        <p>Allocation planning aligned to confirmed series schedules and brochure cycles.</p>
+    <div class="dashboard-grid">
+      <div class="metric">
+        <h3 class="counter" data-target="12">0</h3>
+        <span>Long-Haul Market Expansion</span>
       </div>
-      <div class="card">
-        <h3>Gateway Integration</h3>
-        <p>Heathrow-led sequencing integrated with regional airport and cruise flows.</p>
+      <div class="metric">
+        <h3 class="counter" data-target="85">0</h3>
+        <span>Series Stability Index</span>
       </div>
-      <div class="card">
-        <h3>Compliance Governance</h3>
-        <p>UK & EU driver-hours regulation embedded into routing architecture.</p>
+      <div class="metric">
+        <h3 class="counter" data-target="4">0</h3>
+        <span>Primary Gateway Integration</span>
       </div>
-      <div class="card">
-        <h3>Peak Season Stability</h3>
-        <p>Capacity protection across repeat departure cycles and high-demand corridors.</p>
+      <div class="metric">
+        <h3 class="counter" data-target="100">0</h3>
+        <span>Compliance Validation Protocol</span>
       </div>
     </div>
   </div>
 </section>
-
-<!-- CAPACITY RISK -->
-
-<section class="section">
-  <div class="container">
-    <h2>Capacity Risk & Mitigation Framework</h2>
-    <div class="divider"></div>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Forward Allocation Planning</h3>
-        <p>Peak summer volatility mitigated through structured grid forecasting.</p>
-      </div>
-      <div class="card">
-        <h3>Routing Feasibility Validation</h3>
-        <p>Mileage modelling assessed prior to operational confirmation.</p>
-      </div>
-      <div class="card">
-        <h3>Gateway Contingency Design</h3>
-        <p>Multi-entry sequencing across Heathrow and regional gateways.</p>
-      </div>
-      <div class="card">
-        <h3>Series Continuity Controls</h3>
-        <p>Capacity structured across repeat seasonal programmes.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ANNUAL GROWTH -->
-
-<section class="section">
-  <div class="container">
-    <h2>Annual Growth & Market Alignment</h2>
-    <div class="divider"></div>
-
-    <p>
-      Long-haul demand across North America, India, China and Europe
-      continues to reinforce Britain’s premium touring position.
-      Structured infrastructure ensures scalable support aligned to programme expansion.
-    </p>
-  </div>
-</section>
-
-<!-- TRADE CREDENTIALS -->
-
-<section class="section">
-  <div class="container">
-    <h2>Trade Partnership Credentials</h2>
-    <div class="divider"></div>
-
-    <div class="grid">
-      <div class="card">
-        <h3>DMC Collaboration</h3>
-        <p>Integration within destination-level programme planning cycles.</p>
-      </div>
-      <div class="card">
-        <h3>Series Infrastructure Support</h3>
-        <p>Capacity modelling aligned to brochure production timelines.</p>
-      </div>
-      <div class="card">
-        <h3>Multi-Gateway Execution</h3>
-        <p>Structured operational sequencing across major UK entry points.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ESG -->
-
-<section class="section">
-  <div class="container">
-    <h2>ESG & Sustainability Alignment</h2>
-    <div class="divider"></div>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Environmental Efficiency</h3>
-        <p>Route optimisation supports responsible touring corridors.</p>
-      </div>
-      <div class="card">
-        <h3>Driver Welfare & Compliance</h3>
-        <p>Regulated hours governance protecting safety and wellbeing.</p>
-      </div>
-      <div class="card">
-        <h3>Regional Dispersion Support</h3>
-        <p>Encouraging balanced regional engagement beyond gateway concentration.</p>
-      </div>
-      <div class="card">
-        <h3>Governance Transparency</h3>
-        <p>Structured allocation and compliance review integrated within programme design.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
 
 <section class="cta">
   <div class="container">
@@ -348,6 +277,31 @@ footer {
   <br>
   info@ukinboundgroundtransport.com
 </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const counters = document.querySelectorAll(".counter");
+
+  counters.forEach(counter => {
+    const target = +counter.getAttribute("data-target");
+    let count = 0;
+    const speed = 200;
+
+    const updateCount = () => {
+      const increment = target / speed;
+      if (count < target) {
+        count += increment;
+        counter.innerText = Math.ceil(count);
+        requestAnimationFrame(updateCount);
+      } else {
+        counter.innerText = target + (target === 100 ? "%" : "+");
+      }
+    };
+
+    updateCount();
+  });
+});
+</script>
 
 </body>
 </html>
