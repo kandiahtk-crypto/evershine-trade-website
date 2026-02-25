@@ -1,3 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UK Inbound Ground Transport</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family:'Inter',sans-serif;
+  background:#f5f7fa;
+  color:#1f2a36;
+  line-height:1.75;
+}
+
+/* REMOVE BLUE + PURPLE COMPLETELY */
+
+a,
+a:visited,
+a:active {
+  color:#b48a2c;
+  text-decoration:none;
+  transition:0.3s ease;
+}
+
+a:hover {
+  opacity:0.75;
+}
+
+.container {
+  width:90%;
+  max-width:1100px;
+  margin:0 auto;
+  text-align:center;
+}
+
+/* ===== HEADER ===== */
+
+header {
+  background:#ffffff;
+  padding:40px 0 30px;
+  border-bottom:1px solid #e4e8ee;
+}
+
+.logo {
+  font-family:'Playfair Display',serif;
+  font-size:18px;
+  letter-spacing:6px;
+  color:#b48a2c;
+  margin-bottom:30px;
+}
+
+nav {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px 40px;
+}
+
+nav a {
+  font-size:13px;
+  letter-spacing:3px;
+  color:#1f2a36;
+}
+
+.nav-cta {
+  border:1px solid #b48a2c;
+  padding:8px 20px;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+  padding:100px 0 80px;
+  background:linear-gradient(to bottom,#ffffff,#f0f3f8);
+}
+
+.hero h1 {
+  font-family:'Playfair Display',serif;
+  font-weight:400;
+  font-size:38px;
+  margin-bottom:30px;
+  letter-spacing:1px;
+}
+
+.hero p {
+  max-width:760px;
+  margin:0 auto 30px;
+  color:#5a6675;
+}
+
+/* ===== INLINE LINKS ===== */
+
+.inline-link {
+  color:#b48a2c;
+  border-bottom:1px solid rgba(180,138,44,0.4);
+  padding-bottom:2px;
+}
+
+/* ===== SECTION ===== */
+
+.section {
+  padding:80px 0;
+  background:#ffffff;
+  border-top:1px solid #e4e8ee;
+}
+
+.section h2 {
+  font-family:'Playfair Display',serif;
+  font-weight:400;
+  font-size:28px;
+  margin-bottom:25px;
+}
+
+.section p {
+  max-width:780px;
+  margin:0 auto 25px;
+  color:#5a6675;
+}
+
+/* ===== BULLETS ===== */
+
+ul {
+  list-style:none;
+  max-width:650px;
+  margin:0 auto;
+  text-align:left;
+}
+
+ul li {
+  position:relative;
+  padding-left:22px;
+  margin-bottom:14px;
+  color:#2c3642;
+}
+
+ul li::before {
+  content:"";
+  position:absolute;
+  left:0;
+  top:9px;
+  width:6px;
+  height:6px;
+  background:#b48a2c;
+  border-radius:50%;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+  padding:60px 0;
+  background:#f0f3f8;
+  font-size:14px;
+  color:#6b7684;
+  border-top:1px solid #e4e8ee;
+}
+
+footer p {
+  margin-bottom:12px;
+  letter-spacing:1px;
+}
+
+.email-link {
+  color:#1f2a36;
+  font-weight:500;
+  border-bottom:1px solid rgba(180,138,44,0.4);
+}
+
+@media (max-width:768px){
+
+.hero h1 { font-size:30px; }
+
+nav { gap:15px 20px; }
+
+}
+
+</style>
+</head>
+
+<body>
+
 <header>
   <div class="container">
     <div class="logo">UK INBOUND GROUND TRANSPORT</div>
@@ -14,13 +202,14 @@
 
 <section class="hero">
   <div class="container">
-    <h1>Supporting International Inbound Tourism to Britain & Ireland</h1>
+    <h1>Strategic Ground Transport Partner Supporting Britain’s International Visitor Economy</h1>
 
     <p>
-      UK Inbound Ground Transport operates as a trade-only transport partner 
+      UK Inbound Ground Transport operates as a trade-only infrastructure partner 
       aligned with structured inbound touring across England, Scotland, Wales 
-      and Ireland. We support international tour operators and destination 
-      management companies delivering scheduled series and bespoke group programmes.
+      and Ireland. We support international tour operators, destination 
+      management companies and trade stakeholders delivering fixed series 
+      and multi-region programmes.
     </p>
 
     <p>
@@ -32,45 +221,37 @@
   </div>
 </section>
 
-<section style="padding:80px 0;">
+<section class="section">
   <div class="container">
+    <h2>Aligned with Britain’s Inbound Tourism Strategy</h2>
 
-    <h2 style="font-family:'Playfair Display',serif;font-weight:400;margin-bottom:30px;">
-      Aligned with Britain’s Inbound Tourism Strategy
-    </h2>
-
-    <p style="max-width:800px;margin:0 auto 25px;color:#aab4c0;">
-      Our operational structure is designed to support Britain’s global 
-      inbound objectives, facilitating seamless multi-region touring across 
-      key visitor destinations including London, the Cotswolds, Bath, Oxford, 
-      Stratford-upon-Avon, the Lake District, Edinburgh and the Scottish Highlands.
+    <p>
+      Our operational structure supports Britain’s global inbound objectives, 
+      facilitating seamless touring across key visitor destinations including 
+      London, Bath, Oxford, Stratford-upon-Avon, the Lake District, Edinburgh 
+      and the Scottish Highlands.
     </p>
 
-    <p style="max-width:800px;margin:0 auto 25px;color:#aab4c0;">
-      We work in coordination with international trade partners to ensure 
-      programme stability, driver-hours compliance, urban access management 
-      and peak-season fleet allocation across strategic gateway airports.
+    <p>
+      We coordinate programme stability, driver-hours compliance, 
+      urban access management and peak-season fleet allocation across 
+      major gateway airports and regional entry points.
     </p>
-
   </div>
 </section>
 
-<section style="padding:80px 0;border-top:1px solid rgba(200,162,77,0.15);">
+<section class="section">
   <div class="container">
+    <h2>Trade Infrastructure & Regulatory Standards</h2>
 
-    <h2 style="font-family:'Playfair Display',serif;font-weight:400;margin-bottom:30px;">
-      Trade Infrastructure & Compliance
-    </h2>
-
-    <ul style="max-width:650px;margin:0 auto;text-align:left;">
+    <ul>
       <li>UK Operator Licence & regulatory compliance</li>
       <li>EU & UK driver-hours management</li>
-      <li>Urban traffic and access planning</li>
+      <li>Urban traffic and congestion modelling</li>
       <li>Multi-stop itinerary feasibility review</li>
-      <li>Peak season capacity modelling</li>
-      <li>24/7 operational programme support</li>
+      <li>Peak season fleet capacity planning</li>
+      <li>24/7 programme operational support</li>
     </ul>
-
   </div>
 </section>
 
@@ -86,3 +267,6 @@
     <p>© 2026 Evershine Transport Ltd · Registered in England & Wales</p>
   </div>
 </footer>
+
+</body>
+</html>
