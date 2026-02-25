@@ -79,9 +79,10 @@ nav {
 nav a {
   text-decoration:none;
   font-size:13px;
-  letter-spacing:3px;
+  letter-spacing:2px;
   color:#2b3440;
-  padding-bottom:4px;
+  padding-bottom:6px;
+  border-bottom:2px solid transparent;
 }
 
 nav a.active {
