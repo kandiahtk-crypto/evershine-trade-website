@@ -1,11 +1,180 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trade Programme Enquiry | UK Inbound Ground Transport</title>
-<link rel="stylesheet" href="style.css">
+<title>Trade Programme Submission | UK Inbound Ground Transport</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family:'Inter', sans-serif;
+  background:#f3f2ee;
+  color:#2c3440;
+  line-height:1.7;
+}
+
+.container {
+  width:90%;
+  max-width:1000px;
+  margin:0 auto;
+}
+
+/* ===== HEADER ===== */
+
+header {
+  background:#ffffff;
+  padding:40px 0 20px;
+  border-bottom:1px solid #e6e3dc;
+  text-align:center;
+}
+
+.logo {
+  font-size:18px;
+  letter-spacing:6px;
+  color:#b79a4b;
+  margin-bottom:25px;
+}
+
+nav {
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+nav a {
+  text-decoration:none;
+  font-size:13px;
+  letter-spacing:3px;
+  color:#2c3440;
+}
+
+/* ===== HERO ===== */
+
+.portal-hero {
+  padding:100px 0 60px;
+  text-align:center;
+}
+
+.portal-hero h1 {
+  font-family:'Playfair Display', serif;
+  font-weight:400;
+  font-size:38px;
+}
+
+.portal-hero p {
+  max-width:750px;
+  margin:25px auto 0;
+  color:#5d6775;
+}
+
+.divider {
+  width:70px;
+  height:2px;
+  background:#b79a4b;
+  margin:25px auto 40px;
+}
+
+/* ===== INFO BAND ===== */
+
+.info-band {
+  background:#ffffff;
+  padding:60px 40px;
+  margin-bottom:60px;
+  border:1px solid #e6e3dc;
+}
+
+.info-band h3 {
+  font-family:'Playfair Display', serif;
+  font-weight:400;
+  margin-bottom:20px;
+}
+
+.info-band p {
+  color:#5d6775;
+  margin-bottom:15px;
+  font-size:14px;
+}
+
+/* ===== FORM SECTION ===== */
+
+.form-wrapper {
+  background:#ffffff;
+  padding:70px;
+  border:1px solid #e6e3dc;
+}
+
+.form-section {
+  margin-bottom:50px;
+}
+
+.form-section h3 {
+  font-family:'Playfair Display', serif;
+  font-weight:400;
+  margin-bottom:25px;
+  border-bottom:1px solid #e6e3dc;
+  padding-bottom:10px;
+}
+
+label {
+  display:block;
+  font-size:12px;
+  letter-spacing:1px;
+  margin-bottom:8px;
+  margin-top:20px;
+}
+
+input, select, textarea {
+  width:100%;
+  padding:12px;
+  border:1px solid #ddd;
+  font-family:'Inter', sans-serif;
+}
+
+textarea {
+  min-height:120px;
+}
+
+.submit-button {
+  margin-top:40px;
+  background:#b79a4b;
+  color:#ffffff;
+  border:none;
+  padding:16px 40px;
+  letter-spacing:2px;
+  font-size:13px;
+  cursor:pointer;
+}
+
+.submit-button:hover {
+  opacity:0.9;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+  padding:80px 0;
+  text-align:center;
+  font-size:14px;
+  color:#6b7380;
+  border-top:1px solid #e6e3dc;
+  margin-top:80px;
+}
+
+@media(max-width:768px){
+  .form-wrapper { padding:40px 25px; }
+  .portal-hero h1 { font-size:28px; }
+}
+
+</style>
 </head>
 
 <body>
@@ -18,69 +187,90 @@
     <a href="gateways.html">Gateways</a>
     <a href="model.html">Operational Model</a>
     <a href="partnerships.html">Trade Partnerships</a>
-    <a href="trade-enquiry.html" class="active">Trade Enquiry</a>
+    <a href="trade-enquiry.html">Trade Portal</a>
   </nav>
 </header>
 
-<section class="section">
+<section class="portal-hero">
   <div class="container">
-
-    <h2>Trade Programme Enquiry</h2>
+    <h1>Trade Programme Submission Portal</h1>
     <div class="divider"></div>
-
     <p>
-      For confirmed departure grids, series allocation discussions,
-      framework agreements and structured UK & Ireland touring programmes.
+      Structured submission interface for international tour operators,
+      DMC partners and fixed-departure programme planners seeking
+      UK touring capacity allocation.
     </p>
+  </div>
+</section>
 
-    <form action="send-rfq.php" method="POST" style="max-width:700px;margin:40px auto;text-align:left;">
+<section class="container">
 
-      <label>Company Name</label><br>
-      <input type="text" name="company" required style="width:100%;padding:12px;margin:10px 0 25px;border:1px solid #ececec;"><br>
+  <div class="info-band">
+    <h3>Submission Guidelines</h3>
+    <p>• Confirmed departure schedules receive priority allocation review.</p>
+    <p>• Capacity modelling is aligned to seasonal contracting cycles.</p>
+    <p>• Routing and regulatory compliance validation undertaken prior to confirmation.</p>
+  </div>
 
-      <label>Primary Source Market</label><br>
-      <input type="text" name="market" style="width:100%;padding:12px;margin:10px 0 25px;border:1px solid #ececec;"><br>
+  <div class="form-wrapper">
 
-      <label>Departure Season</label><br>
-      <input type="text" name="season" style="width:100%;padding:12px;margin:10px 0 25px;border:1px solid #ececec;"><br>
+    <form action="https://formsubmit.co/info@ukinboundgroundtransport.com" method="POST">
 
-      <label>Estimated Number of Departures</label><br>
-      <input type="number" name="departures" style="width:100%;padding:12px;margin:10px 0 25px;border:1px solid #ececec;"><br>
+      <input type="hidden" name="_subject" value="New Trade Programme Submission">
+      <input type="hidden" name="_captcha" value="false">
 
-      <label>Gateway Points (e.g. LHR / MAN / EDI)</label><br>
-      <input type="text" name="gateways" style="width:100%;padding:12px;margin:10px 0 25px;border:1px solid #ececec;"><br>
+      <div class="form-section">
+        <h3>Operator Details</h3>
 
-      <label>Programme Overview</label><br>
-      <textarea name="overview" rows="6" style="width:100%;padding:12px;margin:10px 0 30px;border:1px solid #ececec;"></textarea><br>
+        <label>Company Name</label>
+        <input type="text" name="Company" required>
 
-      <button type="submit" style="background:#c6a548;color:#ffffff;padding:14px 30px;border:none;letter-spacing:2px;font-size:13px;">
-        Submit Trade Enquiry
+        <label>Primary Contact Name</label>
+        <input type="text" name="Contact" required>
+
+        <label>Email Address</label>
+        <input type="email" name="Email" required>
+
+        <label>Source Market</label>
+        <select name="Market">
+          <option>United States</option>
+          <option>China</option>
+          <option>India</option>
+          <option>Europe</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-section">
+        <h3>Programme Overview</h3>
+
+        <label>Estimated Departure Dates</label>
+        <input type="text" name="Dates">
+
+        <label>Tour Routing Summary</label>
+        <textarea name="Routing"></textarea>
+
+        <label>Number of Departures</label>
+        <input type="text" name="Departures">
+
+        <label>Additional Operational Notes</label>
+        <textarea name="Notes"></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">
+        Submit Programme For Allocation Review
       </button>
 
     </form>
 
   </div>
-</section>
 
-<section class="section" style="background:#f9f9f7;">
-  <div class="container">
-    <h2>Engagement Framework</h2>
-    <div class="divider"></div>
-
-    <p>
-      All programme submissions undergo routing validation, compliance review,
-      mileage modelling and allocation feasibility assessment prior to formal quotation.
-      Structured collaboration ensures operational stability across peak-season departures.
-    </p>
-  </div>
 </section>
 
 <footer>
-  <div class="container">
-    <p>© 2026 Evershine Transport Limited</p>
-    <p class="email">info@ukinboundgroundtransport.com</p>
-    <p>Registered in England & Wales</p>
-  </div>
+  © 2026 Evershine Transport Limited  
+  <br>
+  info@ukinboundgroundtransport.com
 </footer>
 
 </body>
