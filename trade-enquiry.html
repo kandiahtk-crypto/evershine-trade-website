@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Trade Enquiry</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trade Programme Enquiry | UK Inbound Ground Transport</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
@@ -15,44 +18,69 @@
     <a href="gateways.html">Gateways</a>
     <a href="model.html">Operational Model</a>
     <a href="partnerships.html">Trade Partnerships</a>
-    <a href="trade-enquiry.html">Trade Enquiry</a>
+    <a href="trade-enquiry.html" class="active">Trade Enquiry</a>
   </nav>
 </header>
 
 <section class="section">
-<div class="container narrow">
+  <div class="container">
 
-<h1>Trade Programme Enquiry</h1>
-<div class="divider"></div>
+    <h2>Trade Programme Enquiry</h2>
+    <div class="divider"></div>
 
-<p>
-For confirmed departure grids, series allocation discussions
-and annual framework agreements.
-</p>
+    <p>
+      For confirmed departure grids, series allocation discussions,
+      framework agreements and structured UK & Ireland touring programmes.
+    </p>
 
-<form>
-  <label>Company Name</label><br>
-  <input type="text" style="width:100%;padding:12px;margin:10px 0;"><br>
+    <form action="send-rfq.php" method="POST" style="max-width:700px;margin:40px auto;text-align:left;">
 
-  <label>Departure Season</label><br>
-  <input type="text" style="width:100%;padding:12px;margin:10px 0;"><br>
+      <label>Company Name</label><br>
+      <input type="text" name="company" required style="width:100%;padding:12px;margin:10px 0 25px;border:1px solid #ececec;"><br>
 
-  <label>Estimated Number of Departures</label><br>
-  <input type="text" style="width:100%;padding:12px;margin:10px 0;"><br>
+      <label>Primary Source Market</label><br>
+      <input type="text" name="market" style="width:100%;padding:12px;margin:10px 0 25px;border:1px solid #ececec;"><br>
 
-  <label>Programme Overview</label><br>
-  <textarea style="width:100%;padding:12px;margin:10px 0;height:120px;"></textarea><br>
+      <label>Departure Season</label><br>
+      <input type="text" name="season" style="width:100%;padding:12px;margin:10px 0 25px;border:1px solid #ececec;"><br>
 
-  <button style="padding:15px 30px;background:#b89b4c;border:none;color:white;">
-    Submit Trade Enquiry
-  </button>
-</form>
+      <label>Estimated Number of Departures</label><br>
+      <input type="number" name="departures" style="width:100%;padding:12px;margin:10px 0 25px;border:1px solid #ececec;"><br>
 
-</div>
+      <label>Gateway Points (e.g. LHR / MAN / EDI)</label><br>
+      <input type="text" name="gateways" style="width:100%;padding:12px;margin:10px 0 25px;border:1px solid #ececec;"><br>
+
+      <label>Programme Overview</label><br>
+      <textarea name="overview" rows="6" style="width:100%;padding:12px;margin:10px 0 30px;border:1px solid #ececec;"></textarea><br>
+
+      <button type="submit" style="background:#c6a548;color:#ffffff;padding:14px 30px;border:none;letter-spacing:2px;font-size:13px;">
+        Submit Trade Enquiry
+      </button>
+
+    </form>
+
+  </div>
+</section>
+
+<section class="section" style="background:#f9f9f7;">
+  <div class="container">
+    <h2>Engagement Framework</h2>
+    <div class="divider"></div>
+
+    <p>
+      All programme submissions undergo routing validation, compliance review,
+      mileage modelling and allocation feasibility assessment prior to formal quotation.
+      Structured collaboration ensures operational stability across peak-season departures.
+    </p>
+  </div>
 </section>
 
 <footer>
-info@ukinboundgroundtransport.com
+  <div class="container">
+    <p>© 2026 Evershine Transport Limited</p>
+    <p class="email">info@ukinboundgroundtransport.com</p>
+    <p>Registered in England & Wales</p>
+  </div>
 </footer>
 
 </body>
