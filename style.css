@@ -255,3 +255,20 @@ footer p { margin-bottom:14px; }
   text-align: left;
   padding-left: 12%;
 }
+/* ===== HERO DESKTOP OFFSET ONLY ===== */
+
+@media(min-width:1024px){
+  .hero .container {
+    text-align: left;
+    padding-left: 10%;
+  }
+}
+
+/* ===== KEEP MOBILE CENTERED ===== */
+
+@media(max-width:1023px){
+  .hero .container {
+    text-align: center;
+    padding-left: 0;
+  }
+}
