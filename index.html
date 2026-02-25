@@ -7,6 +7,24 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
+<!-- STRUCTURED SEO SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "UK Inbound Ground Transport",
+  "legalName": "Evershine Transport Limited",
+  "url": "https://www.ukinboundgroundtransport.com",
+  "email": "info@ukinboundgroundtransport.com",
+  "areaServed": "United Kingdom",
+  "serviceType": "Inbound Ground Transport Infrastructure",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Tour Operators and Destination Management Companies"
+  }
+}
+</script>
+
 <style>
 
 /* ===== GLOBAL ===== */
@@ -90,6 +108,36 @@ nav a:hover {
   max-width:850px;
   margin:0 auto;
   color:#5d6775;
+}
+
+/* ===== MAP STRIP ===== */
+
+.map-strip {
+  position: relative;
+  padding:120px 0;
+  background:#ffffff;
+  border-top:1px solid #e6e3dc;
+  border-bottom:1px solid #e6e3dc;
+  overflow:hidden;
+}
+
+.map-strip::before {
+  content:"";
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:900px;
+  height:900px;
+  background:url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/United_Kingdom_relief_location_map.jpg/800px-United_Kingdom_relief_location_map.jpg') no-repeat center;
+  background-size:contain;
+  opacity:0.04;
+  transform:translate(-50%,-50%);
+  pointer-events:none;
+}
+
+.map-strip .container {
+  position:relative;
+  z-index:2;
 }
 
 /* ===== SECTION ===== */
@@ -229,6 +277,20 @@ footer {
   </div>
 </section>
 
+<!-- MAP STRIP -->
+
+<section class="map-strip">
+  <div class="container">
+    <h2>Operating Across Britain’s Touring Corridors</h2>
+    <div class="gold-divider"></div>
+    <p>
+      Structured ground transport delivery across England, Scotland,
+      Wales and integrated Ireland touring flows aligned to
+      international departure programmes.
+    </p>
+  </div>
+</section>
+
 <!-- INTERNATIONAL TRADE ALIGNMENT -->
 
 <section class="section">
@@ -244,93 +306,23 @@ footer {
     </p>
 
     <div class="grid">
-
       <div class="card">
         <h3>United States</h3>
-        <p>
-          Escorted fixed-departure touring, Scotland extensions,
-          regional dispersion and peak-summer capacity protection.
-        </p>
+        <p>Escorted fixed-departure touring and peak-summer capacity protection.</p>
       </div>
-
       <div class="card">
         <h3>China</h3>
-        <p>
-          Group touring grids, multi-coach movements and
-          structured gateway sequencing across high-volume periods.
-        </p>
+        <p>High-volume group touring and structured gateway sequencing.</p>
       </div>
-
       <div class="card">
         <h3>India</h3>
-        <p>
-          Multi-city touring demand, premium itinerary flows and
-          Scotland inclusion integrated within gateway logistics planning.
-        </p>
+        <p>Multi-city touring demand and Scotland inclusion routing.</p>
       </div>
-
       <div class="card">
         <h3>Europe</h3>
-        <p>
-          Regional coach circuits, multi-country integration and
-          flexible routing aligned to seasonal touring corridors.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- GATEWAY SECTION -->
-
-<section class="section">
-  <div class="container">
-    <h2>Gateway & Regional Touring Integration</h2>
-    <div class="gold-divider"></div>
-    <p>
-      Heathrow-led arrival management integrated with Manchester,
-      Edinburgh and regional UK gateways. Structured routing supports
-      Scotland circuits, Highlands touring, regional England dispersion
-      and Britain & Ireland combinations aligned to operator programme architecture.
-    </p>
-  </div>
-</section>
-
-<!-- STATS -->
-
-<section class="stats">
-  <div class="container">
-    <h2>Inbound Tourism Market Context</h2>
-    <div class="gold-divider"></div>
-
-    <div class="stats-grid">
-      <div class="stat">
-        <h3>Long-Haul Growth</h3>
-        <p>Expansion across North America, India, China and GCC source markets.</p>
-      </div>
-      <div class="stat">
-        <h3>Series Stability</h3>
-        <p>Alignment to confirmed departure calendars and allocation cycles.</p>
-      </div>
-      <div class="stat">
-        <h3>Regulatory Compliance</h3>
-        <p>Driver-hours and routing architecture embedded in programme design.</p>
+        <p>Regional coach circuits and flexible seasonal integration.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- CTA -->
-
-<section class="cta">
-  <div class="container">
-    <h2>Structured Infrastructure for International Touring Brands</h2>
-    <div class="gold-divider"></div>
-    <p>
-      Supporting DMCs and tour operators seeking long-term
-      operational stability across Britain.
-    </p>
-    <a href="trade-enquiry.html" class="cta-button">Submit Trade Enquiry</a>
   </div>
 </section>
 
