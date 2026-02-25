@@ -15,24 +15,17 @@
 
 body {
   font-family:'Inter',sans-serif;
-  background:#f5f7fa;
+  background:#f6f8fb;
   color:#1f2a36;
   line-height:1.75;
 }
 
-/* REMOVE BLUE + PURPLE COMPLETELY */
-
-a,
-a:visited,
-a:active {
+a, a:visited, a:active {
   color:#b48a2c;
   text-decoration:none;
-  transition:0.3s ease;
 }
 
-a:hover {
-  opacity:0.75;
-}
+a:hover { opacity:0.8; }
 
 .container {
   width:90%;
@@ -79,29 +72,33 @@ nav a {
 
 .hero {
   padding:100px 0 80px;
-  background:linear-gradient(to bottom,#ffffff,#f0f3f8);
+  background:linear-gradient(to bottom,#ffffff,#f1f4f8);
 }
 
 .hero h1 {
   font-family:'Playfair Display',serif;
   font-weight:400;
-  font-size:38px;
+  font-size:40px;
   margin-bottom:30px;
-  letter-spacing:1px;
 }
 
 .hero p {
-  max-width:760px;
+  max-width:780px;
   margin:0 auto 30px;
   color:#5a6675;
 }
 
-/* ===== INLINE LINKS ===== */
+/* ===== MAP STRIP ===== */
 
-.inline-link {
-  color:#b48a2c;
-  border-bottom:1px solid rgba(180,138,44,0.4);
-  padding-bottom:2px;
+.map-strip {
+  height:180px;
+  background:
+    linear-gradient(to bottom,rgba(255,255,255,0.9),rgba(255,255,255,0.95)),
+    url('https://upload.wikimedia.org/wikipedia/commons/5/5c/UK_location_map.svg');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  opacity:0.15;
 }
 
 /* ===== SECTION ===== */
@@ -120,8 +117,36 @@ nav a {
 }
 
 .section p {
-  max-width:780px;
+  max-width:800px;
   margin:0 auto 25px;
+  color:#5a6675;
+}
+
+/* ===== GRID ===== */
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:40px;
+  margin-top:40px;
+  text-align:left;
+}
+
+.card {
+  background:#f6f8fb;
+  padding:30px;
+  border:1px solid #e4e8ee;
+}
+
+.card h3 {
+  font-family:'Playfair Display',serif;
+  font-weight:400;
+  margin-bottom:15px;
+  color:#1f2a36;
+}
+
+.card p {
+  font-size:14px;
   color:#5a6675;
 }
 
@@ -138,7 +163,6 @@ ul li {
   position:relative;
   padding-left:22px;
   margin-bottom:14px;
-  color:#2c3642;
 }
 
 ul li::before {
@@ -156,29 +180,21 @@ ul li::before {
 
 footer {
   padding:60px 0;
-  background:#f0f3f8;
+  background:#f1f4f8;
   font-size:14px;
   color:#6b7684;
   border-top:1px solid #e4e8ee;
 }
 
-footer p {
-  margin-bottom:12px;
-  letter-spacing:1px;
-}
+footer p { margin-bottom:12px; }
 
 .email-link {
   color:#1f2a36;
-  font-weight:500;
   border-bottom:1px solid rgba(180,138,44,0.4);
 }
 
 @media (max-width:768px){
-
 .hero h1 { font-size:30px; }
-
-nav { gap:15px 20px; }
-
 }
 
 </style>
@@ -193,8 +209,8 @@ nav { gap:15px 20px; }
       <a href="#">Home</a>
       <a href="#">Markets</a>
       <a href="#">How We Work</a>
-      <a href="#">Fleet & Compliance</a>
-      <a href="#">Entry Points</a>
+      <a href="#">Compliance</a>
+      <a href="#">Gateways</a>
       <a href="#" class="nav-cta">Trade RFQ</a>
     </nav>
   </div>
@@ -205,52 +221,49 @@ nav { gap:15px 20px; }
     <h1>Strategic Ground Transport Partner Supporting Britain’s International Visitor Economy</h1>
 
     <p>
-      UK Inbound Ground Transport operates as a trade-only infrastructure partner 
-      aligned with structured inbound touring across England, Scotland, Wales 
-      and Ireland. We support international tour operators, destination 
-      management companies and trade stakeholders delivering fixed series 
-      and multi-region programmes.
+      We operate as a structured, trade-only transport infrastructure partner 
+      aligned with Britain’s inbound tourism objectives, supporting 
+      international tour operators and destination management companies 
+      delivering fixed departure series and multi-region touring programmes.
     </p>
+  </div>
+</section>
 
-    <p>
-      <a href="#" class="inline-link">Operational Framework</a> ·
-      <a href="#" class="inline-link">Fleet & Compliance Standards</a> ·
-      <a href="#" class="inline-link">Gateway Entry Points</a> ·
-      <a href="#" class="inline-link">Programme Submission</a>
-    </p>
+<div class="map-strip"></div>
+
+<section class="section">
+  <div class="container">
+    <h2>Key Source Markets</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>United States</h3>
+        <p>Supporting escorted touring and fixed series departures aligned with seasonal brochure cycles and gateway-led arrivals.</p>
+      </div>
+      <div class="card">
+        <h3>India</h3>
+        <p>Coordinated multi-city touring with structured urban access and compliance modelling across peak travel periods.</p>
+      </div>
+      <div class="card">
+        <h3>GCC Markets</h3>
+        <p>Luxury-focused and family group touring aligned with regional demand cycles and multi-region itineraries.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <h2>Aligned with Britain’s Inbound Tourism Strategy</h2>
-
+    <h2>Gateway Operations</h2>
     <p>
-      Our operational structure supports Britain’s global inbound objectives, 
-      facilitating seamless touring across key visitor destinations including 
-      London, Bath, Oxford, Stratford-upon-Avon, the Lake District, Edinburgh 
-      and the Scottish Highlands.
+      Our infrastructure supports coordinated arrivals and touring integration 
+      through Britain’s principal international gateways:
     </p>
-
-    <p>
-      We coordinate programme stability, driver-hours compliance, 
-      urban access management and peak-season fleet allocation across 
-      major gateway airports and regional entry points.
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>Trade Infrastructure & Regulatory Standards</h2>
 
     <ul>
-      <li>UK Operator Licence & regulatory compliance</li>
-      <li>EU & UK driver-hours management</li>
-      <li>Urban traffic and congestion modelling</li>
-      <li>Multi-stop itinerary feasibility review</li>
-      <li>Peak season fleet capacity planning</li>
-      <li>24/7 programme operational support</li>
+      <li>London Heathrow – primary long-haul entry hub</li>
+      <li>Manchester – Northern England & Lake District integration</li>
+      <li>Edinburgh – Scotland touring circuits</li>
+      <li>Regional gateway sequencing for multi-entry itineraries</li>
     </ul>
   </div>
 </section>
