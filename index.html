@@ -3,158 +3,196 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UK Inbound Ground Transport | Trade Infrastructure Partner</title>
-<meta name="description" content="Structured UK ground transport partner supporting international tour operators and DMCs with fixed departure series, gateway integration and multi-region Britain touring.">
+<title>UK Inbound Ground Transport | Strategic Touring Infrastructure</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
-/* ================= GLOBAL ================= */
+/* ===== GLOBAL ===== */
 
-body{
-  margin:0;
-  font-family:"Helvetica Neue", Arial, sans-serif;
-  background:#f4f5f7;
-  color:#1a1a1a;
-  line-height:1.6;
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family:'Inter', sans-serif;
+  background:#f5f4f1; /* soft stone */
+  color:#2c3440;
+  line-height:1.75;
 }
 
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:0 20px;
-}
-
-.section{
-  padding:120px 0;
-}
-
-h1{
-  font-size:40px;
-  font-weight:300;
+.container {
+  width:90%;
+  max-width:1150px;
+  margin:0 auto;
   text-align:center;
-  margin-bottom:20px;
 }
 
-h2{
-  font-size:26px;
-  font-weight:300;
-  text-align:center;
-  letter-spacing:1px;
+/* ===== TYPOGRAPHY ===== */
+
+h1,h2,h3 {
+  font-family:'Playfair Display', serif;
+  font-weight:400;
 }
 
-p{
-  color:#555;
+.gold-divider {
+  width:70px;
+  height:2px;
+  background:#b79a4b;
+  margin:25px auto 40px;
 }
 
-.divider{
-  width:50px;
-  height:1px;
-  background:#c9a94d;
-  margin:25px auto 60px auto;
+/* ===== HEADER ===== */
+
+header {
+  background:#ffffff;
+  padding:40px 0 20px;
+  border-bottom:1px solid #e6e3dc;
 }
 
-/* ================= HEADER ================= */
-
-header{
-  background:white;
-  padding:25px 40px;
-  border-bottom:1px solid #e6e6e6;
-}
-
-.logo{
-  font-weight:600;
-  letter-spacing:2px;
+.logo {
   font-size:18px;
+  letter-spacing:6px;
+  color:#b79a4b;
+  margin-bottom:25px;
 }
 
-nav{
-  margin-top:14px;
+nav {
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
 }
 
-nav a{
-  margin-right:28px;
+nav a {
   text-decoration:none;
-  color:#555;
-  font-size:14px;
-  letter-spacing:1px;
+  font-size:13px;
+  letter-spacing:3px;
+  color:#2c3440;
 }
 
-nav a:hover{
-  color:#b89b4c;
+nav a:hover {
+  color:#b79a4b;
 }
 
-/* ================= HERO ================= */
+/* ===== HERO ===== */
 
-.hero{
-  background:white;
-  padding:140px 0;
-  text-align:center;
+.hero {
+  padding:120px 0 100px;
+  background:linear-gradient(to bottom,#ffffff,#f0efe9);
 }
 
-.hero p{
-  max-width:750px;
-  margin:auto;
+.hero h1 {
+  font-size:44px;
+  margin-bottom:30px;
 }
 
-/* ================= MAP STRIP ================= */
-
-.map-strip{
-  position:relative;
-  background:white;
-  padding:140px 0;
+.hero p {
+  max-width:850px;
+  margin:0 auto;
+  color:#5d6775;
 }
 
-.map-strip::before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background:url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Blank_map_of_the_United_Kingdom.svg') center no-repeat;
-  background-size:700px;
-  opacity:0.04;
+/* ===== SECTION ===== */
+
+.section {
+  padding:100px 0;
+  border-top:1px solid #e6e3dc;
 }
 
-/* ================= GRID ================= */
+.section p {
+  max-width:820px;
+  margin:25px auto;
+  color:#5d6775;
+}
 
-.stat-grid{
+/* ===== GRID ===== */
+
+.grid {
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:50px;
-  text-align:center;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:40px;
+  margin-top:50px;
+  text-align:left;
 }
 
-.stat h3{
-  font-size:20px;
-  font-weight:500;
+.card {
+  background:#ffffff;
+  padding:35px;
+  border:1px solid #e6e3dc;
+}
+
+.card h3 {
+  margin-bottom:15px;
+}
+
+/* ===== STATS BAND ===== */
+
+.stats {
+  background:#eceae4;
+  padding:80px 0;
+  border-top:1px solid #e6e3dc;
+  border-bottom:1px solid #e6e3dc;
+}
+
+.stats-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:40px;
+  margin-top:40px;
+}
+
+.stat h3 {
+  font-size:34px;
+  color:#b79a4b;
   margin-bottom:10px;
 }
 
-/* ================= LIFECYCLE ================= */
-
-.lifecycle{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:40px;
-  text-align:center;
-}
-
-.step{
-  background:white;
-  padding:35px;
-  border:1px solid #e6e6e6;
-}
-
-/* ================= FOOTER ================= */
-
-footer{
-  background:white;
-  padding:70px 0;
-  text-align:center;
+.stat p {
   font-size:14px;
-  color:#777;
-  border-top:1px solid #e6e6e6;
+  color:#5d6775;
+}
+
+/* ===== CTA ===== */
+
+.cta {
+  padding:90px 0;
+  background:#ffffff;
+}
+
+.cta-button {
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 30px;
+  border:1px solid #b79a4b;
+  text-decoration:none;
+  letter-spacing:2px;
+  font-size:13px;
+  color:#2c3440;
+}
+
+.cta-button:hover {
+  background:#b79a4b;
+  color:#ffffff;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+  padding:80px 0;
+  background:#f0efe9;
+  border-top:1px solid #e6e3dc;
+  font-size:14px;
+  color:#6b7380;
+}
+
+.email {
+  color:#2c3440;
+  font-weight:500;
+}
+
+@media(max-width:768px){
+  .hero h1 { font-size:32px; }
+  .section { padding:70px 0; }
 }
 
 </style>
@@ -165,157 +203,95 @@ footer{
 <header>
   <div class="logo">UK INBOUND GROUND TRANSPORT</div>
   <nav>
-  <a href="markets.html">Markets</a>
-  <a href="gateways.html">Gateways</a>
-  <a href="model.html">Operational Model</a>
-  <a href="partnerships.html">Trade Partnerships</a>
-</nav>
+    <a href="index.html">Home</a>
+    <a href="markets.html">Markets</a>
+    <a href="gateways.html">Gateways</a>
+    <a href="model.html">Operational Model</a>
+    <a href="partnerships.html">Trade Partnerships</a>
+    <a href="trade-enquiry.html">Trade Enquiry</a>
+  </nav>
 </header>
-
-<!-- HERO -->
 
 <section class="hero">
   <div class="container">
     <h1>
-      Structured UK Ground Transport Infrastructure
-      for International Tour Operators & DMCs
+      Strategic Ground Transport Infrastructure<br>
+      Supporting Britain’s Inbound Touring Sector
     </h1>
+    <div class="gold-divider"></div>
     <p>
-      Supporting fixed departure series, escorted touring programmes,
-      premium small group journeys and multi-region Britain & Ireland routing
-      with gateway-led operational control.
+      Structured operational support for international DMCs,
+      fixed-departure series operators and multi-region touring programmes
+      across England, Scotland, Wales and Ireland integration corridors.
     </p>
   </div>
 </section>
 
-<!-- DIRECTOR STATEMENT -->
-
-<section class="section">
-  <div class="container" style="max-width:900px; text-align:center;">
-    <h2>Director’s Strategic Positioning</h2>
-    <div class="divider"></div>
-    <p style="font-style:italic; font-size:18px;">
-      “Inbound touring infrastructure requires structured allocation,
-      gateway control and repeat departure stability. Our operational
-      model is designed to support series-based touring programmes
-      with regulatory compliance and lifecycle planning at its core.”
-    </p>
-  </div>
-</section>
-
-<!-- MAP STRIP -->
-
-<section class="map-strip">
-  <div class="container">
-    <h2>National Touring Infrastructure Across Britain</h2>
-    <div class="divider"></div>
-  </div>
-</section>
-
-<!-- GOVERNANCE -->
-
 <section class="section">
   <div class="container">
-    <h2>Operational Governance Framework</h2>
-    <div class="divider"></div>
-
-    <div class="stat-grid">
-      <div class="stat">
-        <h3>Driver-Hours Compliance</h3>
-        <p>UK & EU regulations integrated into route feasibility and scheduling.</p>
-      </div>
-
-      <div class="stat">
-        <h3>Series Allocation Priority</h3>
-        <p>Capacity prioritised for confirmed departure grids over ad hoc touring.</p>
-      </div>
-
-      <div class="stat">
-        <h3>Gateway Integration</h3>
-        <p>Heathrow, Manchester and regional arrival alignment.</p>
-      </div>
-
-      <div class="stat">
-        <h3>Contingency Planning</h3>
-        <p>Fleet positioning and regional flexibility during peak season.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GATEWAYS -->
-
-<section class="section">
-  <div class="container">
-    <h2>Primary Airport & Cruise Port Integration</h2>
-    <div class="divider"></div>
-
-    <div class="stat-grid">
-      <div class="stat">
-        <h3>London Heathrow</h3>
-        <p>Long-haul primary gateway for USA, India and GCC departures.</p>
-      </div>
-      <div class="stat">
-        <h3>Manchester</h3>
-        <p>Northern integration supporting Scotland and regional touring.</p>
-      </div>
-      <div class="stat">
-        <h3>Southampton & Dover</h3>
-        <p>Cruise turnaround coordination and port transfers.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERIES LIFECYCLE -->
-
-<section class="section">
-  <div class="container">
-    <h2>Series Departure Lifecycle Architecture</h2>
-    <div class="divider"></div>
-
-    <div class="lifecycle">
-      <div class="step">
-        <strong>Pre-Season Capacity Modelling</strong>
-        <p>Forecasting allocation aligned with brochure cycles.</p>
-      </div>
-      <div class="step">
-        <strong>Peak Allocation Planning</strong>
-        <p>Multi-coach routing and split-group feasibility control.</p>
-      </div>
-      <div class="step">
-        <strong>Operational Delivery</strong>
-        <p>Driver compliance and Day 1 routing stability.</p>
-      </div>
-      <div class="step">
-        <strong>Post-Tour Review</strong>
-        <p>Lifecycle refinement for repeat departure grids.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TRADE POSITIONING -->
-
-<section class="section">
-  <div class="container" style="max-width:900px; text-align:center;">
-    <h2>Trade Partnership Approach</h2>
-    <div class="divider"></div>
-
+    <h2>Gateway & Regional Touring Integration</h2>
+    <div class="gold-divider"></div>
     <p>
-      Supporting international tour operators and destination
-      management companies with structured departure modelling,
-      regulatory compliance and programme continuity across
-      Britain & Ireland itineraries.
+      Heathrow-led arrival management integrated with Manchester,
+      Edinburgh and cruise port sequencing. Structured routing supports
+      Scotland circuits, Highlands extensions, regional England touring
+      and Ireland combinations aligned to brochure cycles.
     </p>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container">
+    <h2>Market Context</h2>
+    <div class="gold-divider"></div>
+
+    <div class="stats-grid">
+      <div class="stat">
+        <h3>Long-Haul Growth</h3>
+        <p>Continued expansion across North America, India and GCC source markets.</p>
+      </div>
+      <div class="stat">
+        <h3>Series Stability</h3>
+        <p>Alignment to confirmed departure calendars and allocation cycles.</p>
+      </div>
+      <div class="stat">
+        <h3>Regulatory Compliance</h3>
+        <p>Driver-hours and routing architecture integrated into programme planning.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Operational Control Model</h2>
+    <div class="gold-divider"></div>
+    <p>
+      Each programme undergoes routing validation, mileage modelling,
+      capacity allocation review and compliance verification prior to
+      fleet confirmation. Infrastructure-first design ensures departure
+      stability across repeat series and peak season demand.
+    </p>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Structured Trade Engagement</h2>
+    <div class="gold-divider"></div>
+    <p>
+      Supporting international tour operators, DMCs and programme planners
+      seeking long-term operational stability within the UK inbound sector.
+    </p>
+    <a href="trade-enquiry.html" class="cta-button">Submit Trade Enquiry</a>
   </div>
 </section>
 
 <footer>
-  UK Inbound Ground Transport<br>
-  Supporting International Tour Operators & DMCs<br><br>
-  info@ukinboundgroundtransport.com<br><br>
-  © 2026 Evershine Transport Ltd · United Kingdom
+  <div class="container">
+    <p>© 2026 UK Inbound Ground Transport</p>
+    <p class="email">info@ukinboundgroundtransport.com</p>
+  </div>
 </footer>
 
 </body>
