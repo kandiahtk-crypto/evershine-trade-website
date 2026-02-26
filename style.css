@@ -285,3 +285,95 @@ footer {
   }
 
 }
+
+/* ================= SLIDE MENU SYSTEM ================= */
+
+.header-inner {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* Hamburger */
+
+.menu-toggle {
+  display:none;
+  flex-direction:column;
+  gap:6px;
+  cursor:pointer;
+  z-index:1001;
+}
+
+.menu-toggle span {
+  width:24px;
+  height:2px;
+  background:#b79a4b;
+  transition:0.3s ease;
+}
+
+/* Animate to X */
+.menu-toggle.active span:nth-child(1) {
+  transform:rotate(45deg) translate(5px,5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform:rotate(-45deg) translate(6px,-6px);
+}
+
+/* Overlay */
+.menu-overlay {
+  display:none;
+}
+
+@media(max-width:900px){
+
+  .menu-toggle {
+    display:flex;
+  }
+
+  .main-nav {
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:300px;
+    height:100vh;
+    background:#ffffff;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    padding:80px 40px;
+    gap:35px;
+    transition:0.4s ease;
+    box-shadow:-5px 0 30px rgba(0,0,0,0.08);
+    z-index:1000;
+  }
+
+  .main-nav.active {
+    right:0;
+  }
+
+  .menu-overlay {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.25);
+    backdrop-filter:blur(3px);
+    display:none;
+    z-index:999;
+  }
+
+  .menu-overlay.active {
+    display:block;
+  }
+
+  body.menu-open {
+    overflow:hidden;
+  }
+
+}
