@@ -23,14 +23,16 @@
       <a href="markets.html">Markets</a>
       <a href="gateways.html">Gateways</a>
       <a href="model.html">Operational Model</a>
-      <a href="partnerships.html">Trade Partnerships</a>
-      <a href="why-partner.html" class="active">Why Partner With Us</a>
-      <a href="trade-enquiry.html" class="nav-cta">Trade Portal</a>
+      <a href="partnerships.html" class="active">Why Partner With Us</a>
+      <a href="series-tours.html">Series Tours</a>
+      <a href="rfq.html" class="nav-cta">Trade Portal</a>
     </nav>
 
   </div>
 </header>
 
+
+<!-- HERO -->
 
 <section class="hero">
   <div class="container">
@@ -45,6 +47,8 @@
 </section>
 
 
+<!-- CAPACITY STRUCTURE -->
+
 <section class="section">
   <div class="container">
 
@@ -52,81 +56,121 @@
     <div class="gold-divider"></div>
 
     <div class="grid">
+
       <div class="card">
         <h3>Departure Grid Alignment</h3>
-        <p>Capacity structured around confirmed series schedules and contracting cycles.</p>
+        <p>
+          Capacity structured around confirmed series schedules,
+          contracting cycles and long-haul programme sequencing.
+        </p>
       </div>
+
       <div class="card">
         <h3>Routing Validation</h3>
-        <p>Mileage feasibility and driver-hours compliance embedded in programme design.</p>
+        <p>
+          Mileage feasibility and UK driver-hours compliance embedded
+          within programme design and allocation modelling.
+        </p>
       </div>
+
       <div class="card">
         <h3>Peak Season Stability</h3>
-        <p>Forward allocation planning across high-demand summer corridors.</p>
+        <p>
+          Forward fleet allocation planning across high-demand
+          summer touring corridors and Scotland extensions.
+        </p>
       </div>
+
       <div class="card">
         <h3>Gateway Integration</h3>
-        <p>Operational sequencing across Heathrow and regional entry points.</p>
+        <p>
+          Structured sequencing across Heathrow, Manchester,
+          Edinburgh and regional arrival points.
+        </p>
       </div>
+
     </div>
 
   </div>
 </section>
 
+
+<!-- GROWTH DASHBOARD -->
 
 <section class="dashboard">
   <div class="container">
 
-    <h2 style="text-align:center;">Inbound Market Growth Context</h2>
+    <h2 style="text-align:center;">Inbound Growth Context</h2>
     <div class="gold-divider"></div>
 
     <div class="dashboard-grid">
+
       <div class="metric">
         <h3 class="counter" data-target="12">0</h3>
         <span>Long-Haul Expansion</span>
       </div>
+
       <div class="metric">
         <h3 class="counter" data-target="85">0</h3>
         <span>Series Stability Index</span>
       </div>
+
       <div class="metric">
         <h3 class="counter" data-target="4">0</h3>
         <span>Primary Gateway Integration</span>
       </div>
+
       <div class="metric">
         <h3 class="counter" data-target="100">0</h3>
         <span>Compliance Protocol</span>
       </div>
+
     </div>
 
   </div>
 </section>
 
 
+<!-- GOVERNANCE -->
+
 <section class="section">
   <div class="container">
-    <h2>Responsible Governance</h2>
+
+    <h2>Responsible Governance & ESG Alignment</h2>
     <div class="gold-divider"></div>
+
     <p>
-      ESG alignment, driver welfare governance and regional dispersion planning
-      are integrated within structured operational delivery.
+      Operational governance integrates structured compliance,
+      driver welfare monitoring, regional dispersion modelling and
+      sustainable routing optimisation across Britain’s touring network.
     </p>
+
+    <p>
+      Fleet allocation decisions are aligned to regulatory standards,
+      programme stability objectives and long-term trade partner continuity.
+    </p>
+
   </div>
 </section>
 
+
+<!-- CTA -->
 
 <section class="cta">
   <div class="container">
-    <h2>
-      Structured Capacity Requires Structured Partnership
-    </h2>
+
+    <h2>Structured Capacity Requires Structured Partnership</h2>
     <div class="gold-divider"></div>
-    <a href="trade-enquiry.html" class="cta-button">
-      Submit Programme For Allocation Review
+
+    <a href="rfq.html" class="cta-button">
+      Submit Programme for Allocation Review
     </a>
+
   </div>
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
   <div class="container">
@@ -138,23 +182,29 @@
 </footer>
 
 
+<!-- COUNTER SCRIPT -->
+
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const counters = document.querySelectorAll(".counter");
+
   counters.forEach(counter => {
     const target = +counter.getAttribute("data-target");
     let count = 0;
     const speed = 200;
+
     const update = () => {
-      const inc = target / speed;
-      if(count < target){
-        count += inc;
+      const increment = target / speed;
+
+      if (count < target) {
+        count += increment;
         counter.innerText = Math.ceil(count);
         requestAnimationFrame(update);
       } else {
         counter.innerText = target + (target === 100 ? "%" : "+");
       }
     };
+
     update();
   });
 });
