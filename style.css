@@ -50,58 +50,61 @@ h1,h2,h3 {
 
 /* ================= NAVIGATION ================= */
 
+/* ================= NAVIGATION ================= */
+
 .main-nav {
   display:flex;
   justify-content:center;
-  gap:45px;
+  gap:55px;
   flex-wrap:wrap;
 }
 
-.main-nav a {
+.main-nav a,
+.main-nav span {
   position:relative;
   text-decoration:none;
-  font-size:13px;
-  letter-spacing:2px;
-  color:#2b3440;
-  padding-bottom:8px;
+  font-size:12px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:#2c3440;
+  padding-bottom:10px;
   display:inline-block;
-  transition:color 0.3s ease;
+  transition:all 0.3s ease;
 }
 
-.main-nav a:hover {
-  color:#000000;
-}
-
+/* Underline animation */
 .main-nav a::after {
   content:"";
   position:absolute;
-  left:50%;
+  left:0;
   bottom:0;
   width:0%;
-  height:2px;
-  background:#c6a548;
-  transform:translateX(-50%);
-  transition:width 0.35s ease;
+  height:1px;
+  background:#b79a4b;
+  transition:0.3s ease;
 }
 
 .main-nav a:hover::after {
   width:100%;
 }
 
-.main-nav a.active::after {
+.main-nav a:hover {
+  color:#b79a4b;
+}
+
+/* Active page */
+.main-nav .active {
+  color:#b79a4b;
+}
+
+.main-nav .active::after {
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
   width:100%;
-}
-
-.nav-cta {
-  border:1px solid #c6a548;
-  padding:8px 22px;
-  letter-spacing:2px;
-  transition:all 0.3s ease;
-}
-
-.nav-cta:hover {
-  background:#c6a548;
-  color:#ffffff;
+  height:1px;
+  background:#b79a4b;
 }
 
 /* ================= HERO ================= */
