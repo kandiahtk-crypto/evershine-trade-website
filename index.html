@@ -5,31 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UK Inbound Ground Transport | Strategic Touring Infrastructure</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<!-- STRUCTURED SEO SCHEMA -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "UK Inbound Ground Transport",
-  "legalName": "Evershine Transport Limited",
-  "url": "https://www.ukinboundgroundtransport.com",
-  "email": "info@ukinboundgroundtransport.com",
-  "areaServed": "United Kingdom",
-  "serviceType": "Inbound Ground Transport Infrastructure",
-  "audience": {
-    "@type": "BusinessAudience",
-    "audienceType": "Tour Operators and Destination Management Companies"
-  }
-}
-</script>
 
 <style>
 
-/* ===== GLOBAL ===== */
+/* ================= GLOBAL ================= */
 
 * { margin:0; padding:0; box-sizing:border-box; }
+
+html { overflow-y:scroll; }
 
 body {
   font-family:'Inter', sans-serif;
@@ -42,10 +28,9 @@ body {
   width:90%;
   max-width:1150px;
   margin:0 auto;
-  
 }
 
-/* ===== TYPOGRAPHY ===== */
+/* ================= TYPOGRAPHY ================= */
 
 h1,h2,h3 {
   font-family:'Playfair Display', serif;
@@ -59,44 +44,102 @@ h1,h2,h3 {
   margin:25px auto 40px;
 }
 
-/* ===== HEADER ===== */
+/* ================= HEADER ================= */
 
-header {
+.site-header {
   background:#ffffff;
-  padding:40px 0 20px;
   border-bottom:1px solid #e6e3dc;
 }
 
+.nav-container {
+  width:90%;
+  max-width:1250px;
+  margin:0 auto;
+  padding:40px 0 25px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
 .logo {
-  font-size:18px;
+  font-size:16px;
   letter-spacing:6px;
   color:#b79a4b;
-  margin-bottom:25px;
 }
 
-nav {
+/* ================= NAVIGATION ================= */
+
+.main-nav {
   display:flex;
-  justify-content:center;
-  gap:40px;
-  flex-wrap:wrap;
+  align-items:center;
+  gap:45px;
 }
 
-nav a {
+.main-nav a,
+.main-nav span {
+  position:relative;
   text-decoration:none;
-  font-size:13px;
+  font-size:12px;
   letter-spacing:3px;
   color:#2c3440;
+  padding-bottom:6px;
 }
 
-nav a:hover {
+/* Hover underline */
+.main-nav a::after {
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:0%;
+  height:1px;
+  background:#b79a4b;
+  transition:0.3s ease;
+}
+
+.main-nav a:hover::after {
+  width:100%;
+}
+
+.main-nav a:hover {
   color:#b79a4b;
 }
 
-/* ===== HERO ===== */
+/* Active page */
+.main-nav .active {
+  color:#b79a4b;
+}
+
+.main-nav .active::after {
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:1px;
+  background:#b79a4b;
+}
+
+/* CTA */
+.nav-cta {
+  border:1px solid #b79a4b;
+  padding:10px 24px;
+  letter-spacing:2px;
+}
+
+.nav-cta::after { display:none; }
+
+.nav-cta:hover {
+  background:#b79a4b;
+  color:#ffffff;
+}
+
+/* ================= HERO ================= */
 
 .hero {
   padding:120px 0 100px;
   background:linear-gradient(to bottom,#ffffff,#f0efe9);
+  text-align:center;
 }
 
 .hero h1 {
@@ -110,10 +153,10 @@ nav a:hover {
   color:#5d6775;
 }
 
-/* ===== MAP STRIP ===== */
+/* ================= MAP STRIP ================= */
 
 .map-strip {
-  position: relative;
+  position:relative;
   padding:120px 0;
   background:#ffffff;
   border-top:1px solid #e6e3dc;
@@ -140,11 +183,12 @@ nav a:hover {
   z-index:2;
 }
 
-/* ===== SECTION ===== */
+/* ================= SECTION ================= */
 
 .section {
   padding:100px 0;
   border-top:1px solid #e6e3dc;
+  text-align:center;
 }
 
 .section p {
@@ -153,7 +197,7 @@ nav a:hover {
   color:#5d6775;
 }
 
-/* ===== GRID ===== */
+/* ================= GRID ================= */
 
 .grid {
   display:grid;
@@ -173,57 +217,7 @@ nav a:hover {
   margin-bottom:15px;
 }
 
-/* ===== STATS ===== */
-
-.stats {
-  background:#eceae4;
-  padding:80px 0;
-  border-top:1px solid #e6e3dc;
-  border-bottom:1px solid #e6e3dc;
-}
-
-.stats-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:40px;
-  margin-top:40px;
-}
-
-.stat h3 {
-  font-size:34px;
-  color:#b79a4b;
-  margin-bottom:10px;
-}
-
-.stat p {
-  font-size:14px;
-  color:#5d6775;
-}
-
-/* ===== CTA ===== */
-
-.cta {
-  padding:90px 0;
-  background:#ffffff;
-}
-
-.cta-button {
-  display:inline-block;
-  margin-top:30px;
-  padding:14px 30px;
-  border:1px solid #b79a4b;
-  text-decoration:none;
-  letter-spacing:2px;
-  font-size:13px;
-  color:#2c3440;
-}
-
-.cta-button:hover {
-  background:#b79a4b;
-  color:#ffffff;
-}
-
-/* ===== FOOTER ===== */
+/* ================= FOOTER ================= */
 
 footer {
   padding:80px 0;
@@ -231,11 +225,26 @@ footer {
   border-top:1px solid #e6e3dc;
   font-size:14px;
   color:#6b7380;
+  text-align:center;
 }
 
 .email {
   color:#2c3440;
   font-weight:500;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:1024px){
+  .nav-container {
+    flex-direction:column;
+    gap:25px;
+  }
+
+  .main-nav {
+    flex-wrap:wrap;
+    justify-content:center;
+  }
 }
 
 @media(max-width:768px){
@@ -256,35 +265,16 @@ footer {
     </div>
 
     <nav class="main-nav">
-      <a href="./" class="active">Home</a>
-
-      <div class="nav-item">
-        <a href="markets.html">Markets</a>
-      </div>
-
-      <div class="nav-item">
-        <a href="model.html">Operations</a>
-      </div>
-
-      <div class="nav-item">
-        <a href="partnerships.html">Trade Partnerships</a>
-      </div>
-
-      <div class="nav-item">
-        <a href="why-partner.html">Why Us</a>
-      </div>
-
-      <a href="trade-enquiry.html" class="nav-cta">
-        Trade Portal
-      </a>
+      <span class="active">Home</span>
+      <a href="markets.html">Markets</a>
+      <a href="model.html">Operations</a>
+      <a href="partnerships.html">Trade Partnerships</a>
+      <a href="why-partner.html">Why Us</a>
+      <a href="trade-enquiry.html" class="nav-cta">Trade Portal</a>
     </nav>
 
   </div>
 </header>
-
-    
-
-<!-- HERO -->
 
 <section class="hero">
   <div class="container">
@@ -301,8 +291,6 @@ footer {
   </div>
 </section>
 
-<!-- MAP STRIP -->
-
 <section class="map-strip">
   <div class="container">
     <h2>Operating Across Britain’s Touring Corridors</h2>
@@ -312,41 +300,6 @@ footer {
       Wales and integrated Ireland touring flows aligned to
       international departure programmes.
     </p>
-  </div>
-</section>
-
-<!-- INTERNATIONAL TRADE ALIGNMENT -->
-
-<section class="section">
-  <div class="container">
-    <h2>International Trade Alignment</h2>
-    <div class="gold-divider"></div>
-
-    <p>
-      Operational frameworks structured to support long-haul programme
-      development from North America, China, India and European outbound markets.
-      Allocation modelling aligns with brochure production timelines,
-      contracting cycles and confirmed departure calendars.
-    </p>
-
-    <div class="grid">
-      <div class="card">
-        <h3>United States</h3>
-        <p>Escorted fixed-departure touring and peak-summer capacity protection.</p>
-      </div>
-      <div class="card">
-        <h3>China</h3>
-        <p>High-volume group touring and structured gateway sequencing.</p>
-      </div>
-      <div class="card">
-        <h3>India</h3>
-        <p>Multi-city touring demand and Scotland inclusion routing.</p>
-      </div>
-      <div class="card">
-        <h3>Europe</h3>
-        <p>Regional coach circuits and flexible seasonal integration.</p>
-      </div>
-    </div>
   </div>
 </section>
 
