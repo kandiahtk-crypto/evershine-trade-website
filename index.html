@@ -27,6 +27,7 @@ body {
   width:90%;
   max-width:1150px;
   margin:0 auto;
+  position:relative;
 }
 
 /* ================= TYPOGRAPHY ================= */
@@ -80,9 +81,7 @@ h1,h2,h3 {
   transition:color 0.3s ease;
 }
 
-.main-nav a:hover {
-  color:#000000;
-}
+.main-nav a:hover { color:#000000; }
 
 .main-nav a::after {
   content:"";
@@ -96,13 +95,9 @@ h1,h2,h3 {
   transition:width 0.35s ease;
 }
 
-.main-nav a:hover::after {
-  width:100%;
-}
+.main-nav a:hover::after { width:100%; }
 
-.main-nav .active {
-  color:#c6a548;
-}
+.main-nav .active { color:#c6a548; }
 
 .main-nav .active::after {
   content:"";
@@ -119,7 +114,6 @@ h1,h2,h3 {
   border:1px solid #c6a548;
   padding:8px 22px;
   letter-spacing:2px;
-  transition:all 0.3s ease;
 }
 
 .nav-cta:hover {
@@ -128,31 +122,8 @@ h1,h2,h3 {
 }
 
 /* ================= MOBILE SLIDE PANEL ================= */
-<section class="section">
-  <div class="container">
 
-    <h2>Series & Fixed Departure Infrastructure</h2>
-    <div class="gold-divider"></div>
-
-    <p>
-      Operational support structured around confirmed departure grids, 
-      brochure production timelines and peak-season allocation pressure.
-      We work alongside international tour operators and destination 
-      management companies requiring dependable ground capacity across 
-      multi-departure touring frameworks.
-    </p>
-
-    <p>
-      Fleet planning aligns with contracted series schedules, Scotland 
-      extensions, regional dispersion and gateway-led routing models. 
-      Emphasis is placed on driver-hour compliance, mileage efficiency 
-      and continuity across consecutive departure rotations.
-    </p>
-
-  </div>
-</section>
-
-  .menu-toggle {
+.menu-toggle {
   display:none;
   flex-direction:column;
   gap:6px;
@@ -173,20 +144,16 @@ h1,h2,h3 {
 .menu-toggle.active span:nth-child(1) {
   transform:rotate(45deg) translate(5px,5px);
 }
-
-.menu-toggle.active span:nth-child(2) {
-  opacity:0;
-}
-
+.menu-toggle.active span:nth-child(2) { opacity:0; }
 .menu-toggle.active span:nth-child(3) {
   transform:rotate(-45deg) translate(6px,-6px);
 }
 
-.menu-overlay {
-  display:none;
-}
+.menu-overlay { display:none; }
 
 @media(max-width:900px){
+
+  .menu-toggle { display:flex; }
 
   .main-nav {
     position:fixed;
@@ -205,13 +172,7 @@ h1,h2,h3 {
     z-index:1000;
   }
 
-  .main-nav.active {
-    right:0;
-  }
-
-  .menu-toggle {
-    display:flex;
-  }
+  .main-nav.active { right:0; }
 
   .menu-overlay {
     position:fixed;
@@ -224,14 +185,8 @@ h1,h2,h3 {
     z-index:999;
   }
 
-  .menu-overlay.active {
-    display:block;
-  }
-
-  body.menu-open {
-    overflow:hidden;
-  }
-
+  .menu-overlay.active { display:block; }
+  body.menu-open { overflow:hidden; }
 }
 
 /* ================= HERO ================= */
@@ -251,6 +206,25 @@ h1,h2,h3 {
   max-width:850px;
   margin:0 auto;
   color:#5d6775;
+}
+
+/* ================= SECTION ================= */
+
+.section {
+  padding:100px 0;
+  border-top:1px solid #e6e3dc;
+  text-align:center;
+}
+
+.section p {
+  max-width:850px;
+  margin:25px auto;
+  color:#5d6775;
+}
+
+@media(max-width:768px){
+  .hero h1 { font-size:32px; }
+  .section { padding:70px 0; }
 }
 
 </style>
@@ -293,12 +267,67 @@ h1,h2,h3 {
     </h1>
     <div class="gold-divider"></div>
     <p>
-      Structured operational support for international tour operators
-      and DMC partners delivering fixed-departure series,
-      multi-region Britain circuits and high-demand seasonal programmes.
+      Operational infrastructure aligned to confirmed departure series, 
+      brochure production cycles and multi-region touring frameworks 
+      across England, Scotland and integrated Britain & Ireland flows.
     </p>
   </div>
 </section>
+
+<section class="section">
+  <div class="container">
+    <h2>Series & Fixed Departure Infrastructure</h2>
+    <div class="gold-divider"></div>
+    <p>
+      Structured support for international tour operators and DMC partners 
+      managing confirmed departure grids, peak-season allocation pressure 
+      and Scotland extension routing.
+    </p>
+    <p>
+      Fleet planning aligns with contracted series schedules, gateway-led 
+      dispatch modelling and driver-hour compliance requirements across 
+      consecutive departure rotations.
+    </p>
+  </div>
+</section>
+
+<section class="section" style="background:#ffffff;">
+  <div class="container">
+    <h2>Peak Season Stability & Risk Mitigation</h2>
+    <div class="gold-divider"></div>
+    <p>
+      Summer congestion exposure, regulatory compliance constraints 
+      and driver availability fluctuations represent recurring operational 
+      risk factors within Britain’s inbound touring cycle.
+    </p>
+    <p>
+      Our infrastructure model prioritises confirmed departures, structured 
+      dispatch sequencing and multi-gateway balancing to ensure repeat 
+      programme continuity during high-demand trading periods.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Destination Management Alignment</h2>
+    <div class="gold-divider"></div>
+    <p>
+      Engagement is positioned as infrastructure support — not ad hoc coach supply.
+      We collaborate with DMC operational teams to validate routing complexity, 
+      optimise mileage efficiency and align with annual contracting frameworks.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="container" style="padding:80px 0; text-align:center; font-size:14px; color:#6b7380;">
+    <p>© 2026 Evershine Transport Limited</p>
+    <p>Registered in England & Wales</p>
+    <p>Company Registration No. 13507458</p>
+    <p class="email">info@ukinboundgroundtransport.com</p>
+  </div>
+</footer>
 
 <script>
 const toggle = document.getElementById("menuToggle");
@@ -320,7 +349,6 @@ toggle.addEventListener("click", () => {
 });
 
 overlay.addEventListener("click", closeMenu);
-
 document.querySelectorAll(".main-nav a").forEach(link => {
   link.addEventListener("click", closeMenu);
 });
