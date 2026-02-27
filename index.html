@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>UK Coach Operator for Tour Operators & DMCs | Inbound Group Transport Britain</title>
+
+<meta name="description" content="Specialist UK coach operator serving international tour operators and DMCs. Structured group touring transport across England, Scotland and Wales for fixed-departure series and inbound programmes.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "UK Inbound Ground Transport",
+  "legalName": "Evershine Transport Limited",
+  "url": "https://www.ukinboundgroundtransport.com",
+  "description": "UK coach operator dedicated to international tour operators and destination management companies delivering inbound group touring programmes across Britain.",
+  "areaServed": "United Kingdom",
+  "serviceType": "Inbound Tourism Coach Transport",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Tour Operators and Destination Management Companies"
+  }
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,220 +32,64 @@
 
 <style>
 
-/* ================= GLOBAL ================= */
+/* GLOBAL */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{overflow-y:scroll;}
+body{font-family:'Inter',sans-serif;background:#f5f4f1;color:#2c3440;line-height:1.75;}
+.container{width:90%;max-width:1150px;margin:0 auto;position:relative;}
 
-* { margin:0; padding:0; box-sizing:border-box; }
-html { overflow-y: scroll; }
+/* TYPOGRAPHY */
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:400;}
+.gold-divider{width:70px;height:2px;background:#b79a4b;margin:25px auto 40px;}
 
-body {
-  font-family:'Inter', sans-serif;
-  background:#f5f4f1;
-  color:#2c3440;
-  line-height:1.75;
-}
+/* HEADER */
+.site-header{background:#ffffff;padding:40px 0 20px;border-bottom:1px solid #e6e3dc;text-align:center;}
+.logo{font-size:18px;letter-spacing:6px;color:#b79a4b;margin-bottom:25px;}
 
-.container {
-  width:90%;
-  max-width:1150px;
-  margin:0 auto;
-  position:relative;
-}
+/* NAV */
+.main-nav{display:flex;justify-content:center;gap:45px;flex-wrap:wrap;}
+.main-nav a,.main-nav span{position:relative;text-decoration:none;font-size:13px;letter-spacing:2px;color:#2b3440;padding-bottom:8px;display:inline-block;transition:color 0.3s ease;}
+.main-nav a:hover{color:#000;}
+.main-nav a::after{content:"";position:absolute;left:50%;bottom:0;width:0;height:2px;background:#c6a548;transform:translateX(-50%);transition:width 0.35s ease;}
+.main-nav a:hover::after{width:100%;}
+.main-nav .active{color:#c6a548;}
+.main-nav .active::after{content:"";position:absolute;left:50%;bottom:0;width:100%;height:2px;background:#c6a548;transform:translateX(-50%);}
+.nav-cta{border:1px solid #c6a548;padding:8px 22px;}
+.nav-cta:hover{background:#c6a548;color:#fff;}
 
-/* ================= TYPOGRAPHY ================= */
-
-h1,h2,h3 {
-  font-family:'Playfair Display', serif;
-  font-weight:400;
-}
-
-.gold-divider {
-  width:70px;
-  height:2px;
-  background:#b79a4b;
-  margin:25px auto 40px;
-}
-
-/* ================= HEADER ================= */
-
-.site-header {
-  background:#ffffff;
-  padding:40px 0 20px;
-  border-bottom:1px solid #e6e3dc;
-  text-align:center;
-}
-
-.logo {
-  font-size:18px;
-  letter-spacing:6px;
-  color:#b79a4b;
-  margin-bottom:25px;
-}
-
-/* ================= NAVIGATION ================= */
-
-.main-nav {
-  display:flex;
-  justify-content:center;
-  gap:45px;
-  flex-wrap:wrap;
-}
-
-.main-nav a,
-.main-nav span {
-  position:relative;
-  text-decoration:none;
-  font-size:13px;
-  letter-spacing:2px;
-  color:#2b3440;
-  padding-bottom:8px;
-  display:inline-block;
-  transition:color 0.3s ease;
-}
-
-.main-nav a:hover { color:#000000; }
-
-.main-nav a::after {
-  content:"";
-  position:absolute;
-  left:50%;
-  bottom:0;
-  width:0%;
-  height:2px;
-  background:#c6a548;
-  transform:translateX(-50%);
-  transition:width 0.35s ease;
-}
-
-.main-nav a:hover::after { width:100%; }
-
-.main-nav .active { color:#c6a548; }
-
-.main-nav .active::after {
-  content:"";
-  position:absolute;
-  left:50%;
-  bottom:0;
-  width:100%;
-  height:2px;
-  background:#c6a548;
-  transform:translateX(-50%);
-}
-
-.nav-cta {
-  border:1px solid #c6a548;
-  padding:8px 22px;
-  letter-spacing:2px;
-}
-
-.nav-cta:hover {
-  background:#c6a548;
-  color:#ffffff;
-}
-
-/* ================= MOBILE SLIDE PANEL ================= */
-
-.menu-toggle {
-  display:none;
-  flex-direction:column;
-  gap:6px;
-  cursor:pointer;
-  position:absolute;
-  right:5%;
-  top:48px;
-  z-index:1001;
-}
-
-.menu-toggle span {
-  width:24px;
-  height:2px;
-  background:#b79a4b;
-  transition:0.3s ease;
-}
-
-.menu-toggle.active span:nth-child(1) {
-  transform:rotate(45deg) translate(5px,5px);
-}
-.menu-toggle.active span:nth-child(2) { opacity:0; }
-.menu-toggle.active span:nth-child(3) {
-  transform:rotate(-45deg) translate(6px,-6px);
-}
-
-.menu-overlay { display:none; }
+/* MOBILE MENU */
+.menu-toggle{display:none;flex-direction:column;gap:6px;cursor:pointer;position:absolute;right:5%;top:48px;z-index:1001;}
+.menu-toggle span{width:24px;height:2px;background:#b79a4b;transition:0.3s ease;}
+.menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+.menu-toggle.active span:nth-child(2){opacity:0;}
+.menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px);}
+.menu-overlay{display:none;}
 
 @media(max-width:900px){
-
-  .menu-toggle { display:flex; }
-
-  .main-nav {
-    position:fixed;
-    top:0;
-    right:-100%;
-    width:300px;
-    height:100vh;
-    background:#ffffff;
-    flex-direction:column;
-    justify-content:center;
-    align-items:flex-start;
-    padding:80px 40px;
-    gap:35px;
-    transition:0.4s ease;
-    box-shadow:-5px 0 30px rgba(0,0,0,0.08);
-    z-index:1000;
-  }
-
-  .main-nav.active { right:0; }
-
-  .menu-overlay {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.25);
-    backdrop-filter:blur(3px);
-    z-index:999;
-  }
-
-  .menu-overlay.active { display:block; }
-  body.menu-open { overflow:hidden; }
+.menu-toggle{display:flex;}
+.main-nav{position:fixed;top:0;right:-100%;width:300px;height:100vh;background:#fff;flex-direction:column;justify-content:center;align-items:flex-start;padding:80px 40px;gap:35px;transition:0.4s ease;box-shadow:-5px 0 30px rgba(0,0,0,0.08);z-index:1000;}
+.main-nav.active{right:0;}
+.menu-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.25);backdrop-filter:blur(3px);z-index:999;}
+.menu-overlay.active{display:block;}
+body.menu-open{overflow:hidden;}
 }
 
-/* ================= HERO ================= */
+/* HERO */
+.hero{padding:120px 0 100px;background:linear-gradient(to bottom,#ffffff,#f0efe9);text-align:center;}
+.hero h1{font-size:44px;margin-bottom:30px;}
+.hero p{max-width:850px;margin:0 auto;color:#5d6775;}
 
-.hero {
-  padding:120px 0 100px;
-  background:linear-gradient(to bottom,#ffffff,#f0efe9);
-  text-align:center;
-}
+/* SECTIONS */
+.section{padding:100px 0;border-top:1px solid #e6e3dc;text-align:center;}
+.section p{max-width:850px;margin:25px auto;color:#5d6775;}
 
-.hero h1 {
-  font-size:44px;
-  margin-bottom:30px;
-}
-
-.hero p {
-  max-width:850px;
-  margin:0 auto;
-  color:#5d6775;
-}
-
-/* ================= SECTION ================= */
-
-.section {
-  padding:100px 0;
-  border-top:1px solid #e6e3dc;
-  text-align:center;
-}
-
-.section p {
-  max-width:850px;
-  margin:25px auto;
-  color:#5d6775;
-}
+.cta{padding:100px 0;text-align:center;border-top:1px solid #e6e3dc;}
+.cta-button{display:inline-block;margin-top:30px;padding:14px 40px;border:1px solid #b79a4b;text-decoration:none;letter-spacing:2px;font-size:13px;color:#2c3440;}
+.cta-button:hover{background:#b79a4b;color:#ffffff;}
 
 @media(max-width:768px){
-  .hero h1 { font-size:32px; }
-  .section { padding:70px 0; }
+.hero h1{font-size:32px;}
+.section{padding:70px 0;}
 }
 
 </style>
@@ -234,123 +99,100 @@ h1,h2,h3 {
 
 <header class="site-header">
   <div class="container">
-
-    <div class="logo">
-      UK INBOUND GROUND TRANSPORT
-    </div>
+    <div class="logo">UK INBOUND GROUND TRANSPORT</div>
 
     <div class="menu-toggle" id="menuToggle">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </div>
 
     <nav class="main-nav" id="mainNav">
       <span class="active">Home</span>
       <a href="markets.html">Markets</a>
-      <a href="model.html">Operations</a>
-      <a href="partnerships.html">Trade Partnerships</a>
-      <a href="why-partner.html">Why Us</a>
+      <a href="gateways.html">Gateways</a>
+      <a href="model.html">Operational Model</a>
+      <a href="partnerships.html">Why Partner With Us</a>
       <a href="trade-enquiry.html" class="nav-cta">Trade Portal</a>
     </nav>
 
     <div class="menu-overlay" id="menuOverlay"></div>
-
   </div>
 </header>
 
 <section class="hero">
   <div class="container">
-    <h1>
-      Strategic Ground Transport Infrastructure<br>
-      Supporting Britain’s Inbound Touring Sector
-    </h1>
+    <h1>UK Coach Operator Supporting International Touring Programmes</h1>
     <div class="gold-divider"></div>
     <p>
-      Operational infrastructure aligned to confirmed departure series, 
-      brochure production cycles and multi-region touring frameworks 
-      across England, Scotland and integrated Britain & Ireland flows.
+      A specialist UK coach operator dedicated exclusively to
+      international tour operators and destination management companies
+      delivering structured group touring across England, Scotland and Wales.
     </p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <h2>Series & Fixed Departure Infrastructure</h2>
+    <h2>Dedicated to Group Tourism Transport</h2>
     <div class="gold-divider"></div>
     <p>
-      Structured support for international tour operators and DMC partners 
-      managing confirmed departure grids, peak-season allocation pressure 
-      and Scotland extension routing.
-    </p>
-    <p>
-      Fleet planning aligns with contracted series schedules, gateway-led 
-      dispatch modelling and driver-hour compliance requirements across 
-      consecutive departure rotations.
+      Our services are focused entirely on organised group travel.
+      We do not operate in retail hire markets. We support fixed-departure
+      series, escorted touring programmes and multi-region Britain circuits.
     </p>
   </div>
 </section>
 
 <section class="section" style="background:#ffffff;">
   <div class="container">
-    <h2>Peak Season Stability & Risk Mitigation</h2>
+    <h2>Operationally Aligned to Touring Structures</h2>
     <div class="gold-divider"></div>
     <p>
-      Summer congestion exposure, regulatory compliance constraints 
-      and driver availability fluctuations represent recurring operational 
-      risk factors within Britain’s inbound touring cycle.
-    </p>
-    <p>
-      Our infrastructure model prioritises confirmed departures, structured 
-      dispatch sequencing and multi-gateway balancing to ensure repeat 
-      programme continuity during high-demand trading periods.
+      Planning is aligned to departure calendars, Scotland extensions,
+      gateway arrivals and seasonal demand patterns to ensure reliable
+      programme continuity across consecutive rotations.
     </p>
   </div>
 </section>
 
-<section class="section">
+<section class="cta">
   <div class="container">
-    <h2>Destination Management Alignment</h2>
+    <h2>Discuss Your Upcoming Touring Programme</h2>
     <div class="gold-divider"></div>
-    <p>
-      Engagement is positioned as infrastructure support — not ad hoc coach supply.
-      We collaborate with DMC operational teams to validate routing complexity, 
-      optimise mileage efficiency and align with annual contracting frameworks.
-    </p>
+    <a href="trade-enquiry.html" class="cta-button">Submit Programme Details</a>
   </div>
 </section>
 
 <footer>
-  <div class="container" style="padding:80px 0; text-align:center; font-size:14px; color:#6b7380;">
+  <div class="container" style="padding:80px 0;text-align:center;font-size:14px;color:#6b7380;">
     <p>© 2026 Evershine Transport Limited</p>
     <p>Registered in England & Wales</p>
     <p>Company Registration No. 13507458</p>
-    <p class="email">info@ukinboundgroundtransport.com</p>
+    <p>info@ukinboundgroundtransport.com</p>
   </div>
 </footer>
 
 <script>
-const toggle = document.getElementById("menuToggle");
-const nav = document.getElementById("mainNav");
-const overlay = document.getElementById("menuOverlay");
+const toggle=document.getElementById("menuToggle");
+const nav=document.getElementById("mainNav");
+const overlay=document.getElementById("menuOverlay");
 
 function closeMenu(){
-  nav.classList.remove("active");
-  overlay.classList.remove("active");
-  toggle.classList.remove("active");
-  document.body.classList.remove("menu-open");
+nav.classList.remove("active");
+overlay.classList.remove("active");
+toggle.classList.remove("active");
+document.body.classList.remove("menu-open");
 }
 
-toggle.addEventListener("click", () => {
-  nav.classList.toggle("active");
-  overlay.classList.toggle("active");
-  toggle.classList.toggle("active");
-  document.body.classList.toggle("menu-open");
+toggle.addEventListener("click",()=>{
+nav.classList.toggle("active");
+overlay.classList.toggle("active");
+toggle.classList.toggle("active");
+document.body.classList.toggle("menu-open");
 });
 
-overlay.addEventListener("click", closeMenu);
-document.querySelectorAll(".main-nav a").forEach(link => {
-  link.addEventListener("click", closeMenu);
+overlay.addEventListener("click",closeMenu);
+document.querySelectorAll(".main-nav a").forEach(link=>{
+link.addEventListener("click",closeMenu);
 });
 </script>
 
