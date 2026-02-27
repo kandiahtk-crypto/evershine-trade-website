@@ -392,3 +392,17 @@ footer {
   }
 
 }
+
+/* Homepage Market Links Styling */
+
+.section:last-of-type a {
+  color: #b79a4b;
+  text-decoration: none;
+  border-bottom: 1px solid #b79a4b;
+  padding-bottom: 2px;
+  transition: opacity 0.3s ease;
+}
+
+.section:last-of-type a:hover {
+  opacity: 0.7;
+}
