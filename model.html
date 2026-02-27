@@ -11,16 +11,22 @@
 
 <body>
 
- <header class="site-header">
+<header class="site-header">
   <div class="container">
 
     <div class="logo">
       UK INBOUND GROUND TRANSPORT
     </div>
 
-    <nav class="main-nav">
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="main-nav" id="mainNav">
       <a href="index.html">Home</a>
-      <a href="markets.html">Markets</a>
+      <a href="markets.html" class="active">Markets</a>
       <a href="gateways.html">Gateways</a>
       <a href="model.html">Operational Model</a>
       <a href="partnerships.html">Trade Partnerships</a>
@@ -28,8 +34,10 @@
       <a href="trade-enquiry.html" class="nav-cta">Trade Portal</a>
     </nav>
 
+    <div class="menu-overlay" id="menuOverlay"></div>
+
   </div>
-</header>
+</header> 
   
 
     
@@ -131,6 +139,32 @@
     <p class="email">info@ukinboundgroundtransport.com</p>
   </div>
 </footer>
+<script>
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("mainNav");
+const overlay = document.getElementById("menuOverlay");
 
+function closeMenu(){
+  nav.classList.remove("active");
+  overlay.classList.remove("active");
+  toggle.classList.remove("active");
+  document.body.classList.remove("menu-open");
+}
+
+if(toggle){
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    overlay.classList.toggle("active");
+    toggle.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
+  });
+
+  overlay.addEventListener("click", closeMenu);
+
+  document.querySelectorAll(".main-nav a").forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+}
+</script>
 </body>
 </html>
