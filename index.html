@@ -7,19 +7,19 @@
 
 <title>UK Coach Operator for Tour Operators & European DMCs | Inbound Group Transport Britain</title>
 
-<meta name="description" content="Specialist UK coach operator serving international tour operators and European DMCs. Fixed-departure series, Scotland touring and structured inbound group transport across England, Scotland and Wales.">
+<meta name="description" content="Specialist UK coach operator serving international tour operators and European DMCs. Structured inbound group touring across England, Scotland and Wales supporting fixed-departure series and multi-region Britain programmes.">
 
 <link rel="canonical" href="https://www.ukinboundgroundtransport.com/">
 
-<meta property="og:title" content="UK Coach Operator for Tour Operators & DMCs">
-<meta property="og:description" content="Inbound UK group transport infrastructure for international tour operators and European destination management companies.">
+<meta property="og:title" content="UK Coach Operator for International Tour Operators & DMCs">
+<meta property="og:description" content="Inbound UK group transport infrastructure supporting structured touring across Britain.">
 <meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-<!-- Organization Schema -->
+<!-- ORGANIZATION SCHEMA -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -35,12 +35,12 @@
 }
 </script>
 
-<!-- Service Schema -->
+<!-- SERVICE SCHEMA -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "Service",
- "name": "Inbound UK Coach Transport",
+ "name": "Inbound UK Coach Transport for Tour Operators",
  "provider": {
    "@type": "Organization",
    "name": "UK Inbound Ground Transport"
@@ -50,72 +50,108 @@
 }
 </script>
 
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [{
-   "@type": "Question",
-   "name": "Do you operate exclusively for tour operators and DMCs?",
-   "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Yes. We specialise exclusively in inbound group transport for international tour operators and European DMC partners."
-   }
- },{
-   "@type": "Question",
-   "name": "Do you support fixed-departure series across England and Scotland?",
-   "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Yes. Fleet allocation aligns with confirmed seasonal departure calendars and brochure cycles."
-   }
- }]
-}
-</script>
-
 <style>
 
 /* GLOBAL */
 *{margin:0;padding:0;box-sizing:border-box;}
+html{overflow-y:scroll;}
 body{font-family:'Inter',sans-serif;background:#f5f4f1;color:#2c3440;line-height:1.75;}
 .container{width:90%;max-width:1150px;margin:0 auto;position:relative;}
 h1,h2,h3{font-family:'Playfair Display',serif;font-weight:400;}
 .gold-divider{width:70px;height:2px;background:#b79a4b;margin:25px auto 40px;}
-.section{padding:100px 0;border-top:1px solid #e6e3dc;text-align:center;}
-.section p{max-width:850px;margin:25px auto;color:#5d6775;}
 
 /* HEADER */
-.site-header{background:#fff;padding:40px 0 20px;border-bottom:1px solid #e6e3dc;text-align:center;}
+.site-header{background:#ffffff;padding:40px 0 20px;border-bottom:1px solid #e6e3dc;text-align:center;}
 .logo{font-size:18px;letter-spacing:6px;color:#b79a4b;margin-bottom:25px;}
 
 /* NAV */
 .main-nav{display:flex;justify-content:center;gap:45px;flex-wrap:wrap;}
-.main-nav a,.main-nav span{position:relative;text-decoration:none;font-size:13px;letter-spacing:2px;color:#2b3440;padding-bottom:8px;display:inline-block;}
+.main-nav a,.main-nav span{position:relative;text-decoration:none;font-size:13px;letter-spacing:2px;color:#2b3440;padding-bottom:8px;display:inline-block;transition:color 0.3s ease;}
+.main-nav a:hover{color:#000;}
+.main-nav a::after{content:"";position:absolute;left:50%;bottom:0;width:0;height:2px;background:#c6a548;transform:translateX(-50%);transition:width 0.35s ease;}
+.main-nav a:hover::after{width:100%;}
 .main-nav .active{color:#c6a548;}
+.main-nav .active::after{content:"";position:absolute;left:50%;bottom:0;width:100%;height:2px;background:#c6a548;transform:translateX(-50%);}
 .nav-cta{border:1px solid #c6a548;padding:8px 22px;}
 .nav-cta:hover{background:#c6a548;color:#fff;}
-
-/* MOBILE */
-.menu-toggle{display:none;flex-direction:column;gap:6px;cursor:pointer;position:absolute;right:5%;top:48px;}
-.menu-toggle span{width:24px;height:2px;background:#b79a4b;}
-.menu-overlay{display:none;}
-
-@media(max-width:900px){
-.menu-toggle{display:flex;}
-.main-nav{position:fixed;top:0;right:-100%;width:300px;height:100vh;background:#fff;flex-direction:column;justify-content:center;align-items:flex-start;padding:80px 40px;gap:35px;transition:0.4s ease;}
-.main-nav.active{right:0;}
-.menu-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.25);display:none;}
-.menu-overlay.active{display:block;}
-body.menu-open{overflow:hidden;}
-}
 
 /* HERO */
 .hero{padding:120px 0 100px;background:linear-gradient(to bottom,#ffffff,#f0efe9);text-align:center;}
 .hero h1{font-size:44px;margin-bottom:30px;}
+.hero p{max-width:850px;margin:0 auto;color:#5d6775;}
+
+/* SECTIONS */
+.section{padding:100px 0;border-top:1px solid #e6e3dc;text-align:center;}
+.section p{max-width:850px;margin:25px auto;color:#5d6775;}
 
 .cta{padding:100px 0;text-align:center;border-top:1px solid #e6e3dc;}
-.cta-button{display:inline-block;margin-top:30px;padding:14px 40px;border:1px solid #b79a4b;text-decoration:none;color:#2c3440;}
-.cta-button:hover{background:#b79a4b;color:#fff;}
+.cta-button{display:inline-block;margin-top:30px;padding:14px 40px;border:1px solid #b79a4b;text-decoration:none;letter-spacing:2px;font-size:13px;color:#2c3440;}
+.cta-button:hover{background:#b79a4b;color:#ffffff;}
+
+/* MOBILE MENU */
+
+.menu-toggle{
+  display:none;
+  flex-direction:column;
+  gap:6px;
+  cursor:pointer;
+  position:absolute;
+  right:5%;
+  top:48px;
+  z-index:1100;
+}
+
+.menu-toggle span{
+  width:24px;
+  height:2px;
+  background:#b79a4b;
+}
+
+.menu-overlay{
+  display:none;
+}
+
+@media(max-width:900px){
+
+  .menu-toggle{display:flex;}
+
+  .main-nav{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:300px;
+    height:100vh;
+    background:#ffffff;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    padding:80px 40px;
+    gap:35px;
+    transition:0.4s ease;
+    box-shadow:-5px 0 30px rgba(0,0,0,0.08);
+    z-index:1050;
+  }
+
+  .main-nav.active{right:0;}
+
+  .menu-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.35);
+    backdrop-filter:blur(3px);
+    z-index:1000;
+  }
+
+  .menu-overlay.active{display:block;}
+
+  body.menu-open{overflow:hidden;}
+
+}
+
+@media(max-width:768px){
+.hero h1{font-size:32px;}
+.section{padding:70px 0;}
+}
 
 </style>
 </head>
@@ -150,69 +186,34 @@ body.menu-open{overflow:hidden;}
 <h1>UK Coach Operator for International Tour Operators & European DMCs</h1>
 <div class="gold-divider"></div>
 <p>
-Specialist inbound UK coach transport supporting fixed-departure series,
-Scotland touring programmes and multi-region Britain circuits.
+A specialist UK coach operator dedicated exclusively to international tour operators
+and destination management companies delivering structured group touring
+across England, Scotland and Wales.
 </p>
 </div>
 </section>
 
 <section class="section">
 <div class="container">
-<h2>Dedicated UK Inbound Touring Infrastructure</h2>
+<h2>Dedicated to Organised Group Tourism</h2>
 <div class="gold-divider"></div>
 <p>
-We operate exclusively within organised group tourism.
-Our services align with confirmed departure grids,
-seasonal contracting cycles and structured programme continuity.
+Our services focus entirely on fixed-departure series, escorted touring programmes,
+Scotland extensions and multi-region Britain circuits aligned to seasonal contracting cycles.
 </p>
-</div>
-</section>
-
-<section class="section" style="background:#ffffff;">
-<div class="container">
-<h2>International & European Market Alignment</h2>
-<div class="gold-divider"></div>
-<p>
-<a href="usa-tour-operators-uk.html">United States</a> |
-<a href="china-tour-operators-uk.html">China</a> |
-<a href="india-tour-operators-uk.html">India</a> |
-<a href="europe-tour-operators-uk.html">Europe</a>
-</p>
-</div>
-</section>
-
-<section class="section">
-<div class="container">
-<h2>Scotland & Multi-Region Touring Expertise</h2>
-<div class="gold-divider"></div>
-<p>
-Structured fleet allocation across London–Edinburgh touring,
-Highlands circuits and England–Scotland fixed-departure series.
-</p>
-</div>
-</section>
-
-<section class="section" style="background:#f9f9f7;">
-<div class="container">
-<h2>Frequently Asked Questions</h2>
-<div class="gold-divider"></div>
-<p><strong>Do you operate exclusively for tour operators?</strong><br>
-Yes. We focus solely on inbound group tourism transport.</p>
-<p><strong>Do you support fixed-departure series?</strong><br>
-Yes. Fleet allocation aligns with confirmed departure schedules.</p>
 </div>
 </section>
 
 <section class="cta">
 <div class="container">
-<h2>Secure Structured UK Touring Capacity</h2>
+<h2>Discuss Your Upcoming Touring Programme</h2>
 <div class="gold-divider"></div>
 <a href="trade-enquiry.html" class="cta-button">Submit Programme Details</a>
 </div>
 </section>
 
-<footer class="section" style="background:#f0efe9;">
-<div class="container">
+<footer>
+<div class="container" style="padding:80px 0;text-align:center;font-size:14px;color:#6b7380;">
 <p>© 2026 Evershine Transport Limited</p>
 <p>Registered in England & Wales</p>
 <p>Company Registration No. 13507458</p>
@@ -226,18 +227,22 @@ const nav=document.getElementById("mainNav");
 const overlay=document.getElementById("menuOverlay");
 
 function closeMenu(){
-nav.classList.remove("active");
-overlay.classList.remove("active");
-document.body.classList.remove("menu-open");
+  nav.classList.remove("active");
+  overlay.classList.remove("active");
+  document.body.classList.remove("menu-open");
 }
 
 toggle.addEventListener("click",()=>{
-nav.classList.toggle("active");
-overlay.classList.toggle("active");
-document.body.classList.toggle("menu-open");
+  nav.classList.toggle("active");
+  overlay.classList.toggle("active");
+  document.body.classList.toggle("menu-open");
 });
 
 overlay.addEventListener("click",closeMenu);
+
+document.querySelectorAll(".main-nav a").forEach(link=>{
+  link.addEventListener("click",closeMenu);
+});
 </script>
 
 </body>
