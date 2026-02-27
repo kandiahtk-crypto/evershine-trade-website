@@ -156,8 +156,24 @@ h1,h2,h3 {
 
 .card {
   background:#ffffff;
-  padding:35px;
+  padding:40px;
   border:1px solid #e6e3dc;
+}
+
+/* Make entire market card clickable */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link .card {
+  transition: all 0.3s ease;
+}
+
+.card-link:hover .card {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 
 .card h3 {
