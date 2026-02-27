@@ -6,6 +6,8 @@
 <title>Why Partner With Us | UK Inbound Ground Transport</title>
 
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
@@ -30,15 +32,14 @@
       <a href="gateways.html">Gateways</a>
       <a href="model.html">Operational Model</a>
       <a href="partnerships.html">Trade Partnerships</a>
-      <a href="why-partner.html">Why Partner With Us</a>
-      <a href="trade-enquiry.html" class="nav-cta active">Trade Portal</a>
+      <a href="why-partner.html" class="active">Why Partner With Us</a>
+      <a href="trade-enquiry.html" class="nav-cta">Trade Portal</a>
     </nav>
 
     <div class="menu-overlay" id="menuOverlay"></div>
 
   </div>
 </header>
-
 
 <!-- HERO -->
 
@@ -54,113 +55,88 @@
   </div>
 </section>
 
-
 <!-- CAPACITY STRUCTURE -->
 
 <section class="section">
   <div class="container">
 
-    <h2>Structured Capacity Model</h2>
+    <h2>Infrastructure, Not Ad Hoc Supply</h2>
     <div class="gold-divider"></div>
 
-    <div class="grid">
+    <p>
+      We operate as structured ground transport infrastructure aligned to
+      confirmed departure grids, brochure cycles and multi-departure
+      programme sequencing — not last-minute coach sourcing.
+    </p>
 
-      <div class="card">
-        <h3>Departure Grid Alignment</h3>
-        <p>
-          Capacity structured around confirmed series schedules,
-          contracting cycles and long-haul programme sequencing.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Routing Validation</h3>
-        <p>
-          Mileage feasibility and UK driver-hours compliance embedded
-          within programme design and allocation modelling.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Peak Season Stability</h3>
-        <p>
-          Forward fleet allocation planning across high-demand
-          summer touring corridors and Scotland extensions.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Gateway Integration</h3>
-        <p>
-          Structured sequencing across Heathrow, Manchester,
-          Edinburgh and regional arrival points.
-        </p>
-      </div>
-
-    </div>
+    <p>
+      Engagement is designed around long-term allocation visibility,
+      operational discipline and repeat departure continuity across
+      peak-season trading windows.
+    </p>
 
   </div>
 </section>
 
-
-<!-- GROWTH DASHBOARD -->
-
-<section class="dashboard">
+<section class="section" style="background:#ffffff;">
   <div class="container">
 
-    <h2 style="text-align:center;">Inbound Growth Context</h2>
+    <h2>Operational Discipline & Programme Continuity</h2>
     <div class="gold-divider"></div>
 
-    <div class="dashboard-grid">
+    <p>
+      Fleet planning integrates gateway-led dispatch modelling,
+      mileage optimisation and full UK driver-hours compliance
+      across complex multi-region itineraries.
+    </p>
 
-      <div class="metric">
-        <h3 class="counter" data-target="12">0</h3>
-        <span>Long-Haul Expansion</span>
-      </div>
-
-      <div class="metric">
-        <h3 class="counter" data-target="85">0</h3>
-        <span>Series Stability Index</span>
-      </div>
-
-      <div class="metric">
-        <h3 class="counter" data-target="4">0</h3>
-        <span>Primary Gateway Integration</span>
-      </div>
-
-      <div class="metric">
-        <h3 class="counter" data-target="100">0</h3>
-        <span>Compliance Protocol</span>
-      </div>
-
-    </div>
+    <p>
+      Structured allocation reduces exposure to congestion-driven
+      disruption and seasonal capacity compression.
+    </p>
 
   </div>
 </section>
-
-
-<!-- GOVERNANCE -->
 
 <section class="section">
   <div class="container">
 
-    <h2>Responsible Governance & ESG Alignment</h2>
+    <h2>Peak Season Stability & Risk Mitigation</h2>
     <div class="gold-divider"></div>
 
     <p>
-      Operational governance integrates structured compliance,
-      driver welfare monitoring, regional dispersion modelling and
-      sustainable routing optimisation across Britain’s touring network.
+      Britain’s inbound touring cycle presents recurring operational
+      pressure points: summer demand compression, regulatory changes,
+      urban congestion and driver availability constraints.
     </p>
 
     <p>
-      Fleet allocation decisions are aligned to regulatory standards,
-      programme stability objectives and long-term trade partner continuity.
+      Our infrastructure model balances multi-gateway deployment,
+      structured sequencing and advance capacity modelling to
+      protect confirmed departures during high-demand periods.
     </p>
 
   </div>
 </section>
 
+<section class="section" style="background:#f9f9f7;">
+  <div class="container">
+
+    <h2>Commercial Framework Alignment</h2>
+    <div class="gold-divider"></div>
+
+    <p>
+      Pricing structures reflect routing complexity, departure volume,
+      seasonal load factors and contractual release periods.
+    </p>
+
+    <p>
+      Transparent allocation frameworks ensure predictable programme
+      stability for operator and DMC partners.
+    </p>
+
+  </div>
+</section>
 
 <!-- CTA -->
 
@@ -170,13 +146,12 @@
     <h2>Structured Capacity Requires Structured Partnership</h2>
     <div class="gold-divider"></div>
 
-    <a href="rfq.html" class="cta-button">
+    <a href="trade-enquiry.html" class="cta-button">
       Submit Programme for Allocation Review
     </a>
 
   </div>
 </section>
-
 
 <!-- FOOTER -->
 
@@ -189,34 +164,8 @@
   </div>
 </footer>
 
+<!-- MOBILE MENU SCRIPT -->
 
-<!-- COUNTER SCRIPT -->
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const counters = document.querySelectorAll(".counter");
-
-  counters.forEach(counter => {
-    const target = +counter.getAttribute("data-target");
-    let count = 0;
-    const speed = 200;
-
-    const update = () => {
-      const increment = target / speed;
-
-      if (count < target) {
-        count += increment;
-        counter.innerText = Math.ceil(count);
-        requestAnimationFrame(update);
-      } else {
-        counter.innerText = target + (target === 100 ? "%" : "+");
-      }
-    };
-
-    update();
-  });
-});
-</script>
 <script>
 const toggle = document.getElementById("menuToggle");
 const nav = document.getElementById("mainNav");
@@ -244,5 +193,6 @@ if(toggle){
   });
 }
 </script>
+
 </body>
 </html>
