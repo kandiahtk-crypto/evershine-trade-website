@@ -405,21 +405,25 @@ footer {
   body.menu-open {
     overflow: hidden;
   }
-/* Premium blue link styling */
+body.menu-open {
+  overflow: hidden;
+}
 
-a,
-a:link,
-a:visited,
-a:active,
-a:focus {
-  color: #1f3c88;   /* deep professional blue */
+/* Content links only (exclude navigation + buttons) */
+
+.section a,
+.hero a,
+.card a {
+  color: #1f3c88;
   text-decoration: none;
   border-bottom: 1px solid rgba(31,60,136,0.4);
   padding-bottom: 2px;
   transition: all 0.3s ease;
 }
 
-a:hover {
-  color: #b79a4b;   /* gold on hover */
+.section a:hover,
+.hero a:hover,
+.card a:hover {
+  color: #b79a4b;
   border-bottom: 1px solid #b79a4b;
 }
