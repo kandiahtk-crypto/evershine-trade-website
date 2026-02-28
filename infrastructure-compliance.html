@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Infrastructure & Compliance Standards | UK Inbound Ground Transport</title>
+
+<meta name="description" content="UK PSV licensed inbound coach operator operating structured compliance, fleet maintenance and driver standards supporting international tour operators across Britain and Ireland.">
+
+<link rel="canonical" href="https://www.ukinboundgroundtransport.com/infrastructure-compliance.html">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+
+    <div class="logo">
+      UK INBOUND GROUND TRANSPORT
+    </div>
+
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="markets.html">Markets</a>
+      <a href="gateways.html">Gateways</a>
+      <a href="model.html">Operational Model</a>
+      <a href="infrastructure-compliance.html" class="active">Infrastructure & Compliance</a>
+      <a href="trade-enquiry.html" class="nav-cta">Trade Portal</a>
+    </nav>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+  </div>
+</header>
+
+
+<section class="section">
+  <div class="container">
+
+    <h2>Infrastructure & Compliance Standards</h2>
+    <div class="divider"></div>
+
+    <p>
+      Operational compliance is integrated within our structured control model,
+      supporting international tour operators and destination management companies
+      operating fixed-departure series and multi-region Britain & Ireland programmes.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="section" style="background:#ffffff;">
+  <div class="container">
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>UK PSV Operator Licence</h3>
+        <p>
+          All services operate under a valid UK Public Service Vehicle (PSV) Operator Licence
+          in accordance with DVSA regulations. Driver-hours compliance, tachograph monitoring
+          and transport legislation adherence are integrated into routing validation and
+          live departure oversight.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Fleet Maintenance & Safety</h3>
+        <p>
+          Vehicles are maintained under structured preventative maintenance schedules
+          aligned with UK safety inspection intervals. Regular compliance checks,
+          servicing cycles and operational readiness procedures support
+          continuity across peak seasonal touring periods.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Professional Touring Drivers</h3>
+        <p>
+          Experienced UK touring drivers with operational familiarity across England,
+          Scotland, Wales and integrated Ireland programmes. Urban access regulation,
+          Highlands routing and multi-region rotation formats are incorporated into
+          structured departure planning.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Modern Touring Fleet</h3>
+        <p>
+          Modern touring fleet with an average vehicle age under five years,
+          prioritising passenger comfort, reliability and environmental standards
+          appropriate for structured inbound group programmes.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section" style="background:#f9f9f7;">
+  <div class="container">
+
+    <h2>Compliance as Operational Control</h2>
+    <div class="divider"></div>
+
+    <p>
+      Compliance is not treated as a checklist but as an integrated operational
+      control framework designed to protect confirmed departures, support
+      consecutive rotation cycles and safeguard long-term trade partnerships
+      across Britain and Ireland.
+    </p>
+
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <p>© 2026 Evershine Transport Limited</p>
+    <p>Registered in England & Wales</p>
+    <p>Company Registration No. 13507458</p>
+    <p class="email">info@ukinboundgroundtransport.com</p>
+  </div>
+</footer>
+
+
+<script>
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("mainNav");
+const overlay = document.getElementById("menuOverlay");
+
+function closeMenu(){
+  nav.classList.remove("active");
+  overlay.classList.remove("active");
+  toggle.classList.remove("active");
+  document.body.classList.remove("menu-open");
+}
+
+if(toggle){
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    overlay.classList.toggle("active");
+    toggle.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
+  });
+
+  overlay.addEventListener("click", closeMenu);
+
+  document.querySelectorAll(".main-nav a").forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+}
+</script>
+
+</body>
+</html>
