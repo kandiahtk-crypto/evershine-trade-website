@@ -1,1 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Series Allocation Framework | UK Inbound Ground Transport</title>
 
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <div class="logo">
+      UK INBOUND GROUND TRANSPORT
+    </div>
+
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="markets.html">Markets</a>
+      <a href="gateways.html">Gateways</a>
+      <a href="model.html">Operational Model</a>
+      <a href="series-allocation.html" class="active">Series Allocation</a>
+      <a href="partnerships.html">Trade Partnerships</a>
+      <a href="why-partner.html">Why Partner With Us</a>
+      <a href="trade-enquiry.html" class="nav-cta">Trade Portal</a>
+    </nav>
+
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="container">
+    <h1>Series Allocation Framework</h1>
+    <div class="gold-divider"></div>
+    <p>
+      Structured capacity allocation for international fixed-departure
+      touring programmes across Britain & Ireland. Designed to protect
+      confirmed departures during peak season trading windows.
+    </p>
+  </div>
+</section>
+
+<!-- ANNUAL STRUCTURE -->
+
+<section class="section">
+  <div class="container">
+
+    <h2>Annual Allocation Structure</h2>
+    <div class="divider"></div>
+
+    <p>
+      Capacity planning aligns with international contracting cycles and
+      brochure production timelines. Allocation discussions are conducted
+      in advance of peak demand compression to secure operational stability.
+    </p>
+
+    <p>
+      Preliminary allocation discussions: Q2–Q3<br>
+      Departure grid confirmation: Q3–Q4<br>
+      Peak season locking: Prior to 31 January<br>
+      Rolling capacity review: Quarterly
+    </p>
+
+  </div>
+</section>
+
+<!-- DEPARTURE PROTECTION -->
+
+<section class="section" style="background:#ffffff;">
+  <div class="container">
+
+    <h2>Confirmed Departure Protection</h2>
+    <div class="divider"></div>
+
+    <p>
+      Confirmed series departures are secured against agreed allocation
+      grids, supported by structured driver-hours validation, routing
+      compliance review and multi-coach coordination modelling.
+    </p>
+
+    <p>
+      Operational planning includes:
+    </p>
+
+    <p>
+      Pre-season mileage and regulatory validation<br>
+      Gateway-based dispatch modelling<br>
+      Multi-coach synchronisation protocols<br>
+      Structured substitution policy where required<br>
+      Contingency routing review for urban congestion risk
+    </p>
+
+  </div>
+</section>
+
+<!-- RELEASE & VARIATION -->
+
+<section class="section">
+  <div class="container">
+
+    <h2>Release & Variation Policy</h2>
+    <div class="divider"></div>
+
+    <p>
+      Allocation stability requires contractual discipline. Agreed release
+      periods are structured at confirmation stage to protect capacity
+      integrity across peak season deployment.
+    </p>
+
+    <p>
+      Routing amendments, vehicle reconfiguration or material programme
+      adjustments are reviewed against compliance, mileage and driver-hour
+      implications. Escalation mechanisms apply where operational exposure
+      materially changes.
+    </p>
+
+  </div>
+</section>
+
+<!-- MULTI-GATEWAY DEPLOYMENT -->
+
+<section class="section" style="background:#f9f9f7;">
+  <div class="container">
+
+    <h2>Gateway-Based Capacity Balancing</h2>
+    <div class="divider"></div>
+
+    <p>
+      Allocation modelling incorporates multi-gateway entry points including
+      London Heathrow, Manchester, Scotland arrival hubs and cruise ports.
+    </p>
+
+    <p>
+      Multi-gateway balancing reduces congestion exposure, supports
+      regional departure sequencing and strengthens peak-season resilience
+      across England, Scotland, Wales and integrated Ireland extensions.
+    </p>
+
+  </div>
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+  <div class="container">
+
+    <h2>2026 Series Allocation Discussions</h2>
+    <div class="gold-divider"></div>
+
+    <a href="trade-enquiry.html" class="cta-button">
+      Submit Departure Grid for Review
+    </a>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="container">
+    <p>© 2026 Evershine Transport Limited</p>
+    <p>Registered in England & Wales</p>
+    <p>Company Registration No. 13507458</p>
+    <p class="email">info@ukinboundgroundtransport.com</p>
+  </div>
+</footer>
+
+<!-- MOBILE MENU SCRIPT -->
+
+<script>
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("mainNav");
+const overlay = document.getElementById("menuOverlay");
+
+function closeMenu(){
+  nav.classList.remove("active");
+  overlay.classList.remove("active");
+  toggle.classList.remove("active");
+  document.body.classList.remove("menu-open");
+}
+
+if(toggle){
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    overlay.classList.toggle("active");
+    toggle.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
+  });
+
+  overlay.addEventListener("click", closeMenu);
+
+  document.querySelectorAll(".main-nav a").forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+}
+</script>
+
+</body>
+</html>
