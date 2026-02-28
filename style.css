@@ -475,5 +475,10 @@ body.menu-open {
 .market-button:active {
   color:#2c3440;
   text-decoration:none;
-  border:none;
+  
+}
+
+.section .market-button {
+  border-bottom: none;
+}  
 }
