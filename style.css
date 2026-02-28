@@ -12,18 +12,32 @@ body {
 }
 /* Global link styling */
 
-a,
-a:link,
-a:visited,
-a:active,
-a:focus {
-  color: #b79a4b;
+/* Content links only */
+.section a,
+.hero a,
+.card a {
+  color: #1f3c88;
   text-decoration: none;
-  transition: opacity 0.3s ease;
+  border-bottom: 1px solid rgba(31,60,136,0.4);
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
 }
 
-a:hover {
-  opacity: 0.7;
+.section a:hover,
+.hero a:hover,
+.card a:hover {
+  color: #b79a4b;
+  border-bottom: 1px solid #b79a4b;
+}
+
+/* Footer links subtle */
+footer a {
+  color: #6b7380;
+  border: none;
+}
+
+footer a:hover {
+  color: #b79a4b;
 }
 
 .container {
