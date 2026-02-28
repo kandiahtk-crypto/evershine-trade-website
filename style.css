@@ -469,3 +469,11 @@ body.menu-open {
   border-color:#b79a4b;
   transform:translateY(-2px);
 }
+.market-button,
+.market-button:visited,
+.market-button:hover,
+.market-button:active {
+  color:#2c3440;
+  text-decoration:none;
+  border:none;
+}
