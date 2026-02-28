@@ -394,8 +394,9 @@ footer {
 }
 
 /* Homepage Market Links Styling */
+/* International Source Market Links */
 
-.section:last-of-type a {
+.source-markets a {
   color: #b79a4b;
   text-decoration: none;
   border-bottom: 1px solid #b79a4b;
@@ -403,6 +404,6 @@ footer {
   transition: opacity 0.3s ease;
 }
 
-.section:last-of-type a:hover {
+.source-markets a:hover {
   opacity: 0.7;
 }
