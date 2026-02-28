@@ -10,6 +10,21 @@ body {
   color:#2c3440;
   line-height:1.75;
 }
+/* Global link styling */
+
+a,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  color: #b79a4b;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
 
 .container {
   width:90%;
