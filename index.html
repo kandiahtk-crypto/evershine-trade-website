@@ -1,283 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UK Inbound Ground Transport | Trade-Only Coach Infrastructure for International Tour Operators</title>
 
-<title>UK Coach Operator for Tour Operators & European DMCs | Inbound Group Transport Britain</title>
-
-<meta name="description" content="Specialist UK coach operator serving international tour operators and European DMCs. Structured inbound group touring across England, Scotland and Wales supporting fixed-departure series and multi-region Britain programmes.">
-
-<link rel="canonical" href="https://www.ukinboundgroundtransport.com/">
-
-<meta property="og:title" content="UK Coach Operator for International Tour Operators & DMCs">
-<meta property="og:description" content="Inbound UK group transport infrastructure supporting structured touring across Britain.">
-<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<!-- ORGANIZATION SCHEMA -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Organization",
- "name": "UK Inbound Ground Transport",
- "legalName": "Evershine Transport Limited",
- "url": "https://www.ukinboundgroundtransport.com",
- "areaServed": ["United Kingdom","Europe"],
- "audience": {
-   "@type": "BusinessAudience",
-   "audienceType": "International Tour Operators and Destination Management Companies"
- }
-}
-</script>
-
-<!-- SERVICE SCHEMA -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Service",
- "name": "Inbound UK Coach Transport for Tour Operators",
- "provider": {
-   "@type": "Organization",
-   "name": "UK Inbound Ground Transport"
- },
- "areaServed": "United Kingdom",
- "serviceType": "Inbound Tourism Coach Transport"
-}
-</script>
- <!-- SERVICE SCHEMA -->
-
-
-<!-- FAQ SCHEMA -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-   {
-     "@type": "Question",
-     "name": "Do you work exclusively with tour operators and DMCs?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes. We operate exclusively within the organised group tourism sector supporting international tour operators and destination management companies."
-     }
-   },
-   {
-     "@type": "Question",
-     "name": "Do you support Scotland touring programmes?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes. We support multi-region England–Scotland touring including Highlands rotations and extended Scotland itineraries."
-     }
-   }
- ]
-}
-</script>
-
-<style>
-
-/* GLOBAL */
-*{margin:0;padding:0;box-sizing:border-box;}
-html{overflow-y:scroll;}
-body{font-family:'Inter',sans-serif;background:#f5f4f1;color:#2c3440;line-height:1.75;}
-.container{width:90%;max-width:1150px;margin:0 auto;position:relative;}
-h1,h2,h3{font-family:'Playfair Display',serif;font-weight:400;}
-.gold-divider{width:70px;height:2px;background:#b79a4b;margin:25px auto 40px;}
-
-/* HEADER */
-.site-header{background:#ffffff;padding:40px 0 20px;border-bottom:1px solid #e6e3dc;text-align:center;}
-.logo{font-size:18px;letter-spacing:6px;color:#b79a4b;margin-bottom:25px;}
-
-/* NAV */
-.main-nav{display:flex;justify-content:center;gap:45px;flex-wrap:wrap;}
-.main-nav a,.main-nav span{position:relative;text-decoration:none;font-size:13px;letter-spacing:2px;color:#2b3440;padding-bottom:8px;display:inline-block;transition:color 0.3s ease;}
-.main-nav a:hover{color:#000;}
-.main-nav a::after{content:"";position:absolute;left:50%;bottom:0;width:0;height:2px;background:#c6a548;transform:translateX(-50%);transition:width 0.35s ease;}
-.main-nav a:hover::after{width:100%;}
-.main-nav .active{color:#c6a548;}
-.main-nav .active::after{content:"";position:absolute;left:50%;bottom:0;width:100%;height:2px;background:#c6a548;transform:translateX(-50%);}
-.nav-cta{border:1px solid #c6a548;padding:8px 22px;}
-.nav-cta:hover{background:#c6a548;color:#fff;}
-
-/* HERO */
-.hero{padding:120px 0 100px;background:linear-gradient(to bottom,#ffffff,#f0efe9);text-align:center;}
-.hero h1{font-size:44px;margin-bottom:30px;}
-.hero p{max-width:850px;margin:0 auto;color:#5d6775;}
-
-/* SECTIONS */
-.section{padding:100px 0;border-top:1px solid #e6e3dc;text-align:center;}
-.section p{max-width:850px;margin:25px auto;color:#5d6775;}
-
-.cta{padding:100px 0;text-align:center;border-top:1px solid #e6e3dc;}
-.cta-button{display:inline-block;margin-top:30px;padding:14px 40px;border:1px solid #b79a4b;text-decoration:none;letter-spacing:2px;font-size:13px;color:#2c3440;}
-.cta-button:hover{background:#b79a4b;color:#ffffff;}
-
-/* MOBILE MENU */
-
-.menu-toggle{
-  display:none;
-  flex-direction:column;
-  gap:6px;
-  cursor:pointer;
-  position:absolute;
-  right:5%;
-  top:48px;
-  z-index:1100;
-}
-
-.menu-toggle span{
-  width:24px;
-  height:2px;
-  background:#b79a4b;
-}
-
-.menu-overlay{
-  display:none;
-}
-
-@media(max-width:900px){
-
-  .menu-toggle{display:flex;}
-
-  .main-nav{
-    position:fixed;
-    top:0;
-    right:-100%;
-    width:300px;
-    height:100vh;
-    background:#ffffff;
-    flex-direction:column;
-    justify-content:center;
-    align-items:flex-start;
-    padding:80px 40px;
-    gap:35px;
-    transition:0.4s ease;
-    box-shadow:-5px 0 30px rgba(0,0,0,0.08);
-    z-index:1050;
-  }
-
-  .main-nav.active{right:0;}
-
-  .menu-overlay{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.35);
-    backdrop-filter:blur(3px);
-    z-index:1000;
-  }
-
-  .menu-overlay.active{display:block;}
-
-  body.menu-open{overflow:hidden;}
-
-}
-
-@media(max-width:768px){
-.hero h1{font-size:32px;}
-.section{padding:70px 0;}
-}
-
-</style>
 </head>
 
 <body>
 
 <header class="site-header">
-<div class="container header-inner">
+  <div class="container header-inner">
 
- 
+    <div class="logo">
+      UK INBOUND GROUND TRANSPORT
+    </div>
 
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="active">Home</a>
+      <a href="markets.html">Markets</a>
+      <a href="gateways.html">Gateways</a>
+      <a href="model.html">Operational Model</a>
+      <a href="partnerships.html">Trade Partnerships</a>
+      <a href="why-partner.html">Why Partner With Us</a>
+      <a href="trade-enquiry.html" class="nav-cta">Trade Portal</a>
+    </nav>
 
-<div class="logo">UK INBOUND GROUND TRANSPORT</div>
-
-<div class="menu-toggle" id="menuToggle">
-<span></span><span></span><span></span>
-</div>
-
-<nav class="main-nav" id="mainNav">
-<a href="index.html" class="active">Home</a>
-<a href="markets.html">Markets</a>
-<a href="uk-ireland-touring-transport.html">UK & Ireland</a>
-<a href="gateways.html">Gateways</a>
-<a href="model.html">Operational Model</a>
-<a href="infrastructure-compliance.html">Infrastructure & Compliance</a>
- <a href="partnerships.html">Why Partner With Us</a>
-<a href="trade-enquiry.html" class="nav-cta">Trade Portal</a>
-</nav>
-</div>
+  </div>
 </header>
 
 <div class="menu-overlay" id="menuOverlay"></div>
 
-
+<!-- HERO -->
 
 <section class="hero">
-<div class="container">
-<h1>UK Coach Operator for International Tour Operators & European DMCs</h1>
-<div class="gold-divider"></div>
-<p>
-A specialist UK coach operator dedicated exclusively to international tour operators
-and destination management companies delivering structured group touring
-across England, Scotland and Wales.
-</p>
-</div>
+  <div class="container">
+    <h1>Structured UK Coach Infrastructure for International Tour Operators & DMCs</h1>
+    <div class="gold-divider"></div>
+    <p>
+      Dedicated inbound ground transport partner supporting fixed-departure series,
+      escorted touring programmes and multi-region Britain & Ireland itineraries
+      across England, Scotland and Wales.
+    </p>
+  </div>
 </section>
+
+<!-- POSITIONING -->
 
 <section class="section">
-<div class="container">
-<h2>Dedicated to Organised Group Tourism</h2>
-<div class="gold-divider"></div>
-<p>
-Our services focus entirely on fixed-departure series, escorted touring programmes,
-Scotland extensions and multi-region Britain circuits aligned to seasonal contracting cycles.
-</p>
-</div>
-</section>
- 
- <section class="section">
   <div class="container">
 
-    <h2>Operational Framework</h2>
+    <h2>Built for Organised Group Tourism</h2>
     <div class="gold-divider"></div>
 
+    <p>
+      We operate exclusively within the international trade sector —
+      supporting tour operators and destination management companies
+      requiring structured allocation, regulatory compliance and
+      peak-season stability across Britain’s inbound touring corridors.
+    </p>
+
+  </div>
+</section>
+
+<!-- INFRASTRUCTURE GRID -->
+
+<section class="section" style="background:#ffffff;">
+  <div class="container">
+
     <div class="grid">
-     <div class="card">
-  <h3>Group Touring Focus</h3>
-  <p>
-   Dedicated exclusively to international tour operators and DMCs
-delivering 
-<a href="fixed-departure-transport-uk.html">
-fixed-departure series infrastructure
-</a>,
-escorted touring programmes and structured multi-region Britain itineraries.
-  </p>
-</div> 
-      
 
       <div class="card">
-        <h3>England–Scotland Continuity</h3>
+        <h3>Series-Based Allocation</h3>
         <p>
-          
-       Multi-night touring across London, the Lake District,
-Yorkshire and extended 
-<a href="britain-ireland-touring-infrastructure.html">
-Britain & Ireland touring infrastructure
-</a>
-requiring rotation stability and timing precision.
-        </p>    
+          Structured fleet planning aligned to confirmed departure grids,
+          release cycles and seasonal demand forecasting.
+        </p>
       </div>
 
       <div class="card">
         <h3>Gateway Integration</h3>
         <p>
-          Structured coordination aligned to Heathrow, Manchester
-          and Edinburgh arrivals ensuring programme continuity
-          across consecutive departure cycles.
+          Heathrow, Manchester, Edinburgh and cruise-port coordination
+          supporting arrival wave control and Day 1 dispatch sequencing.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Multi-Region Routing</h3>
+        <p>
+          England–Scotland continuity, Highlands circuits and integrated
+          Britain & Ireland touring frameworks.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Compliance & Driver-Hours Control</h3>
+        <p>
+          Infrastructure-led programme validation ensuring operational
+          feasibility before departure confirmation.
         </p>
       </div>
 
@@ -286,93 +118,91 @@ requiring rotation stability and timing precision.
   </div>
 </section>
 
+<!-- MARKETS -->
 
-      
-
-   
-   <section class="section">
+<section class="section">
   <div class="container">
 
-    <h2>Why Partner With a Specialist UK Inbound Coach Operator</h2>
+    <h2>International Source Market Alignment</h2>
     <div class="gold-divider"></div>
 
     <p>
-      We operate exclusively within the organised group tourism sector,
-      prioritising structured fleet planning, compliance, reliability
-      and long-term partnership alignment.
+      Supporting structured outbound markets including the United States,
+      India, China and continental Europe — aligned to long-haul contracting cycles
+      and brochure production timelines.
     </p>
 
-    
+  </div>
+</section>
+
+<!-- STABILITY BAND -->
+
+<section class="section" style="background:#f9f9f7;">
+  <div class="container">
+
+    <h2>Peak Season Stability & Operational Discipline</h2>
+    <div class="gold-divider"></div>
+
+    <p>
+      Structured allocation models reduce exposure to congestion risk,
+      capacity compression and regulatory constraints during high-demand periods.
+      Our framework is built for repeat departure continuity —
+      not reactive coach sourcing.
+    </p>
 
   </div>
-</section> 
+</section>
+
+<!-- CTA -->
 
 <section class="cta">
-<div class="container">
-<h2>Discuss Your Upcoming Touring Programme</h2>
-<div class="gold-divider"></div>
-<a href="trade-enquiry.html" class="cta-button">Submit Programme Details</a>
-</div>
-</section>
-<section class="section source-markets">
   <div class="container">
 
-    <h2>International Source Markets</h2>
+    <h2>Discuss Your Upcoming Touring Programme</h2>
     <div class="gold-divider"></div>
 
-    <p>
-      We provide structured inbound UK coach transport for international tour operators and
-      destination management companies across key global source markets.
-    </p>
-
-    <p>
-      <a href="usa-tour-operators-uk.html">United States Tour Operators</a> |
-      <a href="china-tour-operators-uk.html">China Tour Operators</a> |
-      <a href="india-tour-operators-uk.html">India Tour Operators</a> |
-      <a href="europe-tour-operators-uk.html">European Tour Operators</a>
-    </p>
+    <a href="trade-enquiry.html" class="cta-button">
+      Submit Programme Details
+    </a>
 
   </div>
-</section> 
+</section>
 
 <footer>
-<div class="container" style="padding:80px 0;text-align:center;font-size:14px;color:#6b7380;">
-<p>© 2026 Evershine Transport Limited</p>
-<p>Registered in England & Wales</p>
-<p>Company Registration No. 13507458</p>
-<p>info@ukinboundgroundtransport.com</p>
-<p style="margin-top:25px;">
-  <a href="privacy-policy.html">Privacy Policy</a> |
-  <a href="cookie-policy.html">Cookie Policy</a> |
-  <a href="terms-of-trade.html">Trade Terms</a> |
-  <a href="company-information.html">Company Information</a>
-</p>
-</div>
- 
+  <div class="container">
+    <p>© 2026 Evershine Transport Limited</p>
+    <p>Registered in England & Wales</p>
+    <p>Company Registration No. 13507458</p>
+    <p class="email">info@ukinboundgroundtransport.com</p>
+  </div>
 </footer>
 
 <script>
-const toggle=document.getElementById("menuToggle");
-const nav=document.getElementById("mainNav");
-const overlay=document.getElementById("menuOverlay");
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("mainNav");
+const overlay = document.getElementById("menuOverlay");
 
 function closeMenu(){
   nav.classList.remove("active");
   overlay.classList.remove("active");
+  toggle.classList.remove("active");
   document.body.classList.remove("menu-open");
 }
 
-toggle.addEventListener("click",()=>{
-  nav.classList.toggle("active");
-  overlay.classList.toggle("active");
-  document.body.classList.toggle("menu-open");
-});
+if(toggle){
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    overlay.classList.toggle("active");
+    toggle.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
+  });
 
-overlay.addEventListener("click",closeMenu);
+  overlay.addEventListener("click", closeMenu);
 
-document.querySelectorAll(".main-nav a").forEach(link=>{
-  link.addEventListener("click",closeMenu);
-});
+  document.querySelectorAll(".main-nav a").forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+}
 </script>
 
 </body>
